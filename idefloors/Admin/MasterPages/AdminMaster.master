@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_MasterPages_AdminMaster" %>
+<%@ Register src="TopMenu.ascx" tagname="TopMenu" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" clientidmode="Static">
+    <title>Hệ thống quản lý</title>
+    <link rel="stylesheet" type="text/css" href="/Admin/CSS/HWStyle.css"/>
+    <link id="Style2" href="/Admin/CSS/Form.css" rel="stylesheet" type="text/css" />    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+<form id="form1" clientidmode="Static" runat="server">
+    <div id="header">
+        <uc1:TopMenu ID="TopMenu" runat="server" />
+        <div class="TopRight">
+            <div class="itemRow">
+                <div class="itemLabel">Time: </div>
+                <div class="itemContent" id="divTime"></div>
+            </div>
+            <div class="itemRow">
+                <div class="itemLabel">User : </div>
+                <a href="/Channels/Other/UserManagement/UserAccount/ChangePassword.aspx"><asp:Label ID="lblUser" CssClass="username" runat="server"></asp:Label></a>
+                <asp:LinkButton ID="btnLogout" CssClass="logout" runat="server" OnClick="btnLogout_Click" OnClientClick="return confirm('Do you want to logout?');">Logout</asp:LinkButton>      
+                       
+            </div>
+        </div>
+    </div>
+     <div class="mainContent">        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <!--Show loading-->
+    <div id="loading"></div>
+    <!--Include file Javascript JS in here-->    
+    <%--<script src="/Scripts/HWScript.js" type="text/javascript"></script>    
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery.floatheader.js"></script>  --%>  
+    
+   
+     <script type="text/javascript">
+         function checkTime(i) {
+             if (i < 10) {
+                 i = "0" + i;
+             }
+             return i;
+         }
+
+         //Timer Function
+         function startTime() {
+            
+             var today = new Date();
+             var h = today.getHours();
+             var m = today.getMinutes();
+             var s = today.getSeconds();
+
+             var mon = today.getMonth() + 1;
+             
+
+             // add a zero in front of numbers<10
+             m = checkTime(m);
+             s = checkTime(s);
+             var time = document.getElementById('divTime');
+             if (time != null) {
+                 time.innerHTML = h + ":" + m + ":" + s + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + mon + "-" + today.getDate() + "-" + today.getFullYear();
+                 t = setTimeout('startTime()', 2000);
+             }
+         }
+
+         startTime();
+       
+   </script>
+</body>
+</html>

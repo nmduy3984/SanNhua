@@ -1,0 +1,908 @@
+﻿/*============================ Styles CSS3 Design by Thinh ======================================*/
+
+/*Document*/
+body 
+{
+	margin:auto;
+	padding:0px;
+	font-family:Tahoma;				
+	background-image: url('/Images/menu/bg_HW.png');
+	font-size:13px;
+	min-width: 1250px;
+}
+
+body *
+{
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;	
+	-o-transition: all 0.2s ease-in-out;
+    text-align: left;
+}
+
+input:focus  { outline: none; }
+
+a
+{
+	outline: none;
+	min-width:20px;
+	text-decoration:none;
+}
+
+#header
+{
+	width:100%;
+	min-width:1150px;
+	height:40px;
+	background:#222 url(/Images/menu/bgNavi.png) repeat-x;		
+	background-position:left -52px;		    	
+    box-shadow: 0px 2px 5px #444;
+    margin-bottom:2px;
+	/*
+    border-bottom:2px #444 solid;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+    */
+}
+
+#header:hover
+{
+	
+}
+
+/*Navigation Menu*/
+#navi, #navi li, #navi li img, #navi li a
+{
+	margin:0px;
+	padding:0px;
+	float:left;
+	display:block;
+	height:46px;
+	
+	height:40px;
+}
+
+#navi li
+{		
+	min-width:70px;	
+	border-right:1px solid #777;	
+	position:relative;		
+}
+
+#navi li a img
+{
+	width:32px;
+	height:32px;
+	border:0px none;
+	margin:7px 5px 7px 15px;
+	
+}
+
+#navi li a
+{
+	margin:0px 10px 0px 0px;
+	color:#fff;
+	width:100%;
+	background:#222 url(/Images/menu/bgNavi.png) repeat-x;	
+	background-position:left -52px;		
+	font-size:18px;
+	
+	text-decoration:none;
+	line-height:46px;	
+	text-shadow: 2px 2px 7px #111;
+}
+
+#navi > li > a:hover
+{
+	background-image:none;
+	background-position:left top;
+	background-color:#ffdb7f;
+	box-shadow: inset 0 1px 3px #fff, inset 0 -20px #ffa500, 3px 3px 6px rgba(0, 0, 0, .5);	
+	box-shadow: inset 0 1px 3px #fff, inset 0 -18px 5px #ffa500;	
+}
+
+#navi > li:hover > a
+{	
+	background-image:none;
+	background-position:left top;
+	
+	background-color:#ffdb7f;
+	box-shadow: inset 0 1px 3px #fff, inset 0 -20px #ffa500, 3px 3px 6px rgba(0, 0, 0, .5);		
+	
+	box-shadow: inset 0 1px 3px #fff, inset 0 -18px 5px #ffa500;	
+}
+
+/*
+
+#navi li:hover a[class~='mHome']
+{
+	background-color:#ff99be;
+}
+
+#navi li:hover a[class~='mAmazon']
+{	
+	background-color:#fa9808;	
+}
+
+
+#lAmazon
+{
+	border:5px solid #fa9808;
+	*width:340px;
+}
+
+#navi li:hover a[class~='mEbay']
+{	
+	background-color:#8bc822;
+}
+
+#lEbay, #lNexibo
+{
+	border:5px solid #8bc822;
+	*width:510px;
+}
+
+#navi li:hover a[class~='mYahoo']
+{	
+	background-color:#790cb2;
+	
+}
+
+#lYahoo
+{	
+	border: 5px solid #7103AA;
+	*width:510px;	
+}
+
+#lYahoo1 a
+{
+	color:#111 !important;	
+}
+
+#navi li:hover a[class~='mPriceFlat']
+{
+	background-color:#288bbe;
+}
+
+#lPriceFlat
+{
+	border:5px solid #288bbe;
+	*width:340px;
+}
+
+#navi li:hover a[class~='mMining']
+{
+	background-color:#288bbe;
+}
+
+#lMining
+{
+	border:5px solid #288bbe;
+	*width:340px;
+}
+
+#navi li:hover a[class~='mStoneEdge']
+{
+	background-color:#f10061;
+}
+
+#lStoneEdge
+{
+	border:5px solid #f10061;
+	*width:340px;
+}
+
+#navi li:hover a[class~='mOther']
+{
+	background-color:#a0d0eb;
+}
+
+#lOther
+{
+	border:5px solid #a0d0eb;
+	*width:340px;
+}
+
+*/
+
+#navi li div.colMenu
+{
+	width:170px;
+	padding:0 4px;
+	border-right:1px solid #999;
+	height:100%;
+	float:left;
+	display:block;	
+}
+
+table.tableMenu
+{
+	width:100%;
+	float:left;
+	padding-bottom:5px;
+}
+
+table.tableMenu tr td:first-child
+{
+	border-left:0px none;
+}
+
+table.tableMenu tr td
+{	
+	border-left:1px solid #999;
+	vertical-align:top;
+	min-width:160px;
+}
+
+/*Class Sub Menu*/
+#navi li div.sub 
+{
+	padding:0px 5px;	
+	position: absolute;	
+	top: 46px; 
+	left: -6px;	
+	z-index:5000;		
+	display:none;	
+	
+	top:40px;
+	opacity:0.96;
+	background: #333;		
+	border: 3px solid #FFA500;	
+	border-top-width:1px;
+	z-index:12000;
+	
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+	border-radius: 0 0 12px 12px;
+}
+
+#navi li:hover .sub
+{
+	display:block;	
+	left:-4px;
+}
+
+#navi li div.sub ul{	
+	margin: 2px 0 5px 5px; 
+	padding: 0px;	
+	min-width:160px;			
+	float: left;
+	list-style: none;		
+}
+
+#navi li div.sub ul *
+{
+	font-size:12px;
+	margin: 0 ; 
+	padding: 0px;
+	float:left;		
+}
+
+#navi li div.sub ul li 
+{	
+	width: 100%;	
+	height:25px;
+	color: #fff;
+	float:left;
+	display:block;
+	border-style:none;
+	
+	height:20px;
+	line-height:18px;
+}
+
+#navi li div.sub ul li:first-child {	
+	height:25px;	
+	font-weight:bold;
+	border-bottom:1px solid #555;		
+}
+#navi li div.sub ul li:first-child a {
+	padding: 4px 0px 4px 4px;	
+	color: #FFA500;
+	font-family:Tahoma;
+	background-image: none;	
+	
+	font-size:12px;
+	font-weight:bold !important;
+}
+#navi li div.sub ul li:first-child a:hover
+{	 	
+	color: #FFA500;
+	margin-left:0px;
+	text-decoration:none;
+	cursor:default;
+}
+
+#navi li div.sub ul li a {
+	float: left; 
+	text-indent: 0; /*--Reset text indent--*/
+	width:100%;
+	background: url(/Images/menu/navlist_arrow.png) no-repeat 5px 12px;
+	padding: 6px 5px 6px 15px;
+	display: block;
+	text-decoration: none;
+	color: #fff;	
+	line-height:100%;
+	height:16px;
+	text-shadow:none;
+}
+
+#navi li div.sub ul li a:hover 
+{
+	text-decoration:underline; 	
+	color: #77b20d; 
+	margin-left:5px;	
+}
+
+/*End Navigation Menu*/
+/*==========================================================================================================*/
+
+/*Panel Top Right*/
+div.TopRight
+{
+	min-width:240px;
+	height:40px;
+	float:right;
+	color:White;
+    font-weight:bold;
+	text-shadow: 0 0px #fff;
+	max-width:310px;
+}
+
+div.itemRow
+{
+	width:100%;
+	float:left;
+	height:20px;
+	line-height:20px;
+	font-size:12px;
+}
+
+div.itemLabel
+{
+	width:18%;
+	float:left;
+}
+
+div.itemContent
+{
+	width:72%;
+	float:left;
+}
+
+.username
+{
+	color:#09D900;	
+	float:left;
+}
+
+.logout
+{
+	margin-right:10px;
+	float:right;
+	color:#EECC22;
+	cursor:pointer;
+	text-decoration:none;
+	
+}
+
+.logout:hover
+{
+	margin-right:5px;
+	font-weight:bold;
+}
+
+div.mainContent
+{
+	min-height:700px;	
+	width:100%;
+	float:left;		
+}
+
+div.mainContent > h3
+{
+	margin:5px;
+	color:#62412E;
+	text-shadow:0 1px 1px rgba(255, 255, 255, .5);
+}
+
+div.mainContent h3:hover
+{
+		
+}
+
+div.sitemap
+{
+	margin:10px 5px 5px 5px;	
+	width:99%;
+	float:left;
+	min-height:25px;	
+	display:block;
+	color:#62412E;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0 1px 1px rgba(255, 255, 255, .6);
+}
+
+div.sitemap a
+{
+	margin:5px;
+	color:#62412E;
+	font-size:14px;
+	text-decoration:none;
+	
+}
+
+div.sitemap a:hover
+{
+	text-decoration:underline;
+}
+
+/*End Panel Top Right*/
+
+
+/*Footer*/
+#footer
+{	
+    margin-top:36px;
+	width:100%;
+	min-width:1000px;
+	height:120px;
+	float:left;
+	background-color:#222;
+	opacity:0.8;
+	border-top: 6px ridge #B1E745;
+	
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+	
+	/*position:absolute;
+	bottom:0;*/
+}
+
+#lfooter
+{	
+	margin-left:10px;
+	width:40%;
+	float:left;	
+	
+}
+
+#lfooter *
+{
+	
+	float:left;
+	color:#cdcdcd;
+	text-shadow:0 1px 1px rgba(25, 25, 25, .5);
+}
+
+#lfooter p
+{
+	width:100%;
+	font-size:12px;
+}
+
+#lfooter ul.menufooter
+{
+	margin:0;
+	padding:0;
+	width:100%;
+	float:left;
+}
+
+#lfooter ul.menufooter li
+{
+	margin:0 20px 0px 0px;
+	padding:0;
+	float:left;
+	list-style:none;
+}
+
+#lfooter ul.menufooter li a
+{
+	font-size:11px;
+	text-decoration:none;
+}
+
+#lfooter ul.menufooter li a:hover
+{
+	text-decoration:underline;
+}
+
+#rfooter
+{
+	margin:10px 0 0 0;
+	width:410px;	
+	float:right;
+	font-size:12px;
+}
+
+#rfooter div
+{
+	
+	width:100%;
+	float:left;	
+	color:#ccc;
+}
+
+#rfooter h5
+{
+	margin:3px 5px;
+	font-size:12px;
+	font-weight:normal;
+	width:49%;
+	float:left;	
+	color:#ddd;
+}
+
+
+#rfooter div span, #rfooter h5 span
+{
+	min-width:100px;
+	float:left;
+	text-align:left;
+	line-height:20px;
+}
+
+#rfooter h5 meter
+{
+	margin-left:30px;
+	width:100px;
+	
+}
+/*End Footer*/
+
+
+
+/*======= Chinh Menu Small =======*/
+#header
+{
+	width:100%;
+	min-width:1100px;
+	height:40px;
+	background-image: url(/Images/menu/white-bg.png);		
+	background:#222 url(/Images/menu/bgNavi.png) repeat-x;	
+	
+	background-position:left -55px;		
+	
+}
+
+#navi, #navi li, #navi li img, #navi li a
+{	
+	height:40px;
+	
+}
+
+#navi li div.sub 
+{
+	top:40px;
+	opacity:0.99;
+	border-width:3px;
+	border-top-width:1px;
+}
+
+#navi li div.sub a
+{
+	font-weight:normal;
+}
+
+
+#navi li div.sub ul
+{
+	width:150px;
+	min-width:150px;
+}
+
+#navi li div.sub ul li
+{
+	height:20px;
+	line-height:18px;
+}
+
+#navi li div.sub ul li a 
+{
+	/*padding-top:5px;*/
+	margin:2px 0;
+	font-family:Verdana;
+	font-size:11px;	
+}
+
+#navi li div.sub ul li a:hover
+{	
+	/*padding-top:4px;
+	font-size:12px;	
+	text-decoration:none;*/
+}
+
+
+#navi li div.sub ul li:first-child a 
+{
+	font-size:12px;
+	font-weight:bold !important;		
+}
+
+#navi li a img
+{
+	width:26px;
+	height:26px;
+	border:0px none;
+	margin:8px 5px 6px 6px;
+	
+}
+
+#navi li a
+{
+	margin:0px 10px 0px 0px;	
+	width:100%;
+	background:#222 url(/Images/menu/bgNavi.png) repeat-x;	
+	color:#fff;
+	background-position:left -55px;		
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:40px;	
+	
+	/*
+	background: #ccc url(/Images/menu/white-bg.png) repeat-x; 
+	color:#222;
+	text-shadow: 0px 1px 1px #fff;
+	*/
+}
+/*
+#navi li a:hover
+{
+	color:#fff;	
+	text-shadow: 0px 1px 1px #222;
+}
+*/
+div.itemRow 
+{
+	height:18px;
+	line-height:18px;	
+}
+
+.titlePage {
+margin: 10px 20px;
+float:left;
+font-family: Tahoma Arial Times New Roman;
+font-size: 22px;
+color: #77b20d;
+text-shadow:0 1px 1px rgba(200, 200, 200, .5);
+font-weight: bold;
+}
+
+#back-top
+{
+    padding:0 5px;
+    width:40px !important;
+    height:70px;
+    position: fixed; 
+    bottom: 10px; 
+    right: 5px; 
+    cursor: pointer; 
+    background-color:#444;    
+    
+    -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+    -webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#back-top:hover
+{
+    background-color:#666;
+}
+
+#back-top a
+{
+    width:40px;
+    height:70px;
+    float:right;
+    background:transparent url('/Images/icon/topico.png');        
+}
+
+/*======= End Chinh Menu Small =======*/
+
+.homePageBoard div.listImages
+{    
+    width:216px;
+    height:200px;
+      
+    
+}
+
+.homePageBoard div.listImages div
+{
+    margin:280px 2px 2px 2px;    
+    width:48px;
+    height:48px;
+    float:left;
+    border:1px solid #ccc;
+    border-radius:4px;
+    cursor:pointer;        
+}
+
+.homePageBoard div.listImages > div > img
+{
+    width:48px;
+    height:48px;
+    border-radius:4px;         
+}
+
+.homePageBoard div.listImages > div.largeImage
+{
+    position:relative;
+    /*
+    margin:auto;
+    position:relative;
+    z-index:20000;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    */
+}
+
+.homePageBoard div.listImages > div:hover > img
+{
+    position:absolute;
+    bottom:-20px;
+    left:-12px;
+    z-index:200000;
+    
+    width:240px;
+    height:240px;   
+    
+    border:1px solid #999;   
+    border-radius:10px;  
+    box-shadow: 3px 3px 3px 2px #ccc;
+    
+   
+}
+
+
+.homePageBoard div.listImages div:hover
+{    
+    
+    
+}
+/*
+.homePageBoard div.listImages > div.largeImage > img
+{        
+    margin:100px 0 0 20%;    
+    width:auto;
+    height:auto;   
+    border:1px solid #999;   
+    border-radius:10px;  
+    box-shadow: 3px 3px 3px 2px #ccc    
+}
+*/
+
+.listUserOnline
+{
+    margin:0;
+    padding:0;   
+    max-height:760px;
+    overflow:auto;
+    border-bottom:1px solid #ccc;
+}
+
+.listUserOnline > li
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-width:200px;
+    height:20px;
+    float:left;
+    list-style-type:none;    
+}
+
+.listUserOnline > li *
+{
+    float:left;
+}
+
+.listUserOnline > li .username
+{
+    margin-right:4px;
+    color:#028bcc;
+    width:94px;
+    text-align:right;
+    font-weight:bold;    
+    overflow:hidden;
+}
+
+.listUserOnline > li .username:hover
+{
+    text-decoration:underline;
+}
+
+.listUserOnline > li .uIP
+{
+    width:110px;
+}
+
+
+/*------------------------------------- General --------------------------------*/
+.clear{clear:both}
+.flt_l{float:left}
+.flt_r{float:right}
+.txt_r{text-align:right}
+.txt_l{text-align:left}
+.w100px{width:100px}
+.w200px{width:200px}
+.w300px{width:300px}
+.waterMark{background-color:#ECECCC; color:#808080}
+#loading{display:none; background: url(/Images/ajax-loader.gif) no-repeat; width:100px; height:100px; position:fixed; right:50%; top:50%}
+.highlight { background: yellow;}
+.icon_import{background:url(/Images/Icon/import.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_add{background:url(/Images/Icon/Add.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_delete{background:url(/Images/Icon/delete.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_export{background:url(/Images/Icon/save.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_export_all{background:url(/Images/Icon/saveall.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_retrieve_data{background:url(/Images/Icon/excel2.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_list_deleted{background:url(/Images/Icon/list_delete.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+.icon_list_file{background:url(/Images/Icon/playlist.png) no-repeat left top;width:24px; height:24px; float:left; padding-right:5px}
+/*----------------------------------- End General ------------------------------*/
+
+/*------------------------------------- Amazon --------------------------------*/
+.amzCreateProduct input[type=text],.amzCreateProduct textarea,
+.amzCreateProduct input[class~='aspNetDisabled'] 
+{width:450px}
+.lbw
+{
+    padding:0px 0px 0px 0px;
+    text-align:left;
+    width:5px;
+}
+
+/*----------------------------------- End Amazon ------------------------------*/
+
+/*--------------style show block/list-------------------*/
+.divItem
+{
+    width: 300px;
+    height: 315px;
+    float: left;
+    border: 1px solid #000000;
+    margin: 0 7.5px 10px 7px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.divItem:hover
+{
+    box-shadow: 0 0 12px #000000;
+}
+.divItem a
+{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.divItem td { text-align: center;}
+/*-----------end style show block/list----------*/
+/*----------Order detail style -----------------*/
+fieldset input
+{
+    border: 0px;
+    background: #fff;
+    color: #335EA8;
+}
+fieldset legend
+{ color: green;font-weight: bold;}
+.style1{ text-align: center;}
+.style3{ height: 21px; }
+.style4 { width: 98px;}
+.imgThumb
+{
+    margin:0;    
+    width:50px;
+    height:50px;
+}

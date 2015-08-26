@@ -1,0 +1,168 @@
+body ,html{
+font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: normal;
+color: #000000;
+background-color: #fcfcfc;
+margin: 0;
+padding: 0;
+min-width: 760px;
+height:100%;	
+}
+
+td, th, input, select, textarea {
+    font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    }
+
+.body {
+  height: 50px;
+  overflow: hidden;
+}
+.body table td {
+  font: normal 11px 'Segoe UI', tahoma, verdana, arial, sans-serif;
+  vertical-align: top;
+}
+.body table td.companyLogo {
+  padding: 0 7px 0 210px;
+  white-space: nowrap;
+}
+.topLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#topTxtBlock {
+  height: 50px;
+  text-align: right;
+  white-space: nowrap;
+}
+#topCopyright,
+#topRightLogo {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap;
+}
+#topCopyright a,
+#topRightLogo a {
+  display: block;
+  display: inline-block;
+}
+#topCopyright,
+#topRightLogo {
+  margin: 15px 10px 0 0;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #f1f1f1;
+  background-repeat: no-repeat;
+}
+#topCopyright {
+  margin-top: 10px;
+  font-weight: normal;
+}
+#topCopyright {
+  text-align: right;
+}
+#topCopyright a {
+  color: #f1f1f1;
+}
+#topRightLogo {
+  margin: 4px 9px 0 0;
+}
+
+#mainLogin {
+  /*background: #3080bb url('/Images/Skin/Yellow/Login/bg_main_login.jpg') 50% 100% no-repeat;*/
+  background: #3080bb;
+}
+/* ---------- form  --------- */
+.formFields {
+  border-collapse: collapse;
+  margin-top: 2px;
+}
+.formFields td {
+  padding: 3px;
+  vertical-align: top;
+}
+.formFields input,
+.formFields .commonButton,
+.formFields select {
+  vertical-align: middle;
+}
+.formFields td.name,
+.formFields td.nameError {
+  vertical-align: top;
+  padding-left: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+/* ---------- for login --------- */
+
+#login {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+#login form {
+  width: 453px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+#mainLogin #login {
+  width: 453px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0;
+  background-color: transparent;
+}
+#mainLogin #login form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#mainLogin #login .formArea {
+  border: 1px solid #86a7d4;
+}
+#mainLogin .formArea table {
+  border: 1px solid #c9ddf5;
+  width: 100%;
+}
+#mainLogin .formArea table table {
+  border: 0;
+}
+#loginTitle {
+  padding: 0 5px 3px 75px;
+  height: 62px;
+  font: normal 17px "Segoe UI", "Franklin Gothic Medium", verdana, arial, sans-serif;
+  line-height: 20px;
+  color: #fff;
+  background: #064473 url('/Images/Skin/Yellow/Login/login-header.png') 0 0 no-repeat;
+}
+#mainLogin #loginForm input[type="text"],
+#mainLogin #loginForm input[type="password"],
+#mainLogin #loginForm select {
+  border: 1px solid #abadb3;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+#get_password {
+  text-align: left;
+  padding-left: 0;
+}
+#get_password a:link,
+#get_password a:visited {
+  color: #06c;
+}
+#get_password a:hover {
+  color: #39f;
+}
+#loginForm {
+  padding: 10px;
+  background-color: #f0f0f0;
+}

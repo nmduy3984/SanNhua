@@ -1,0 +1,1 @@
+var OxOa677=[""];function ParseFloatToString(Ox24){var Ox8=parseFloat(Ox24);if(isNaN(Ox8)){return OxOa677[0];} ;return Ox8+OxOa677[0];} ;
