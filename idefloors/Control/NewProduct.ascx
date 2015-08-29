@@ -8,7 +8,7 @@
     <%if (new_product.Rows.Count > 0)
       { %>
     <div class="spec_products">
-        <div id="SlideNewProduct" style="position: relative; top: 0px; left: 0px; width: 751px; height: 219px; overflow: hidden;">
+        <div id="SlideNewProduct" style="position: relative; top: 0px; left: 0px; width: 751px; height: 250px; overflow: hidden;">
 
             <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -19,7 +19,7 @@
             </div>
 
             <!-- Slides Container -->
-            <div class="ProductList" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 751px; height: 219px; overflow: hidden;">
+            <div class="ProductList" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 751px; height: 250px; overflow: hidden;">
                 <% foreach (DataRow row in new_product.Rows)
                    {
                        DataTable productPopup = new DataTable();
@@ -82,18 +82,18 @@
                               dem++;
                     %>
                     <div>
-                        <a title="<%=row["ProductID"]%>#idefloor.vn#<%=row["Size"]%>" href="../Images/ProductImages/<%=row["ImageUrl"]%>">
+                        <a title="<%=row["Name"]%> - <%=row["ProductID"]%>#idefloor.vn#<%=row["Size"]%>" href="../Images/ProductImages/<%=row["ImageUrl"]%>">
                             <img u="image" class="img" src="../Images/ProductImages/<%=row["ImageUrl"]%>" /></a>
                     </div>
-                    <div style="text-align: center; color: #555"><strong><%=row["ProductID"]%></strong></div>
+                    <div style="text-align: center; color: #555"><strong><%=row["Name"]%><br /><%=row["ProductID"]%></strong></div>
                     <%}
                     %>
                     <div style="display: none;">
-                        <a title="<%=row1["ProductID"]%>#idefloor.vn#<%=row1["Size"]%>" href="../Images/ProductImages/<%=row1["ImageUrl"]%>">
+                        <a title="<%=row1["Name"]%> - <%=row1["ProductID"]%>#idefloor.vn#<%=row1["Size"]%>" href="../Images/ProductImages/<%=row1["ImageUrl"]%>">
                             <span class="thumb">
                                 <img src="../Images/ProductImages/<%=row1["ImageUrl"]%>" />
                             </span>
-                            <strong><%=row1["ProductID"]%><span class="quick">Quick</span></strong><em>Zoom</em>
+                            <strong><%=row1["Name"]%><br /><%=row1["ProductID"]%></strong><em>Zoom</em>
                         </a>
                     </div>
                     <%

@@ -66,11 +66,11 @@
                    {
             %>
             <li>
-                <a title="<%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["ProductID"]%><span class="quick">Quick</span></strong><em>Zoom</em>
+                    <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%}
@@ -123,11 +123,11 @@
                    {
                 %>
                 <li>
-                    <a title="<%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["ProductID"]%></strong><em>Zoom</em>
+                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%}
