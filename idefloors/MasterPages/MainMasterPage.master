@@ -45,10 +45,7 @@
 
     <script>
         jQuery(document).ready(function ($) {
-            $("#btnSearch").click(function () {
-                alert(1);
-            });
-
+            
             $("#scroller").simplyScroll({
                 customClass: 'vert',
                 orientation: 'vertical',
@@ -99,7 +96,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body oncontextmenu="return false;">
-
 
     <div id="Container">
         <!-- Begin Banner -->        

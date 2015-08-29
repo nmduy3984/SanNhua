@@ -10,6 +10,8 @@
 
 <%@ Register Src="../Control/Common/Banner.ascx" TagName="Banner" TagPrefix="uc5" %>
 
+<%@ Register src="../Control/Common/Search.ascx" tagname="Search" tagprefix="uc6" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -70,13 +72,17 @@
         <div class="Clear">
         </div>
         <div id="Outer">
-            <div id="SearchForm">
+            <!-- Begin Banner -->        
+        <uc6:Search ID="Search1" runat="server" />
+        <!-- End Banner -->
+            <%--<div id="SearchForm">
                 <div id="SearchFormContainer">
                     <input name="txtSearch" type="text" id="txtSearch" class="search-input" placeholder="Tìm kiếm" />
                     <input type="submit" name="ctl00$ctlSearch$btnSearch" value="" id="ctl00_ctlSearch_btnSearch"
                         class="search-button" />
+                    
                 </div>
-            </div>
+            </div>--%>
             <!-- Begin Menu -->
             <uc4:Menu ID="Menu1" runat="server" />
             <!-- End Menu -->
