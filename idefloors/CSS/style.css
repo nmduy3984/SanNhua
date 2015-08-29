@@ -4011,26 +4011,28 @@ ul li.spacemenu {
         }
 
     .fixed_img_col2 li:nth-child(odd) {
-        background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;
+        /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
         /*border: 1px solid #dadada;*/
         float: left;
-        height: 115px;
+        height: 125px;
         margin: 0 18px 20px 0;
         overflow: hidden;
         padding: 0;
         position: relative;
         width: 354px;
+        text-align:center;
     }
     .fixed_img_col2 li:nth-child(even) {
-        background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;
+        /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
         /*border: 1px solid #dadada;*/
         float: left;
-        height: 115px;
+        height: 125px;
         margin: 0 0px 20px 0;
         overflow: hidden;
         padding: 0;
         position: relative;
         width: 354px;
+        text-align:center;
     }
     .fixed_img_col2 .thumb {
         border: 1px solid #555;
@@ -4054,6 +4056,9 @@ ul li.spacemenu {
         padding-bottom: 7px;
         position: absolute;
         top: 94px;
+        left: 0px;
+        text-align: center;
+        width: 354px;
     }
 
         .fixed_img_col2 strong .quick {
@@ -4208,37 +4213,40 @@ ul li.spacemenu {
     display: block;
 }
 .fixed_img_col4 li:nth-child(1) {
-    background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
     /*border: 1px solid #dadada;*/
     float: left;
-    height: 227px;
+    height: 250px;
     margin: 0 23px 20px 0;
     overflow: hidden;
     padding: 0;
     position: relative;
     width: 227px;
+    text-align:center;
 }
 .fixed_img_col4 li:nth-child(2) {
-    background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
     /*border: 1px solid #dadada;*/
     float: left;
-    height: 227px;
+    height: 250px;
     margin: 0 22px 20px 0;
     overflow: hidden;
     padding: 0;
     position: relative;
     width: 227px;
+    text-align:center;
 }
 .fixed_img_col4 li:nth-child(3) {
-    background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
     /*border: 1px solid #dadada;*/
     float: left;
-    height: 227px;
+    height: 250px;
     margin: 0 0px 20px 0;
     overflow: hidden;
     padding: 0;
     position: relative;
     width: 227px;
+    text-align:center;
 }
 .fixed_img_col4 .thumb {
     border: 1px solid #555;
@@ -4262,6 +4270,7 @@ ul li.spacemenu {
     padding-bottom: 7px;
     position: absolute;
     top: 205px;
+    width: 227px;
 }
 .fixed_img_col4 em {
     background: rgba(0, 0, 0, 0) url("../Images/search.gif") no-repeat scroll 0 0;
