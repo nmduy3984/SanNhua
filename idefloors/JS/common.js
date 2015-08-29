@@ -9,7 +9,7 @@ function SlideNewProduct(tagHtmlId) {
         $SlideDuration: 160,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
         $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
         $SlideWidth: 180,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-        $SlideHeight: 220,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+        $SlideHeight: 248,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
         $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
         $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
         $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
