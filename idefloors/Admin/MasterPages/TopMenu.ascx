@@ -16,7 +16,7 @@
                         <li><a href="/Admin/SanPham/QLSanPham.aspx">Quản lý sản phẩm</a></li>
                         <li><a href="/Admin/TinTuc/QLTinTuc.aspx">Quản lý Tin Tức</a></li>
                         <li><a href="/Admin/Project/QLProject.aspx">Quản lý Project</a></li>
-                        <li><a href="/Admin/Banner/QLBanner.aspx">Quản lý Banner</a></li>
+                        <li><a href="/Admin/Flash/QLFlash.aspx">Quản lý Flash</a></li>
                        <%-- <li><a href="/Admin/QLUser.aspx">Quản lý user</a></li>--%>
                     </ul>
                   </td>    

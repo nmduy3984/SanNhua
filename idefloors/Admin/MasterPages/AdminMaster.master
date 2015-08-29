@@ -7,6 +7,7 @@
     <title>Hệ thống quản lý</title>
     <link rel="stylesheet" type="text/css" href="/Admin/CSS/HWStyle.css"/>
     <link id="Style2" href="/Admin/CSS/Form.css" rel="stylesheet" type="text/css" />    
+    <script type="text/javascript" src="../../JS/jquery-1.9.1.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="Insert.aspx.cs" Inherits="Admin_DanhMuc_Insert" %>
 <%@ register namespace="CustomEditor" tagprefix="one" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script type="text/javascript">
+        
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
 <div style="width: 100%; float: left;margin-top:30px;">
@@ -14,7 +18,6 @@
                     <span>Danh Mục Cha</span>
                     <asp:HiddenField ID="hiddenParentID" runat="server" Value="-1"/> 
                     <asp:DropDownList ID="ddlDanhMucCha" runat="server">
-                     
                     </asp:DropDownList>
                 </div>
                 <div>
@@ -28,7 +31,7 @@
                 <div>
                     <span>Hình ảnh-ImgURL (.jpg)</span>
                     <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px"/>
-                     <asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>
+                     <%--<asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>--%>
                 </div>
               <%--   <div>
                     <span>Hình ảnh-Thumb (.jpg)</span>

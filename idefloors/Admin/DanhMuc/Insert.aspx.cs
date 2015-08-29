@@ -13,7 +13,11 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
     public string value = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        DataAccess.LoadCategory(ref ddlDanhMucCha,"-1");
+        if (!IsPostBack)
+        {
+            DataAccess.LoadCategory(ref ddlDanhMucCha, "-1");
+        }
+       
     }
 
     protected void btnSubmit_Click(object sender, EventArgs e)
@@ -24,8 +28,7 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
             string name = txtTenDanhMuc.Text;
             string des = Server.HtmlEncode(txtDes.Content.ToString());
             string seq = txtSeq.Text;
-            int parentID = Convert.ToInt32(ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString());
-            int level = 0;
+            string parentID = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
             string sql = "";
 
             DateTime now = DateTime.Now;

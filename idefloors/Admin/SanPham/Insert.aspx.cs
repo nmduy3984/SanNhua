@@ -54,7 +54,7 @@ public partial class Admin_SanPham_Insert : System.Web.UI.Page
         
 
         sql = @"Insert into Product(ProductID,Name,Size,ImageUrl,CategoryID,Description,Status)
-                       Values(N'{0}',N'{1}',{2},'{3}',{4},'{5}',{6})
+                       Values(N'{0}',N'{1}',N'{2}','{3}',{4},'{5}',{6})
                     ";
         sql = string.Format(sql, maSP, tenSP, kichthuoc, strName, ddlDanhMuc.SelectedValue, des,status);
         try
