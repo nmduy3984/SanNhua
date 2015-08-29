@@ -1,0 +1,1 @@
+var OxO2767=["id","myid","title","mytitle"];SyncToView=function SyncToView_Div(){alert(element.title);alert(element.id);} ;SyncTo=function SyncTo_Div(element){element[OxO2767[0]]=OxO2767[1];element[OxO2767[2]]=OxO2767[3];} ;
