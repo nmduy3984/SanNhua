@@ -17,7 +17,7 @@ public class StringHelper
 
         public static string getFolderNewImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\News\\";
 
-        public static string getFolderBannerImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\banners\\";
+        public static string getFolderFlashImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\Flash\\";
 
         public static string PageHome = "/Home.aspx";
         public static string PageLogin = "/Admin/Login.aspx";

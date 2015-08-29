@@ -26,7 +26,7 @@ override protected void OnInit(EventArgs args)
 		<![endif]-->
 		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&file=DialogHead.js"></script>
 		<script type="text/javascript">
-		var OxOe80c=[];function PostBackAction(){<%=Page.GetPostBackEventReference(hiddenAction,"")%>;} ;
+		var OxO1d06=[];function PostBackAction(){<%=Page.ClientScript.GetPostBackEventReference(hiddenAction,"")%>;} ;
 		</script>
 		<title>[[InsertTemplate]]</title>
 		<style type="text/css">

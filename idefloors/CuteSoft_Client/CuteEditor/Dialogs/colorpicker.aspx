@@ -46,7 +46,7 @@ override protected void OnInit(EventArgs args)
 			#ajaxdiv{padding:10px;margin:0;text-align:center; background:#eeeeee;}
 		</style>
 		<script>
-var OxO2879=["0","#","length","\x3Ctr\x3E","\x3Ctd class=\x27colorcell\x27\x3E\x3Cdiv class=\x27colordiv\x27 style=\x27background-color:","\x27 cvalue=\x27","\x27 title=\x27","\x27\x3E\x26nbsp;\x3C/div\x3E\x3C/td\x3E","\x3C/tr\x3E"];function DoubleHex(Ox8){if(Ox8<16){return OxO2879[0]+Ox8.toString(16);} ;return Ox8.toString(16);} ;function ToHexString(Oxa,Oxb,b){return (OxO2879[1]+DoubleHex(Oxa*51)+DoubleHex(Oxb*51)+DoubleHex(b*51)).toUpperCase();} ;function MakeHex(z,x,y){var Ox11=z%2;var Ox12=(z-Ox11)/2;z=Ox11*3+Ox12;if(z<3){x=5-x;} ;if(z==1||z==4){y=5-y;} ;return ToHexString(5-y,5-x,5-z);} ;var colors= new Array(216);for(var z=0;z<6;z++){for(var x=0;x<6;x++){for(var y=0;y<6;y++){var hex=MakeHex(z,x,y);var xx=(z%2)*6+x;var yy=Math.floor(z/2)*6+y;colors[yy*12+xx]=hex;} ;} ;} ;var arr=[];for(var i=0;i<colors[OxO2879[2]];i++){if(i%12==0){arr.push(OxO2879[3]);} ;arr.push(OxO2879[4]);arr.push(colors[i]);arr.push(OxO2879[5]);arr.push(colors[i]);arr.push(OxO2879[6]);arr.push(colors[i]);arr.push(OxO2879[7]);if(i%12==11){arr.push(OxO2879[8]);} ;} ;
+var OxO1771=["0","#","length","\x3Ctr\x3E","\x3Ctd class=\x27colorcell\x27\x3E\x3Cdiv class=\x27colordiv\x27 style=\x27background-color:","\x27 cvalue=\x27","\x27 title=\x27","\x27\x3E\x26nbsp;\x3C/div\x3E\x3C/td\x3E","\x3C/tr\x3E"];function DoubleHex(Ox8){if(Ox8<16){return OxO1771[0]+Ox8.toString(16);} ;return Ox8.toString(16);} ;function ToHexString(Oxa,Oxb,b){return (OxO1771[1]+DoubleHex(Oxa*51)+DoubleHex(Oxb*51)+DoubleHex(b*51)).toUpperCase();} ;function MakeHex(z,x,y){var Ox11=z%2;var Ox12=(z-Ox11)/2;z=Ox11*3+Ox12;if(z<3){x=5-x;} ;if(z==1||z==4){y=5-y;} ;return ToHexString(5-y,5-x,5-z);} ;var colors= new Array(216);for(var z=0;z<6;z++){for(var x=0;x<6;x++){for(var y=0;y<6;y++){var hex=MakeHex(z,x,y);var xx=(z%2)*6+x;var yy=Math.floor(z/2)*6+y;colors[yy*12+xx]=hex;} ;} ;} ;var arr=[];for(var i=0;i<colors[OxO1771[2]];i++){if(i%12==0){arr.push(OxO1771[3]);} ;arr.push(OxO1771[4]);arr.push(colors[i]);arr.push(OxO1771[5]);arr.push(colors[i]);arr.push(OxO1771[6]);arr.push(colors[i]);arr.push(OxO1771[7]);if(i%12==11){arr.push(OxO1771[8]);} ;} ;
 		</script>
 	</head>
 	<body>
@@ -78,7 +78,7 @@ var OxO2879=["0","#","length","\x3Ctr\x3E","\x3Ctd class=\x27colorcell\x27\x3E\x
 				<div class="tab-page">
 					<table cellSpacing='2' cellPadding="1" align="center">
 						<script>
-							var OxO7266=[""];document.write(arr.join(OxO7266[0]));
+							var OxOb563=[""];document.write(arr.join(OxOb563[0]));
 						</script>
 						<tr>
 							<td colspan="12" height="12"><p align="left"></p>

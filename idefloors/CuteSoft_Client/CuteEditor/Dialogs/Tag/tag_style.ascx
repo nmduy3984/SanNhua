@@ -56,5 +56,5 @@
 	</tr>
 </table>
 <script type="text/javascript">
-var OxOe805=["ondblclick","navtd","shiftKey","style"];Window_GetElement(window,OxOe805[1],true)[OxOe805[0]]=function (){if(event[OxOe805[2]]){alert(element[OxOe805[3]].cssText);} ;} ;
+var OxObecd=["ondblclick","navtd","shiftKey","style"];Window_GetElement(window,OxObecd[1],true)[OxObecd[0]]=function (){if(event[OxObecd[2]]){alert(element[OxObecd[3]].cssText);} ;} ;
 </script>

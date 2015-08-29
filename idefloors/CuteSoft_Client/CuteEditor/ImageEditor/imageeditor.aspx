@@ -83,7 +83,7 @@
 		</form>
 		<script type="text/javascript">
 		
-			var OxO4d46=["save","ImageEditor1","closeeditordialog","close"];function do_insert(){DoAction(OxO4d46[0],OxO4d46[1]);(top[OxO4d46[2]]||top[OxO4d46[3]])();} ;function do_Close(){(top[OxO4d46[2]]||top[OxO4d46[3]])();} ;function do_cancel(){(top[OxO4d46[2]]||top[OxO4d46[3]])();} ;
+			var OxOb36e=["save","ImageEditor1","closeeditordialog","close"];function do_insert(){DoAction(OxOb36e[0],OxOb36e[1]);(top[OxOb36e[2]]||top[OxOb36e[3]])();} ;function do_Close(){(top[OxOb36e[2]]||top[OxOb36e[3]])();} ;function do_cancel(){(top[OxOb36e[2]]||top[OxOb36e[3]])();} ;
 		</script>
 	</body>
 </html>

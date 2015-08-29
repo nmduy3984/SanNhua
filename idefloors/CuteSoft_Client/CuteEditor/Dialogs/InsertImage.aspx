@@ -33,7 +33,7 @@ override protected void OnInit(EventArgs args)
 		<![endif]-->
 		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&file=DialogHead.js"></script>
 		<script type="text/javascript">
-		var OxO843a=[];function PostBackAction(){<%=Page.GetPostBackEventReference(hiddenAction,"")%>;} ;
+		var OxOe0c1=[];function PostBackAction(){<%=Page.ClientScript.GetPostBackEventReference(hiddenAction,"")%>;} ;
 		</script>
 		<style type="text/css">	
 			#browse_Frame{border-top:1px solid #a0a0a0;border-left:1px solid #a0a0a0;border-bottom:1px solid #ffffff;border-right:1px solid #ffffff;width:280px;height:250px;overflow:auto;background-color:white;}
@@ -272,20 +272,20 @@ override protected void OnInit(EventArgs args)
 								<div id="uploader">
 									<ce:uploader id="InputFile" runat="server"></ce:uploader>
 								</div>								
-								<table>
+								<table cellpadding="0" cellspacing="2">
 									<% if(secset.RestrictUploadedImageDimension) {%>
 									<tr>
-										<td><img class="image-align" alt="" src="../Load.ashx?type=image&file=colorfocus.gif" /></td>
+										<td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
 										<td>[[MaxImagedImension]]
 										<%= secset.MaxImageWidth%>
 										x
 										<%= secset.MaxImageHeight%>
 										[[pixels]].</td>
 									</tr>
-									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=colorfocus.gif" /></td><td>[[AutomaticImageResizeOnOff]]
+									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td><td>[[AutomaticImageResizeOnOff]]
 										<%= secset.AutoResizeUploadedImages? "[[on]]":"[[off]]" %>.</td></tr>
 									<%}%>
-									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=colorfocus.gif" /></td>
+									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
 									<td>
 										<%if(secset.MaxImageFolderSize>0){%>
 										<table border="0" cellpadding="0" cellspacing="0">

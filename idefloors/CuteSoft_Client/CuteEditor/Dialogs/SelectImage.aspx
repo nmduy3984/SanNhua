@@ -33,7 +33,7 @@ string QUERY_STRING=Request.ServerVariables["QUERY_STRING"];
 		<![endif]-->
 		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&file=DialogHead.js"></script>
 		<script type="text/javascript">
-		var OxO4238=[];function PostBackAction(){<%=Page.GetPostBackEventReference(hiddenAction,"")%>;} ;
+		var OxOde4f=[];function PostBackAction(){<%=Page.ClientScript.GetPostBackEventReference(hiddenAction,"")%>;} ;
 		</script>
 		<style type="text/css">	
 			#browse_Frame{border-top:1px solid #a0a0a0;border-left:1px solid #a0a0a0;border-bottom:1px solid #ffffff;border-right:1px solid #ffffff;width:260px;height:250px;overflow:auto;background-color:white;}

@@ -27,7 +27,7 @@ override protected void OnInit(EventArgs args)
 		<![endif]-->
 			<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&amp;file=DialogHead.js"></script>
 			<script type="text/javascript">
-		var OxO463d=[];function PostBackAction(){<%=Page.GetPostBackEventReference(hiddenAction,"")%>;} ;
+		var OxOa16b=[];function PostBackAction(){<%=Page.ClientScript.GetPostBackEventReference(hiddenAction,"")%>;} ;
 			</script>
 		<style type="text/css">
 			#browse_Frame{border-top:1px solid #a0a0a0;border-left:1px solid #a0a0a0;border-bottom:1px solid #ffffff;border-right:1px solid #ffffff;width:270px;height:240px;overflow:auto;background-color:white;}

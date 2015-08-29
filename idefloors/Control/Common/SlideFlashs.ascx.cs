@@ -9,10 +9,10 @@ using System.Data;
 
 public partial class Control_Common_SlideFlashs : System.Web.UI.UserControl
 {
-    public DataTable banner = new DataTable();
+    public DataTable Flash = new DataTable();
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
-            banner = DataAccess.GetDatatable("select * from Banner order by CreatedDate desc");
+            Flash = DataAccess.GetDatatable("select * from Flash order by CreatedDate desc");
     }
 }

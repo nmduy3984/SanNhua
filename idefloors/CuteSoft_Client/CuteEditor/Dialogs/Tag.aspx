@@ -69,11 +69,11 @@ rel=stylesheet type=text/css href="Load.ashx?type=style&amp;file=IE.css"><![endi
 			<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&amp;file=DialogHead.js"></script>
 			<%if(nocancel){%>
 			<script type="text/javascript">
-			var OxO3d40=["nocancel"];top[OxO3d40[0]]=true;
+			var OxOcd67=["nocancel"];top[OxOcd67[0]]=true;
 			</script>
 			<%}else{%>
 			<script type="text/javascript">
-			var OxO2a3a=["nocancel"];top[OxO2a3a[0]]=false;
+			var OxOc651=["nocancel"];top[OxOc651[0]]=false;
 			</script>
 			<%}%>
 			<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&amp;file=Dialog_TagHead.js"></script>

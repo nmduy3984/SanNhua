@@ -27,7 +27,7 @@ override protected void OnInit(EventArgs args)
 		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&file=DialogHead.js"></script>
 		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&amp;file=Dialog_gallery_spring.js"></script>
 		<script type="text/javascript">		
-			var OxObdfc=[];function Check(Ox12,Ox27){} ;function showTooltip(Ox42,obj,Ox43){} ;function insert(src){} ;function delayhidetip(){} ;
+			var OxO30e2=[];function Check(Ox12,Ox27){} ;function showTooltip(Ox42,obj,Ox43){} ;function insert(src){} ;function delayhidetip(){} ;
 		</script>
 		<style type="text/css">	 
 			#dropdowncell { padding:0 0 5px 10px;vertical-align:middle;}

@@ -138,11 +138,11 @@ override protected void OnInit(EventArgs args)
 
 
 <script language="JavaScript" type="text/javascript" >
-var OxOff55=["postback","Save"];function doClose(){Window_SetDialogReturnValue(window,null);var OxO86ae=[];Window_CloseDialog(window);} ;function CuteEditor_OnCommand(editor,Ox4d,Ox4e,Ox4f){if(Ox4d.toLowerCase()==OxOff55[0]&&Ox4f==OxOff55[1]){Window_SetDialogReturnValue(window,'<%= Request.QueryString["f"]%>');} ;} ;
+var OxO9d70=["postback","Save"];function doClose(){Window_SetDialogReturnValue(window,null);var OxObeea=[];Window_CloseDialog(window);} ;function CuteEditor_OnCommand(editor,Ox4d,Ox4e,Ox4f){if(Ox4d.toLowerCase()==OxO9d70[0]&&Ox4f==OxO9d70[1]){Window_SetDialogReturnValue(window,'<%= Request.QueryString["f"]%>');} ;} ;
 </script>
 
 <asp:Panel runat=server Visible=false id="savedpanel">
 <script language="JavaScript" type="text/javascript" >
-var OxO86ae=[];Window_CloseDialog(window);
+var OxObeea=[];Window_CloseDialog(window);
 </script>
 </asp:Panel>

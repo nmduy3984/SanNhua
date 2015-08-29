@@ -11,12 +11,12 @@
 
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 310px; overflow: hidden;">
-         <% foreach (DataRow row in banner.Rows)
+         <% foreach (DataRow row in Flash.Rows)
                    {
                 %>
         <div>
-            <a href="<%= row["Link"].ToString()%>"><img u="image" src="../Images/Banners/<%= row["ImgUrl"].ToString()%>" /></a>
-            <img u="thumb" src="../Images/Banners/<%= row["ThumbUrl"].ToString()%>" />
+            <a href="<%= row["Link"].ToString()%>"><img u="image" src="../Images/Flash/<%= row["ImgUrl"].ToString()%>" /></a>
+            <img u="thumb" src="../Images/Flash/<%= row["ThumbUrl"].ToString()%>" />
         </div>
         <%} %>
     </div>

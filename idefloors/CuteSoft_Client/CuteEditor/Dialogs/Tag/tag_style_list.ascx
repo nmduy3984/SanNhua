@@ -5,7 +5,7 @@ The Style - List-XXX
 <div id="outer" style="height:100px; margin-bottom:10px; padding:5px;"><div id="div_demo">[[DemoText]]</div></div><br />
 <script type="text/javascript">
 
-var OxO426e=["cssText","style"];function UpdateState(){div_demo[OxO426e[1]][OxO426e[0]]=element[OxO426e[1]][OxO426e[0]];} ;function SyncToView(){} ;function SyncTo(element){} ;
+var OxOc003=["cssText","style"];function UpdateState(){div_demo[OxOc003[1]][OxOc003[0]]=element[OxOc003[1]][OxOc003[0]];} ;function SyncToView(){} ;function SyncTo(element){} ;
 
 </script>
 >

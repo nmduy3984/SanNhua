@@ -324,7 +324,7 @@
 		</title>
     <link href="Load.ashx?type=style&file=spell.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript">
-		var OxObdae=[];window.focus();
+		var OxOa737=[];window.focus();
     </script>
     <script language="JavaScript" src="Load.ashx?type=script&verfix=1006&file=spell.js&_x=0121" type="text/javascript"></script>
 </head>
@@ -469,5 +469,5 @@
 
 
 <script type="text/javascript">
-var OxO5bc2=["ua","userAgent","isOpera","opera","isSafari","safari","isGecko","gecko","isWinIE","msie","isMac","Mac","availWidth","dialogWidth","availHeight","dialogHeight"];var _Browser_TypeInfo=null;function Browser__InitType(){if(_Browser_TypeInfo!=null){return ;} ;var Ox4={};Ox4[OxO5bc2[0]]=navigator[OxO5bc2[1]].toLowerCase();Ox4[OxO5bc2[2]]=(Ox4[OxO5bc2[0]].indexOf(OxO5bc2[3])>-1);Ox4[OxO5bc2[4]]=(Ox4[OxO5bc2[0]].indexOf(OxO5bc2[5])>-1);Ox4[OxO5bc2[6]]=(!Ox4[OxO5bc2[2]]&&!Ox4[OxO5bc2[4]]&&Ox4[OxO5bc2[0]].indexOf(OxO5bc2[7])>-1);Ox4[OxO5bc2[8]]=(!Ox4[OxO5bc2[2]]&&Ox4[OxO5bc2[0]].indexOf(OxO5bc2[9])>-1);Ox4[OxO5bc2[10]]=navigator[OxO5bc2[1]].indexOf(OxO5bc2[11])!=-1;_Browser_TypeInfo=Ox4;} ;Browser__InitType();function Browser_IsWinIE(){return _Browser_TypeInfo[OxO5bc2[8]];} ;try{if(Browser_IsWinIE()){top.moveTo((screen[OxO5bc2[12]]-self[OxO5bc2[13]])/2,(screen[OxO5bc2[14]]-self[OxO5bc2[15]])/2);} else {} ;} catch(x){} ;
+var OxO2c1c=["ua","userAgent","isOpera","opera","isSafari","safari","isGecko","gecko","isWinIE","msie","isMac","Mac","availWidth","dialogWidth","availHeight","dialogHeight"];var _Browser_TypeInfo=null;function Browser__InitType(){if(_Browser_TypeInfo!=null){return ;} ;var Ox4={};Ox4[OxO2c1c[0]]=navigator[OxO2c1c[1]].toLowerCase();Ox4[OxO2c1c[2]]=(Ox4[OxO2c1c[0]].indexOf(OxO2c1c[3])>-1);Ox4[OxO2c1c[4]]=(Ox4[OxO2c1c[0]].indexOf(OxO2c1c[5])>-1);Ox4[OxO2c1c[6]]=(!Ox4[OxO2c1c[2]]&&!Ox4[OxO2c1c[4]]&&Ox4[OxO2c1c[0]].indexOf(OxO2c1c[7])>-1);Ox4[OxO2c1c[8]]=(!Ox4[OxO2c1c[2]]&&Ox4[OxO2c1c[0]].indexOf(OxO2c1c[9])>-1);Ox4[OxO2c1c[10]]=navigator[OxO2c1c[1]].indexOf(OxO2c1c[11])!=-1;_Browser_TypeInfo=Ox4;} ;Browser__InitType();function Browser_IsWinIE(){return _Browser_TypeInfo[OxO2c1c[8]];} ;try{if(Browser_IsWinIE()){top.moveTo((screen[OxO2c1c[12]]-self[OxO2c1c[13]])/2,(screen[OxO2c1c[14]]-self[OxO2c1c[15]])/2);} else {} ;} catch(x){} ;
 </script>

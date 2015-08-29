@@ -261,6 +261,16 @@ public class DataAccess
         ddlDanhMucCha.SelectedValue = selectvalue;
     }
 
-   
+    public static DataTable getFlash(string Id, string Page, string Limit, ref int total)
+    {
+        string _TableName = "Flash n";
+        string _PK = "Id";
+        string _FieldSelect = "n.*";
+        string _Filter = "";
+        if (Id != "" && Id != "-1")
+            _Filter = " n.Id = " + Id;
+
+        return GetData_Paging(_TableName, _PK, _FieldSelect, _Filter, " Id desc", Page, Limit, ref total);
+    }
 }
 

@@ -11,4 +11,6 @@ public partial class Control_Common_Search : System.Web.UI.UserControl
     {
 
     }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    { }
 }
