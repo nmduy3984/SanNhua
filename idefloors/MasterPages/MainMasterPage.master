@@ -46,8 +46,7 @@
     <%--<script type="text/javascript" src="../JS/addthis_widget.js"></script>--%>
 
     <script>
-        jQuery(document).ready(function ($) {
-            
+        jQuery(document).ready(function ($) {            
             $("#scroller").simplyScroll({
                 customClass: 'vert',
                 orientation: 'vertical',
@@ -77,6 +76,11 @@
             if ($("#SlideProductDetail").length > 0) {
                 SlideProductDetail("SlideProductDetail");
             }
+            $("input id*='txtSearch'").keydown(function () {
+                if (event.keyCode == 13) {
+                    document.getElementById("btnSearch").onsubmit();
+                }
+            });
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
@@ -92,6 +96,7 @@
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
         });
+        
     </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">

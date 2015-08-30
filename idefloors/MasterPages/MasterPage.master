@@ -38,12 +38,19 @@
     </script>
     <script>
         jQuery(document).ready(function ($) {
+            
             if ($("#SlideFlashs").length > 0) {
                 SlideFlashs("SlideFlashs");
             }
             if ($("#SlideProjects").length > 0) {
                 SlideProjects("SlideProjects");
             }
+
+            $("input id*='txtSearch'").keydown(function () {
+                if (event.keyCode == 13) {
+                    document.getElementById("btnSearch").onsubmit();
+                }
+            });
 
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
