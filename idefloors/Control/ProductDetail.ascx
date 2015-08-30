@@ -31,7 +31,7 @@
     <div class="img_link">
         <a title="<%=productByID.Rows[0]["ProductID"]%>#idefloor.vn#<%=productByID.Rows[0]["Size"]%>" href="../Images/ProductImages/<%=productByID.Rows[0]["ImageUrl"]%>">
             <span class="thumb">
-                <img u="image" class="img" src="../Images/ProductImages/<%= productByID.Rows[0]["ImageUrl"] %>" />
+                <img  alt="idefloors.vn" u="image" class="img" src="../Images/ProductImages/<%= productByID.Rows[0]["ImageUrl"] %>" />
             </span>
         </a>
 
@@ -79,7 +79,7 @@
             <li>
                 <a title="<%=row["ProductID"]%>#idefloor.vn#<%=row["Size"]%>" href="../Page/ProductDetail.aspx?Id=<%=row["ProductID"]%>">
                     <span class="thumb">
-                        <img src="../Images/ProductImages/<%=row["ImageUrl"]%>" />
+                        <img  alt="idefloors.vn" src="../Images/ProductImages/<%=row["ImageUrl"]%>" />
                     </span>
                     <strong><%=row["ProductID"]%></strong><em>Zoom</em>
                 </a>

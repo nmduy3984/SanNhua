@@ -11,44 +11,44 @@
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 435px; height: 210px; overflow: hidden;">
         <div>
-            <img u="image" src="../Images/References/Hospitals/01.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-01.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/01.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-01.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/02.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-02.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/02.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-02.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/03.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-03.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/03.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-03.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/04.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-04.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/04.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-04.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/05.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-05.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/05.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-05.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/06.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-06.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/06.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-06.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/07.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-07.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/07.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-07.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/08.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-08.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/08.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-08.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/09.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-09.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/09.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-09.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hospitals/10.jpg" />
-            <img u="thumb" src="../Images/References/Hospitals/thumb-10.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hospitals/10.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hospitals/thumb-10.jpg" />
         </div>
     </div>
 

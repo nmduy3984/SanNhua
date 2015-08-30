@@ -13,10 +13,11 @@
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 310px; overflow: hidden;">
          <% foreach (DataRow row in Flash.Rows)
                    {
+                       string link = row["Link"].ToString().Trim() == "" ? "javascript:void();" : row["Link"].ToString();
                 %>
         <div>
-            <a href="<%= row["Link"].ToString()%>"><img u="image" src="../Images/Flash/<%= row["ImgUrl"].ToString()%>" /></a>
-            <img u="thumb" src="../Images/Flash/<%= row["ThumbUrl"].ToString()%>" />
+            <a href="<%= link%>"><img  alt="idefloors.vn"  u="image" src="../Images/Flash/<%= row["ImgUrl"].ToString()%>" /></a>
+            <img  alt="idefloors.vn"  u="thumb" src="../Images/Flash/<%= row["ThumbUrl"].ToString()%>" />
         </div>
         <%} %>
     </div>

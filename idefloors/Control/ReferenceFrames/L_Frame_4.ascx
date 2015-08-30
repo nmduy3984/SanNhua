@@ -11,44 +11,44 @@
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 435px; height: 210px; overflow: hidden;">
         <div>
-            <img u="image" src="../Images/References/Home/01.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-01.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/01.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-01.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/02.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-02.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/02.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-02.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/03.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-03.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/03.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-03.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/04.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-04.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/04.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-04.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/05.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-05.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/05.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-05.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/06.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-06.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/06.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-06.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/07.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-07.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/07.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-07.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/08.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-08.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/08.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-08.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/09.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-09.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/09.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-09.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Home/10.jpg" />
-            <img u="thumb" src="../Images/References/Home/thumb-10.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Home/10.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Home/thumb-10.jpg" />
         </div>
     </div>
 

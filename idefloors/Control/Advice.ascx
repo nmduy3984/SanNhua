@@ -14,7 +14,7 @@
             LVT- and clickfloors <a href="../Images/PDF/Advice/floor_covering_EU.pdf" target="_blank">(download PDF)</a>
         </div>
         <div>
-            <a href="http://www.idefloors.com/sites/idefloors.com/files/film/locking.html" target="_blank"><img src="../Images/Advice/film-locking-marine_01.png" /></a>
+            <a href="http://www.idefloors.com/sites/idefloors.com/files/film/locking.html" target="_blank"><img  alt="idefloors.vn"  src="../Images/Advice/film-locking-marine_01.png" /></a>
         </div>
         <div class="content">Please contact us for more information:</div>
         <div>Phone: +46 (0)733-15 81 00</div>

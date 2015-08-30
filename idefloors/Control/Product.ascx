@@ -68,7 +68,7 @@
             <li>
                 <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
-                        <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
+                        <img  alt="idefloors.vn" src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
                     <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
@@ -125,7 +125,7 @@
                 <li>
                     <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
-                            <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
+                            <img  alt="idefloors.vn" src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
                         <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                     </a>

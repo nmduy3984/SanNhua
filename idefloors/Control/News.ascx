@@ -11,7 +11,7 @@
     %>
     <div class="img_link">
         <a href="../Page/NewsDetail.aspx?Id=<%=row["Id"] %>">
-            <img u="image" class="img" src="../Images/News/<%=row["ImageUrl"] %>" /></a>
+            <img  alt="idefloors.vn" u="image" class="img" src="../Images/News/<%=row["ImageUrl"] %>" /></a>
     </div>
     <div class="content">
         <div class="title"><a href="../Page/NewsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></div>

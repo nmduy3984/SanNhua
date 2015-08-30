@@ -6,7 +6,7 @@
             <!--<div class="roll"> -->
             <div class="img_roll">
                 <a href='' title='Sàn nhựa vân gỗ Galaxy MSW7013'>
-                    <img src="../Images/ProductImages/4.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
+                    <img  alt="idefloors.vn" src="../Images/ProductImages/4.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
                 </a>
             </div>
             <div class="name_product_roll">
@@ -21,7 +21,7 @@
         <div class='showproduct showproduct_bordder'>
             <div class="img_roll">
                 <a href='' title='Sàn nhựa vân gỗ Galaxy MSW7013'>
-                    <img src="../Images/ProductImages/2.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
+                    <img  alt="idefloors.vn" src="../Images/ProductImages/2.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
                 </a>
             </div>
             <div class="name_product_roll">
@@ -37,7 +37,7 @@
         <div class='showproduct showproduct_bordder'>
             <div class="img_roll">
                 <a href='' title='Sàn nhựa vân gỗ Galaxy MSW7013'>
-                    <img src="../Images/ProductImages/3.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
+                    <img  alt="idefloors.vn" src="../Images/ProductImages/3.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
                 </a>
             </div>
             <div class="name_product_roll">
@@ -53,7 +53,7 @@
         <div class='showproduct showproduct_bordder'>
             <div class="img_roll">
                 <a href='' title='Sàn nhựa vân gỗ Galaxy MSW7013'>
-                    <img src="../Images/ProductImages/4.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
+                    <img  alt="idefloors.vn" src="../Images/ProductImages/4.jpg" alt="Sàn nhựa vân gỗ Galaxy MSW7013" style="border-width: 0px;" />
                 </a>
             </div>
             <div class="name_product_roll">

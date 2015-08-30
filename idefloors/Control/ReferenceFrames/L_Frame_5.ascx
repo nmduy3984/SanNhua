@@ -11,44 +11,44 @@
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 435px; height: 210px; overflow: hidden;">
         <div>
-            <img u="image" src="../Images/References/Hotel/01.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-01.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/01.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-01.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/02.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-02.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/02.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-02.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/03.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-03.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/03.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-03.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/04.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-04.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/04.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-04.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/05.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-05.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/05.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-05.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/06.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-06.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/06.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-06.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/07.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-07.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/07.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-07.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/08.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-08.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/08.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-08.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/09.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-09.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/09.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-09.jpg" />
         </div>
         <div>
-            <img u="image" src="../Images/References/Hotel/10.jpg" />
-            <img u="thumb" src="../Images/References/Hotel/thumb-10.jpg" />
+            <img  alt="idefloors.vn" u="image" src="../Images/References/Hotel/10.jpg" />
+            <img  alt="idefloors.vn" u="thumb" src="../Images/References/Hotel/thumb-10.jpg" />
         </div>
     </div>
 

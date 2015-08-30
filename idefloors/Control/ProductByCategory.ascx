@@ -39,7 +39,7 @@
                 image: {
                     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                     titleSrc: function (item) {
-                        var arr = item.el.attr('title').split('#idefloor.vn#');
+                        var arr = item.el.attr('title').split('#idefloors.vn#');
                         return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0];
                     }
                 }
@@ -55,9 +55,9 @@
                   
             %>
             <li>
-                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
-                        <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
+                        <img  alt="idefloors.vn"  src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
                     <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
@@ -94,7 +94,7 @@
                     image: {
                         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                         titleSrc: function (item) {
-                            var arr = item.el.attr('title').split('#idefloor.vn#');
+                            var arr = item.el.attr('title').split('#idefloors.vn#');
                             return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0];
                         }
                     }
@@ -119,9 +119,9 @@
                           {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
-                            <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
+                            <img  alt="idefloors.vn"  src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
                         <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
@@ -131,9 +131,9 @@
                           {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloor.vn#<%=row2["Size"]%>" href="../Page/ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
+                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../Page/ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
                         <span class="thumb">
-                            <img src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
+                            <img  alt="idefloors.vn"  src="../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
                         <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
