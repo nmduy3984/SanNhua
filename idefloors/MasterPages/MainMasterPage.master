@@ -11,7 +11,9 @@
 
 <%@ Register Src="../Control/Common/LeftMenu.ascx" TagName="LeftMenu" TagPrefix="uc6" %>
 
+
 <%@ Register src="../Control/Common/Search.ascx" tagname="Search" tagprefix="uc7" %>
+
 
 <!DOCTYPE html>
 
@@ -96,12 +98,13 @@
     </asp:ContentPlaceHolder>
 </head>
 <body oncontextmenu="return false;">
-
+    <form id="frmMain" runat="server">
     <div id="Container">
         <!-- Begin Banner -->        
         <uc5:Banner ID="Banner1" runat="server" />
         <!-- End Banner -->
         <div class="Clear">
+            
         </div>
         <div id="Outer">
             <!-- Begin Search -->
@@ -135,5 +138,6 @@
     </div>
     <uc3:Footer ID="Footer1" runat="server" />
     <a href="#" class="cd-top cd-is-visible">Top</a>
+    </form>
 </body>
 </html>
