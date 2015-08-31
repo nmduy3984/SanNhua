@@ -21,10 +21,10 @@
     <title>idefloors.vn</title>
     <meta name="keywords" content="" />
     <meta name="description" content="idefloors.vn" />
-    <meta name="DC.title" content="Sàn nhựa đẹp" />
 
     <!--include File CSS-->
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen" />
+    <%--<link rel="stylesheet" href="../CSS/widget.css" />--%>
 
     <!--include File Javascript-->
     <script type="text/javascript" src="../JS/jquery-1.9.1.min.js"></script>
@@ -32,13 +32,14 @@
     <script type="text/javascript" src="../JS/jssor.slider.js"></script>
     <script type="text/javascript" src="../JS/common.js"></script>
     <script type="text/javascript" src="../JS/main.js"></script>
+    <%--<script type="text/javascript" src="../JS/addthis_widget.js"></script>--%>
 
     <script type="text/javascript">
         var $j = jQuery.noConflict();
     </script>
     <script>
         jQuery(document).ready(function ($) {
-            
+
             if ($("#SlideFlashs").length > 0) {
                 SlideFlashs("SlideFlashs");
             }
@@ -74,6 +75,9 @@
 <body oncontextmenu="return false;">
     <form id="form1" runat="server">
         <div id="Container">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55e44dc5c6de444b" async="async"></script>
+
             <!-- Begin Banner -->
             <uc5:Banner ID="Banner1" runat="server" />
             <!-- End Banner -->
@@ -83,14 +87,6 @@
                 <!-- Begin Banner -->
                 <uc6:Search ID="Search1" runat="server" />
                 <!-- End Banner -->
-                <%--<div id="SearchForm">
-                <div id="SearchFormContainer">
-                    <input name="txtSearch" type="text" id="txtSearch" class="search-input" placeholder="Tìm kiếm" />
-                    <input type="submit" name="ctl00$ctlSearch$btnSearch" value="" id="ctl00_ctlSearch_btnSearch"
-                        class="search-button" />
-                    
-                </div>
-            </div>--%>
                 <!-- Begin Menu -->
                 <uc4:Menu ID="Menu1" runat="server" />
                 <!-- End Menu -->

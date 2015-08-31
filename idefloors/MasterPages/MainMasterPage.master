@@ -12,7 +12,7 @@
 <%@ Register Src="../Control/Common/LeftMenu.ascx" TagName="LeftMenu" TagPrefix="uc6" %>
 
 
-<%@ Register src="../Control/Common/Search.ascx" tagname="Search" tagprefix="uc7" %>
+<%@ Register Src="../Control/Common/Search.ascx" TagName="Search" TagPrefix="uc7" %>
 
 
 <!DOCTYPE html>
@@ -24,12 +24,6 @@
     <title>idefloors.vn</title>
     <meta name="keywords" content="" />
     <meta name="description" content="idefloors.vn" />
-    <meta name="DC.title" content="Sàn nhựa đẹp" />
-    <meta property="og:url" content="http://hiepphatcorp.com/Page/Product.aspx" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Your Website Title" />
-    <meta property="og:description" content="Your description" />
-    <meta property="og:image" content="http://hiepphatcorp.com/Images/banner.png" />
     <!--include File CSS-->
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen" />
     <link rel="stylesheet" href="../CSS/magnific-popup.css" />
@@ -46,7 +40,7 @@
     <%--<script type="text/javascript" src="../JS/addthis_widget.js"></script>--%>
 
     <script>
-        jQuery(document).ready(function ($) {            
+        jQuery(document).ready(function ($) {
             $("#scroller").simplyScroll({
                 customClass: 'vert',
                 orientation: 'vertical',
@@ -96,7 +90,7 @@
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
         });
-        
+
     </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -104,45 +98,48 @@
 </head>
 <body oncontextmenu="return false;">
     <form id="frmMain" runat="server">
-    <div id="Container">
-        <!-- Begin Banner -->        
-        <uc5:Banner ID="Banner1" runat="server" />
-        <!-- End Banner -->
-        <div class="Clear">
-            
-        </div>
-        <div id="Outer">
-            <!-- Begin Search -->
-            <uc7:Search ID="Search1" runat="server" />
-            <!-- Begin Search -->
-            <!-- Begin Menu -->
-            <uc4:Menu ID="Menu1" runat="server" />
-            <!-- End Menu -->
-            <!-- Begin Flashs -->
-            <uc1:SlideFlashs ID="SlideFlashs1" runat="server" />
-            <!-- End Flashs -->
-            <div id="Wrapper">
-                <!--  begin left menu -->
-                <uc6:LeftMenu ID="LeftMenu1" runat="server" />
-                <!--  end left menu -->
-                <!---- begin content --->
-                <div style="float: left;">
-                    <div class="center">
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </div>
-                </div>
-                <!---- end content --->
+        <div id="Container">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55e44dc5c6de444b" async="async"></script>
+
+            <!-- Begin Banner -->
+            <uc5:Banner ID="Banner1" runat="server" />
+            <!-- End Banner -->
+            <div class="Clear">
             </div>
-            <br class="Clear" />
+            <div id="Outer">
+                <!-- Begin Search -->
+                <uc7:Search ID="Search1" runat="server" />
+                <!-- Begin Search -->
+                <!-- Begin Menu -->
+                <uc4:Menu ID="Menu1" runat="server" />
+                <!-- End Menu -->
+                <!-- Begin Flashs -->
+                <uc1:SlideFlashs ID="SlideFlashs1" runat="server" />
+
+                <!-- End Flashs -->
+                <div id="Wrapper">
+                    <!--  begin left menu -->
+                    <uc6:LeftMenu ID="LeftMenu1" runat="server" />
+                    <!--  end left menu -->
+                    <!---- begin content --->
+                    <div style="float: left;">
+                        <div class="center">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!---- end content --->
+                </div>
+                <br class="Clear" />
+            </div>
+            <br />
+            <br />
+            <br />
+            <uc2:SlideProjects ID="SlideProjects1" runat="server" />
         </div>
-        <br />
-        <br />
-        <br />
-        <uc2:SlideProjects ID="SlideProjects1" runat="server" />
-    </div>
-    <uc3:Footer ID="Footer1" runat="server" />
-    <a href="#" class="cd-top cd-is-visible">Top</a>
+        <uc3:Footer ID="Footer1" runat="server" />
+        <a href="#" class="cd-top cd-is-visible">Top</a>
     </form>
 </body>
 </html>
