@@ -1,4 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Certificate.ascx.cs" Inherits="Control_Certificate" %>
+<%@ Import Namespace="System.Data" %>
+
 <div id="wrapcertificate">
     <div class="certificate">
         <div class="certificatetitle">Giới thiệu</div>
@@ -17,23 +19,42 @@
         <div class="certificatetitle">Chứng nhận chất lượng</div>
         <div style='clear: both;'></div>
         <div class="fixed_img_col3">
+            <% if (certificate.Rows.Count > 0)
+               {
+                   int count = 1;
+                   foreach (DataRow row in certificate.Rows)
+                   {
+                       if (count > 3) count = 1;
+                       if (count == 1)
+                       {
+            %>
             <ul>
+                <%}
+                   if (count <= 3)
+                   {
+                          
+                %>
                 <li>
-                    <a href="../Images/PDF/Certificate/3P02236-4_Ide_Trading_Sverige_AB_ISO_5659-2_eng.pdf" target="_blank">
-                        <span style="background: url(../Images/Certificate/3P02236-4_Ide_Trading_Sverige_AB_ISO_5659-2_eng.jpg) no-repeat; background-color: #eee;" class="thumb"></span>
-                        <strong>MSC-2001 Chứng nhận chất lượng Chứng nhận chất lượng</strong>
-                    </a></li>
-                <li class="view">
-                    <a href="../Images/PDF/Certificate/3P04247_Ide_Trading_Sverige_AB.pdf" target="_blank">
-                        <span style="background: url(../Images/Certificate/3P02236-4_Ide_Trading_Sverige_AB_ISO_5659-2_eng_.jpg) no-repeat; background-color: #eee;" class="thumb"></span>
-                        <strong>MSC-2001 Chứng nhận chất lượng Chứng nhận chất lượng</strong>
-                    </a></li>
-                <li>
-                    <a href="../Images/PDF/Certificate/3P02236-4_Ide_Trading_Sverige_AB_ISO_5659-2_eng.pdf" target="_blank">
-                        <span style="background: url(../Images/Certificate/3P04247_Ide_Trading_Sverige_AB.jpg) no-repeat; background-color: #eee;" class="thumb"></span>
-                        <strong>MSC-2001 Chứng nhận chất lượng Chứng nhận chất lượng Chứng nhận chất lượng</strong>
-                    </a></li>
+                    <a href="../Images/PDF/Certificate/<%= row["FileName"].ToString()%>" target="_blank">
+                        <span style="background: url(../Images/Certificate/<%= row["ImgUrl"].ToString()%>) no-repeat; background-color: #eee;" class="thumb"></span>
+                        <strong><%= row["Title"].ToString()%></strong>
+                    </a>
+                </li>
+                <%}
+                   if (count == 3)
+                   { %>
             </ul>
+            <%}
+                       count++;
+               }
+              }
+               else
+               {
+            %>
+            <div>Đang cập nhật</div>
+            <%
+              }
+            %>
         </div>
     </div>
 </div>
