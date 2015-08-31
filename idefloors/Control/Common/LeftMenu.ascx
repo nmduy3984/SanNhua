@@ -52,7 +52,7 @@
             <ul>
 
                 <li><a href="#"><span>Hotline: 08.66795275</span></a> </li>
-                <li><a href="#"><span>Email: luutrung@idefloor.vn</span></a> </li>
+                <li><a href="#"><span>Email: luutrung@idefloors.vn</span></a> </li>
                 <li>
                     <a href="skype:nmduy_84">Skype: Anh Lưu</a>
                 </li>
