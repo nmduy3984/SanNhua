@@ -3,7 +3,7 @@
 	<input type="text" id="inp_src" style="width:320px" /><button id="btnbrowse">[[Browse]]</button>
 </fieldset>
 <fieldset style="height:180px;width:270px;overflow:hidden;"><legend>[[Demo]]</legend>
-	<img id="img_demo" src="" alt="" />
+	<img  alt="idefloors.vn" id="img_demo" src="" alt="" />
 </fieldset>
 
 <script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1006&file=Dialog_Tag_Media.js"></script>

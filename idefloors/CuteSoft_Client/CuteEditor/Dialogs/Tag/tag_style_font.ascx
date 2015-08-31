@@ -67,7 +67,7 @@
 	</fieldset>
 	<fieldset style="padding:4px;"><legend>[[Color]]</legend>
 		<input size="14" type="text" id="inp_color"/>
-		<img alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" />
+		<img  alt="idefloors.vn" alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" />
 	</fieldset>
 </div>
 <div id="outer" style="height:100px; margin-bottom:10px; padding:5px;"><div id="div_demo">[[DemoText]]</div></div><br />

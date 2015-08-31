@@ -197,37 +197,37 @@
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('none')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_none.gif' alt='No Border' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_none.gif' alt='No Border' />
 									</td>
 								</tr>
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_outside.gif' alt='All' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_outside.gif' alt='All' />
 									</td>
 								</tr>
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('left')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_left.gif' alt='[[Left]]' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_left.gif' alt='[[Left]]' />
 									</td>
 								</tr>
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('top')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_top.gif' alt='[[Top]]' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_top.gif' alt='[[Top]]' />
 									</td>
 								</tr>
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('right')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_right.gif' alt='[[Right]]' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_right.gif' alt='[[Right]]' />
 									</td>
 								</tr>
 								<tr>
 									<td onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" onclick="doPart('bottom')"
 										style="height:30px;padding:4px;border:white 1px solid;">
-										<img src='Load.ashx?type=image&file=border_bottom.gif' alt='[[Bottom]]' />
+										<img  alt="idefloors.vn" src='Load.ashx?type=image&file=border_bottom.gif' alt='[[Bottom]]' />
 									</td>
 								</tr>
 							</table>
@@ -239,19 +239,19 @@
 							<tr>
 								<td>[[BorderColor]]:<br />
 									<input autocomplete="off" type="text" id="bordercolor" name="bordercolor" size="7" style="WIDTH:57px" />
-									<img alt="" id="bordercolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
+									<img  alt="idefloors.vn" alt="" id="bordercolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
 								</td>
 							</tr>
 							<tr>
 								<td>[[ForeColor]]:<br />
 									<input autocomplete="off" type="text" id="inp_color" name="inp_color" size="7" style="WIDTH:57px" />
-									<img alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
+									<img  alt="idefloors.vn" alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
 								</td>
 							</tr>
 							<tr>
 								<td>[[Shade]]:<br />
 									<input autocomplete="off" type="text" id="inp_shade" name="inp_shade" size="7" style="WIDTH:57px" />
-									<img alt="" id="inp_shade_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
+									<img  alt="idefloors.vn" alt="" id="inp_shade_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
 								</td>
 							</tr>
 						</table>

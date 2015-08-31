@@ -3,7 +3,7 @@
 	<legend>[[Backgroundcolor]]</legend>
 	<div style="padding:3px;">
 		<input autocomplete="off" type="text" id="inp_color" name="inp_color" size="7" style='width:60px;vertical-align:top;' />
-		<img alt="" src="Load.ashx?type=image&file=colorpicker.gif" id="inp_color_Preview" style='vertical-align:top;' />
+		<img  alt="idefloors.vn" alt="" src="Load.ashx?type=image&file=colorpicker.gif" id="inp_color_Preview" style='vertical-align:top;' />
 	</div>
 </fieldset>
 <fieldset style="padding:4px;"><legend>[[Backgroundimage]]</legend>

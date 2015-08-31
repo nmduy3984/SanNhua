@@ -42,7 +42,7 @@ override protected void OnInit(EventArgs args)
 										<td>
 											<input runat="server" id="inp_width" value="80" maxlength="3" onkeyup="checkConstrains('width');"  onkeypress="return CancelEventIfNotDigit()" style="WIDTH : 70px" name="inp_width" />
 										</td>
-										<td rowspan="2" align="right" valign="middle"><img src="Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" /></td>
+										<td rowspan="2" align="right" valign="middle"><img  alt="idefloors.vn" src="Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" /></td>
 									</tr>
 									<tr>
 										<td>[[Height]]:</td>
@@ -61,7 +61,7 @@ override protected void OnInit(EventArgs args)
 						</td>
 						<td style="white-space:nowrap" >
 							<div style="width:100px; height:80px; vertical-align:top;overflow:hidden;BACKGROUND-COLOR: #ffffff;BORDER-RIGHT: buttonhighlight 1px solid;BORDER-TOP: buttonshadow 1px solid;BORDER-LEFT: buttonshadow 1px solid;BORDER-BOTTOM: buttonhighlight 1px solid;">
-								<img alt="" id="img_demo" src="Load.ashx?type=image&file=1x1.gif" />
+								<img  alt="idefloors.vn" alt="" id="img_demo" src="Load.ashx?type=image&file=1x1.gif" />
 							</div>
 						</td>
 					</tr>	

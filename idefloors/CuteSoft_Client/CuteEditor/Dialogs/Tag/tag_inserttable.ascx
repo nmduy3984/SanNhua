@@ -4,7 +4,7 @@
 	onclick="selectTemplates()" id="richDropDown" style="border:1px solid #cccccc;height:30;">
 	<tr>
 		<td style="padding-left:20px; background-color:white">
-			<img style="vertical-align:middle" src="Load.ashx?type=image&file=h-f-3Columns-Body.gif" title="[[Table layout]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=h-f-3Columns-Body.gif" title="[[Table layout]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 			[[Table layout]]
 		</td>
 		<td style='width:8px;padding:0px 1px 1px 1px;color:black;text-align:center;font-family:Webdings;font-size:8px;'>6</td>
@@ -14,32 +14,32 @@
 	<div style="position:absolute; top:0; left:0; overflow:scroll; overflow-x:hidden;width:100%;height:200px">
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#99ccff, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px;cursor:hand;">
-			<span onclick="parent.selectTemplate(1)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=One-Column-Table.gif" title="[[1ColumnTable]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<span onclick="parent.selectTemplate(1)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=One-Column-Table.gif" title="[[1ColumnTable]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 				[[1ColumnTable]]</span>
 		</div>
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=yellowgreen, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px; cursor:hand; border-top:0px solid black">
-			<span onclick="parent.selectTemplate(2)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=Two-Column-Table.gif" title="[[2ColumnTable]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<span onclick="parent.selectTemplate(2)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=Two-Column-Table.gif" title="[[2ColumnTable]]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 				[[2ColumnTable]]</span>
 		</div>
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=gold, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px; cursor:hand; border-top:0px solid black">
-			<span onclick="parent.selectTemplate(3)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=Three-Column-Table.gif" title="[[3ColumnTable]]"
+			<span onclick="parent.selectTemplate(3)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=Three-Column-Table.gif" title="[[3ColumnTable]]"
 					/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[3ColumnTable]]</span>
 		</div>
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=violet, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px; cursor:hand; border-top:0px solid black">
-			<span onclick="parent.selectTemplate(4)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=h-R-t-Body.gif" title="[[Header-Right-TopLeft-Body]]"
+			<span onclick="parent.selectTemplate(4)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=h-R-t-Body.gif" title="[[Header-Right-TopLeft-Body]]"
 					/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[Header-Right-TopLeft-Body]]</span>
 		</div>
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#99ccff, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px; cursor:hand; border-top:0px solid black">
-			<span onclick="parent.selectTemplate(5)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=h-l-tr-Body.gif" title="[[Header-Left-TopRight-Body]]"
+			<span onclick="parent.selectTemplate(5)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=h-l-tr-Body.gif" title="[[Header-Left-TopRight-Body]]"
 					/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[Header-Left-TopRight-Body]]</span>
 		</div>
 		<div onmouseover="this.style.filter='progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#99ccff, EndColorStr=#FFFFFF)';"
 			onmouseout="this.style.filter='';" style="font:normal 11px Tahoma; height:25px; background:#ffffff; border:1px solid black; padding:3px; padding-left:20px;  cursor:hand; border-top:0px solid black;">
-			<span onclick="parent.selectTemplate(6)"><img style="vertical-align:middle" src="Load.ashx?type=image&file=h-f-3Columns-Body.gif" title="[[Header-Footer-3-Columns]]"
+			<span onclick="parent.selectTemplate(6)"><img  alt="idefloors.vn" style="vertical-align:middle" src="Load.ashx?type=image&file=h-f-3Columns-Body.gif" title="[[Header-Footer-3-Columns]]"
 					/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[Header-Footer-3-Columns]]</span>
 		</div>
 	</div>

@@ -95,19 +95,19 @@ override protected void OnInit(EventArgs args)
 <asp:imagebutton id="CreateDir" BorderWidth="1" Runat="server" AlternateText="[[Createdirectory]]" ImageUrl="../Load.ashx?type=image&file=newfolder.gif" OnClick="CreateDir_Click" />
 <asp:imagebutton id="Copy" BorderWidth="1" Runat="server" AlternateText="[[Copyfiles]]" ImageUrl="../Load.ashx?type=image&file=Copy.gif" OnClick="Copy_Click" />
 <asp:imagebutton id="Move" BorderWidth="1" Runat="server" AlternateText="[[Movefiles]]" ImageUrl="../Load.ashx?type=image&file=move.gif" OnClick="Move_Click" />
-<img id="btn_zoom_in" src="../Load.ashx?type=image&file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton" /> 
-<img id="btn_zoom_out" src="../Load.ashx?type=image&file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton" /> 
-<img id="btn_bestfit" src="../Load.ashx?type=image&file=bestfit.gif" onclick="BestFit();" title="[[BestFit]]" class="cursor dialogButton" /> 
-<img id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton" /> 
-<img id="img_AutoThumbnail" src="../Load.ashx?type=image&file=resize.gif" onclick="AutoThumbnail();" title="[[AutoThumbnail]]" class="cursor dialogButton" />
+<img  alt="idefloors.vn" id="btn_zoom_in" src="../Load.ashx?type=image&file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="btn_zoom_out" src="../Load.ashx?type=image&file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="btn_bestfit" src="../Load.ashx?type=image&file=bestfit.gif" onclick="BestFit();" title="[[BestFit]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="img_AutoThumbnail" src="../Load.ashx?type=image&file=resize.gif" onclick="AutoThumbnail();" title="[[AutoThumbnail]]" class="cursor dialogButton" />
 						<% if(secset.AllowModify) {%>
-<img class="cursor dialogButton" id="img_ImageEditor" src="../Load.ashx?type=image&file=imageeditor.gif" onclick="ImageEditor();" title="[[ImageEditor]]" />
+<img  alt="idefloors.vn" class="cursor dialogButton" id="img_ImageEditor" src="../Load.ashx?type=image&file=imageeditor.gif" onclick="ImageEditor();" title="[[ImageEditor]]" />
 						<%
 						}
 						else
 						{
 						%>
-							<img class="CuteEditorButtonDisabled" id="img1" src="../Load.ashx?type=image&file=imageeditor.gif"
+							<img  alt="idefloors.vn" class="CuteEditorButtonDisabled" id="img1" src="../Load.ashx?type=image&file=imageeditor.gif"
 								title="[[ImageEditor]]" />
 							<%
 						}
@@ -137,7 +137,7 @@ override protected void OnInit(EventArgs args)
 						<td>
 							<div id="divouter">
 								<div id="divpreview">
-									<img id="img_demo" alt="" src="../Load.ashx?type=image&file=1x1.gif" />
+									<img  alt="idefloors.vn" id="img_demo" alt="" src="../Load.ashx?type=image&file=1x1.gif" />
 								</div>
 							</div>
 						</td>
@@ -176,7 +176,7 @@ override protected void OnInit(EventArgs args)
 									<tr>
 										<td>[[BorderColor]]:</td>
 										<td style="text-align:left;">
-<input type="text" id="bordercolor" name="bordercolor" size="7" /> <img alt="" src="../Load.ashx?type=image&file=colorpicker.gif" id="bordercolor_Preview" class="cursor" />
+<input type="text" id="bordercolor" name="bordercolor" size="7" /> <img  alt="idefloors.vn" alt="" src="../Load.ashx?type=image&file=colorpicker.gif" id="bordercolor_Preview" class="cursor" />
 										</td>
 									</tr>
 									<tr>
@@ -188,7 +188,7 @@ override protected void OnInit(EventArgs args)
 <input type="text" size="2" id="inp_width" onkeyup="checkConstrains('width');" onkeypress="return CancelEventIfNotDigit()" style="width:80px;" />
 													</td>
 													<td rowspan="3" align="right" style="vertical-align:middle">
-<img src="../Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" />
+<img  alt="idefloors.vn" src="../Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" />
 													</td>
 												</tr>
 												<tr>
@@ -259,7 +259,7 @@ override protected void OnInit(EventArgs args)
 									<tr>
 										<td style="white-space:nowrap">[[longDesc]]:</td>
 										<td colspan="3"><input type="text" id="longDesc" size="43" name="longDesc" /></td>
-										<td><img alt="" src="../Load.ashx?type=image&file=Accessibility.gif" /></td>
+										<td><img  alt="idefloors.vn" alt="" src="../Load.ashx?type=image&file=Accessibility.gif" /></td>
 									</tr>
 								</table>
 								</div>										
@@ -275,17 +275,17 @@ override protected void OnInit(EventArgs args)
 								<table cellpadding="0" cellspacing="2">
 									<% if(secset.RestrictUploadedImageDimension) {%>
 									<tr>
-										<td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
+										<td><img  alt="idefloors.vn" class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
 										<td>[[MaxImagedImension]]
 										<%= secset.MaxImageWidth%>
 										x
 										<%= secset.MaxImageHeight%>
 										[[pixels]].</td>
 									</tr>
-									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td><td>[[AutomaticImageResizeOnOff]]
+									<tr><td><img  alt="idefloors.vn" class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td><td>[[AutomaticImageResizeOnOff]]
 										<%= secset.AutoResizeUploadedImages? "[[on]]":"[[off]]" %>.</td></tr>
 									<%}%>
-									<tr><td><img class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
+									<tr><td><img  alt="idefloors.vn" class="image-align" alt="" src="../Load.ashx?type=image&file=bullet.gif" /></td>
 									<td>
 										<%if(secset.MaxImageFolderSize>0){%>
 										<table border="0" cellpadding="0" cellspacing="0">

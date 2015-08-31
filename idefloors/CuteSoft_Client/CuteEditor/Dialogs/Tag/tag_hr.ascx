@@ -29,7 +29,7 @@
 							<td class="normal">[[Color]]:</td>
 							<td>
 <input autocomplete="off" type="text" id="hrcolor" size="7" style="WIDTH:57px" /> 
-<img alt="" id="hrcolorpreview" src="Load.ashx?type=image&file=colorpicker.gif" style='vertical-align:top;' />
+<img  alt="idefloors.vn" alt="" id="hrcolorpreview" src="Load.ashx?type=image&file=colorpicker.gif" style='vertical-align:top;' />
 							</td>
 							<td style="width:3">&nbsp;
 							</td>

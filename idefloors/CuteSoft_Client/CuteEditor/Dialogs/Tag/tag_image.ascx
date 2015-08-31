@@ -19,7 +19,7 @@
 			<td valign="middle" style="white-space:nowrap" >[[longDesc]]:</td>
 			<td colspan="3"><input type="text" id="longDesc" size="45" name="longDesc" />
 			</td>
-			<td><img alt="" src="Load.ashx?type=image&file=Accessibility.gif" /></td>
+			<td><img  alt="idefloors.vn" alt="" src="Load.ashx?type=image&file=Accessibility.gif" /></td>
 		</tr>
 	</table>
 </fieldset>
@@ -62,7 +62,7 @@
 									<td>[[BorderColor]]:</td>
 									<td style="white-space:nowrap;">
 <input autocomplete="off" type="text" id="bordercolor" name="bordercolor" size="7" />
-<img alt="" src="Load.ashx?type=image&file=colorpicker.gif" id="bordercolor_Preview" style='vertical-align:top;' />
+<img  alt="idefloors.vn" alt="" src="Load.ashx?type=image&file=colorpicker.gif" id="bordercolor_Preview" style='vertical-align:top;' />
 									</td>
 									<td>
 									</td>
@@ -72,7 +72,7 @@
 									<td>
 <input type="text" size="2" id="inp_width" onkeyup="checkConstrains('width');" rem-skipautofirechanged="1" onkeypress="return CancelEventIfNotDigit()" style="width:80px;" />
 									</td>
-									<td rowspan="2" align="right" valign="middle"><img src="Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" /></td>
+									<td rowspan="2" align="right" valign="middle"><img  alt="idefloors.vn" src="Load.ashx?type=image&file=locked.gif" id="imgLock" width="25" height="32" title="[[ConstrainProportions]]" /></td>
 								</tr>
 								<tr>
 									<td>[[Height]]:</td>
@@ -117,7 +117,7 @@
 		<td style="white-space:nowrap; width:5" >&nbsp;</td>
 		<td>
 			<div id="outer" style="width:230px; height:251px">
-			    <img alt="" src="Load.ashx?type=image&file=1x1.gif" id="img_demo" />
+			    <img  alt="idefloors.vn" alt="" src="Load.ashx?type=image&file=1x1.gif" id="img_demo" />
 			</div>
 		</td>
 	</tr>

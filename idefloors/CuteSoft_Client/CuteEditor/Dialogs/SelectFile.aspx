@@ -89,9 +89,9 @@ override protected void OnInit(EventArgs args)
 <asp:ImageButton id="CreateDir" BorderWidth="1" Runat="server" AlternateText="[[Createdirectory]]"	ImageUrl="Load.ashx?type=image&amp;file=newfolder.gif" OnClick="CreateDir_Click" />
 <asp:ImageButton id="Copy" BorderWidth="1" Runat="server" AlternateText="[[Copyfiles]]" ImageUrl="Load.ashx?type=image&amp;file=Copy.gif" OnClick="Copy_Click" />
 <asp:ImageButton id="Move" BorderWidth="1" Runat="server" AlternateText="[[Movefiles]]" ImageUrl="Load.ashx?type=image&amp;file=move.gif" OnClick="Move_Click" />
-<img id="btn_zoom_in" src="Load.ashx?type=image&amp;file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton"  />
-<img id="btn_zoom_out" src="Load.ashx?type=image&amp;file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton"  />
-<img id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton"  />
+<img  alt="idefloors.vn" id="btn_zoom_in" src="Load.ashx?type=image&amp;file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton"  />
+<img  alt="idefloors.vn" id="btn_zoom_out" src="Load.ashx?type=image&amp;file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton"  />
+<img  alt="idefloors.vn" id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton"  />
 					</td>
 				</tr>
 			</table>
@@ -156,7 +156,7 @@ override protected void OnInit(EventArgs args)
 							<%if(secset.MaxDocumentFolderSize>0){%>
 							<table>
 								<tr>
-									<td><img class="image-align" alt="" src="../Load.ashx?type=image&file=colorfocus.gif" /></td>
+									<td><img  alt="idefloors.vn" class="image-align" alt="" src="../Load.ashx?type=image&file=colorfocus.gif" /></td>
 									<td style="margin:0;padding:0">[[MaxFolderSizeAllowed]]: <%= CuteEditor.Impl.FileStorage.FormatSize(secset.MaxDocumentFolderSize * 1024)%>.</td>
 									<td>&nbsp; [[Used]]: <%= CuteEditor.Impl.FileStorage.FormatSize(RootDirectorySize) %></td>
 									<td>

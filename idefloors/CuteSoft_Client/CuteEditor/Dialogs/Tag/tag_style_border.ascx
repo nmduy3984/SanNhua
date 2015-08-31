@@ -103,7 +103,7 @@
 			<td>[[Color]]</td>
 			<td>
 				<input autocomplete="off" size="7" type="text" id="inp_color" style="width:57px"/>
-				<img alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" />
+				<img  alt="idefloors.vn" alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" />
 			</td>
 		</tr>
 	</table>

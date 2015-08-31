@@ -50,14 +50,14 @@
 				<td>[[Color]]</td>
 				<td>
 <input autocomplete="off" type="text" id="inp_forecolor" name="inp_forecolor" size="7" style="WIDTH:72px" />
-<img alt="" id="img_forecolor" src="Load.ashx?type=image&file=colorpicker.gif" style="margin-bottom:-2px" />
+<img  alt="idefloors.vn" alt="" id="img_forecolor" src="Load.ashx?type=image&file=colorpicker.gif" style="margin-bottom:-2px" />
 				</td>
 			</tr>
 			<tr>
 				<td>[[BackColor]]</td>
 				<td>
 <input autocomplete="off" type="text" id="inp_backcolor" name="inp_backcolor" size="7" style="WIDTH:72px" />
-<img alt="" id="img_backcolor" src="Load.ashx?type=image&file=colorpicker.gif" style="margin-bottom:-2px" />
+<img  alt="idefloors.vn" alt="" id="img_backcolor" src="Load.ashx?type=image&file=colorpicker.gif" style="margin-bottom:-2px" />
 				</td>
 			</tr>
 			<tr>		

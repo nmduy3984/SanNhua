@@ -63,7 +63,7 @@
 				&nbsp;
 				[[Color]]:&nbsp;
 				<input autocomplete="off" type="text" id="inp_color" size="7" style="width:57px" />
-				<img alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px;" />
+				<img  alt="idefloors.vn" alt="" id="inp_color_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px;" />
 			</td>
 		</tr>
 		<tr>

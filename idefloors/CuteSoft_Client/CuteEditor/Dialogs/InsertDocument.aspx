@@ -92,9 +92,9 @@ override protected void OnInit(EventArgs args)
 <asp:imagebutton id="CreateDir" BorderWidth="1" Runat="server" AlternateText="[[Createdirectory]]" ImageUrl="../Load.ashx?type=image&file=newfolder.gif" OnClick="CreateDir_Click" />
 <asp:imagebutton id="Copy" BorderWidth="1" Runat="server" AlternateText="[[Copyfiles]]" ImageUrl="../Load.ashx?type=image&file=Copy.gif" OnClick="Copy_Click" />
 <asp:imagebutton id="Move" BorderWidth="1" Runat="server" AlternateText="[[Movefiles]]" ImageUrl="../Load.ashx?type=image&file=move.gif" OnClick="Move_Click" />
-<img id="btn_zoom_in" src="../Load.ashx?type=image&file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton" /> 
-<img id="btn_zoom_out" src="../Load.ashx?type=image&file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton" /> 
-<img id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton" />
+<img  alt="idefloors.vn" id="btn_zoom_in" src="../Load.ashx?type=image&file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="btn_zoom_out" src="../Load.ashx?type=image&file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]" class="cursor dialogButton" /> 
+<img  alt="idefloors.vn" id="btn_Actualsize" src="../Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton" />
 						</td>
 					</tr>
 				</table>
@@ -148,7 +148,7 @@ override protected void OnInit(EventArgs args)
 											<td>[[Color]]:</td>
 											<td>
 												<input type="text" id="inp_color" name="inp_color" size="7" style="width:57px" />
-<img title="" src="../Load.ashx?type=image&file=colorpicker.gif" id="inp_color_preview" class="cursor" />
+<img  alt="idefloors.vn" title="" src="../Load.ashx?type=image&file=colorpicker.gif" id="inp_color_preview" class="cursor" />
 											</td>
 										</tr>
 										<tr>

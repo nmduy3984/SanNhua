@@ -87,10 +87,10 @@
 		</tr>
 		<tr>
 			<td>[[Color]]:&nbsp;<input autocomplete="off" size="7" type="text" id="inp_item_forecolor" />
-			<img alt="" id="inp_item_forecolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
+			<img  alt="idefloors.vn" alt="" id="inp_item_forecolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px" />
 			</td>
 			<td>[[BackColor]]:&nbsp;<input autocomplete="off" size="7" type="text" id="inp_item_backcolor" />
-			<img alt="" id="inp_item_backcolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px"/>
+			<img  alt="idefloors.vn" alt="" id="inp_item_backcolor_Preview" src="Load.ashx?type=image&file=colorpicker.gif" class="cursor" style="margin-bottom:-2px"/>
 			</td>
 		</tr>
 	</table>

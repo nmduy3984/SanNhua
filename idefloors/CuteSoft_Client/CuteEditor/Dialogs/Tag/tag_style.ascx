@@ -35,7 +35,7 @@
 				if(iscurrent)activetext=ptext;
 			%>
 			<div class='buttons'><a <%=iscurrent?"class='current'":""%>' href='<%=CuteEditor.EditorUtility.ReplaceParam(Context.Request.RawUrl,"Style",pname)%>'>
-				<img alt="" src="Load.ashx?type=image&file=style.<%=pname%>.gif" />
+				<img  alt="idefloors.vn" alt="" src="Load.ashx?type=image&file=style.<%=pname%>.gif" />
 				<%=ptext%>
 			</a>
 			</div>

@@ -72,7 +72,7 @@
 			    <button id="btn_instfoot">[[Insert]]</button>	
 			</td>
 			<td style="width:5px"></td>
-			<td><img src="Load.ashx?type=image&file=Accessibility.gif" title="Accessibility" /></td>
+			<td><img  alt="idefloors.vn" src="Load.ashx?type=image&file=Accessibility.gif" title="Accessibility" /></td>
 		</tr>
 	</table>
 </fieldset>

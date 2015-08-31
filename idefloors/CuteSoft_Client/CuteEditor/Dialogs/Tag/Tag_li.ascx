@@ -14,16 +14,16 @@
 				onmouseout="doMouseOut(this)">
 				<ul style="list-style-type: none;">
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 				</ul>	
 			</div>
@@ -36,16 +36,16 @@
 						onmouseout="doMouseOut(this)">
 						<ol type="1">
 							<li>
-								<div><img src="../images/listbar.gif"></div> 
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 							<li>
-								<div><img src="../images/listbar.gif"></div> 
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 							<li>
-								<div><img src="../images/listbar.gif"></div>
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div>
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 						</ol>	
 					</div>
@@ -58,16 +58,16 @@
 						onmouseout="doMouseOut(this)">
 						<ol type="I">
 							<li>
-								<div><img src="../images/listbar.gif"></div> 
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 							<li>
-								<div><img src="../images/listbar.gif"></div> 
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 							<li>
-								<div><img src="../images/listbar.gif"></div> 
-								<div><img src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+								<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 							</li>
 						</ol>	
 					</div>
@@ -85,16 +85,16 @@
 					onmouseout="doMouseOut(this)">
 				<ol type="A">
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 					<li>
-						<div><img src="../images/listbar.gif"></div> 
-						<div><img src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+						<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 					</li>
 				</ol>	
 				</div>
@@ -107,16 +107,16 @@
 					onmouseout="doMouseOut(this)">
 					<ol type="a">
 						<li>
-							<div><img src="../images/listbar.gif"></div>
-							<div><img src="../images/listbar.gif"></div> 
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div>
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 						</li>
 						<li>
-							<div><img src="../images/listbar.gif"></div> 
-							<div><img src="../images/listbar.gif"></div> 
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 						</li>
 						<li>
-							<div><img src="../images/listbar.gif"></div> 
-							<div><img src="../images/listbar.gif"></div> 
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+							<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 						</li>
 					</ol>	
 				</div>
@@ -129,16 +129,16 @@
 			onmouseout="doMouseOut(this)">
 		<ol type="i">
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		</ol>	
 		</div>
@@ -156,16 +156,16 @@
 			onmouseout="doMouseOut(this)">
 		<ul type="disc">
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		</ul>	
 		</div>
@@ -178,16 +178,16 @@
 			onmouseout="doMouseOut(this)">
 		<ul type="circle">
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		</ul>	
 		</div>
@@ -200,16 +200,16 @@
 			onmouseout="doMouseOut(this)">
 		<ul type="square">
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		<li>
-			<div><img src="../images/listbar.gif"></div> 
-			<div><img src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
+			<div><img  alt="idefloors.vn" src="../images/listbar.gif"></div> 
 		</li>
 		</div>
 	</td>

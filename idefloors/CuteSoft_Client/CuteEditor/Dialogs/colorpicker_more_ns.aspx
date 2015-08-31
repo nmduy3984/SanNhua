@@ -87,10 +87,10 @@ Email: lewis@moten.com
 						<div id="pnlGradient_Top"></div>
 						<div id="pnlGradient_Background1"></div>
 						<div id="pnlGradient_Background2"></div>
-						<img id="imgGradient" src="ColorSpace1.png">
+						<img  alt="idefloors.vn" id="imgGradient" src="ColorSpace1.png">
 						<div id="pnlGradientRgb_Overlay1"></div>
 						<div id="pnlGradientRgb_Overlay2"></div>
-						<img id="pnlVerticalHsbSaturation_Hue" src="Vertical1.png">
+						<img  alt="idefloors.vn" id="pnlVerticalHsbSaturation_Hue" src="Vertical1.png">
 						<div id="pnlVertical_Background2"></div>
 						<div id="pnlVertical_Background1"></div>
 						<div id="pnlVertical_Top"></div>
