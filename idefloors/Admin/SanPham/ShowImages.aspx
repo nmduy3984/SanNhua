@@ -42,7 +42,7 @@
                 <%=dr["MaSanPham"]%>
             </td> 
              <td align="center">
-                <img height="200px" src="/Images/ProductImages/<%=dr["HinhAnh"]%>" />
+                <img  alt="idefloors.vn" height="200px" src="/Images/ProductImages/<%=dr["HinhAnh"]%>" />
             </td>   
          </tr>
         <%} %>

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="Edit.aspx.cs" Inherits="Admin_TinTuc_Edit" %>
-<%@ register namespace="CustomEditor" tagprefix="one" %>
+<%--<%@ register namespace="CustomEditor" tagprefix="one" %>--%>
 <%@ Register TagPrefix="CE" Namespace="CuteEditor" Assembly="CuteEditor" %> 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -17,8 +17,11 @@
                 </div>
                  <div>
                     <span>Mô tả</span>
-                     <one:CustomEditor ID="txtDes" Height="150" runat="server" />
+                     <%--<one:CustomEditor ID="txtDes" Height="150" runat="server" />--%>
                 </div>
+                <div style="clear:both;margin:0px;padding:0px;" >
+                  <CE:Editor id="txtDes" runat="server" Width="703px" Height="300px" UseHTMLEntities="False" /> 
+              </div>
                  <%--<div>
                     <span>Nội Dung</span>
                     <one:CustomEditor ID="txtContent" Height="300" runat="server" />

@@ -74,7 +74,7 @@
                 <input type="checkbox" name="chk" value="<%=ID%>" />
             </td>
             <td align="center">
-                <img height="150px" width="150px;" src="/Images/ProductImages/<%=hinhanh%>" />
+                <img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/ProductImages/<%=hinhanh%>" />
             </td>
             <td>
                    <a href="Edit.aspx?ID=<%=ID%>"><%=maSP%></a>

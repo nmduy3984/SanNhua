@@ -58,7 +58,7 @@
                 <input type="checkbox" name="chk" value="<%=dr["ID"]%>" />
             </td>
              <td>
-                 <img height="150px" width="150px;" src="/Images/News/<%=dr["ImageUrl"]%>" />
+                 <img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/News/<%=dr["ImageUrl"]%>" />
             </td> 
             <td>
                 <a href="Edit.aspx?ID=<%=dr["ID"]%>"><%=dr["Title"].ToString()%></a>

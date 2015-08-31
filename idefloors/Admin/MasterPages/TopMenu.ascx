@@ -17,7 +17,7 @@
                         <li><a href="/Admin/TinTuc/QLTinTuc.aspx">Quản lý Tin Tức</a></li>
                         <li><a href="/Admin/Project/QLProject.aspx">Quản lý Project</a></li>
                         <li><a href="/Admin/Flash/QLFlash.aspx">Quản lý Flash</a></li>
-                       <%-- <li><a href="/Admin/QLUser.aspx">Quản lý user</a></li>--%>
+                        <li><a href="/Admin/Certificate/QLCertificate.aspx">Quản lý Certificate</a></li>
                     </ul>
                   </td>    
             </tr>

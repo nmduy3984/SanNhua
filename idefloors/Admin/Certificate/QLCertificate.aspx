@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="QLFlash.aspx.cs" Inherits="Admin_Flash_QLFlash" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="QLCertificate.aspx.cs" Inherits="Admin_Certificate_QLCertificate" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -10,7 +10,7 @@
             runat="server">Tạo mới</asp:LinkButton>
         <asp:LinkButton CssClass="btn_green" ForeColor="#ca0303" ID="btnDelete"
             OnClick="btnDelete_Click" OnClientClick="return checkDelete('Are you sure delete all selected items');"
-            runat="server">Xóa Flash</asp:LinkButton>
+            runat="server">Xóa Tin Tức</asp:LinkButton>
        
     </div>
 
@@ -33,16 +33,17 @@
         <tr>
             <th scope="col" width="25">
             </th>
-            <th scope="col" width="25">
-                <span>Ảnh lớn</span>
+             <th scope="col">
+                Img
             </th>
-           
+                      
             <th scope="col">
-                <span>Ảnh nhỏ</span>
+                <span>Tiêu Đề</span>
             </th>
             <th scope="col">
-               Liên kết
+               Download File
             </th>
+            
         </tr>
 
         <%
@@ -51,18 +52,19 @@
         %>
         <tr>
             <td>
-                <input type="checkbox" name="chk" value="<%=dr["Id"]%>" />
+                <input type="checkbox" name="chk" value="<%=dr["CertificateID"]%>" />
             </td>
              <td>
-                 <a href="Edit.aspx?ID=<%=dr["Id"]%>"><img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/Flash/<%=dr["ImgUrl"]%>" /></a>
+                 <img height="150px" width="150px;" src="/Images/Certificate/<%=dr["ImgUrl"]%>" />
             </td> 
             <td>
-                <a href="Edit.aspx?ID=<%=dr["Id"]%>"><%=dr["Title"]%></a>
+                <a href="Edit.aspx?ID=<%=dr["CertificateID"]%>"><%=dr["Title"].ToString()%></a>
             </td>  
              <td>
-                <%=dr["Link"].ToString()%>
+                
+                 <a href="/Images/PDF/Certificate/<%=dr["FileName"].ToString()%>">Download File</a>
             </td>
-             
+            
          </tr>
         <%} %>
 

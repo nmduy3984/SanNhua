@@ -21,7 +21,7 @@
      <div style="float:right;margin-bottom: 11px;margin-top: 10px;"><%=_Status%> || Page size 
             <asp:DropDownList ID="ddlPageSize" AutoPostBack="true" onselectedindexchanged = "btnGetData_Click" runat="server" >
               <asp:ListItem Text= "4" Value ="4" ></asp:ListItem>
-              <asp:ListItem Text= "10" Value ="10" ></asp:ListItem>
+              <asp:ListItem Text= "10" Value ="10" Selected="True" ></asp:ListItem>
               <asp:ListItem Text= "30" Value ="30" ></asp:ListItem>
               <asp:ListItem Text= "50" Value ="50" ></asp:ListItem>
               <asp:ListItem Text= "100" Value ="100" ></asp:ListItem>
@@ -43,9 +43,9 @@
             <th scope="col">
                 <span>Tên Danh Mục Sản Phẩm</span>
             </th>
-           <%-- <th scope="col">
-               Mô tả
-            </th>--%>
+            <th scope="col">
+               Giới thiệu
+            </th>
              <th scope="col">
                 <span>Thư tự show</span>
             </th>
@@ -84,7 +84,7 @@
                 <input type="checkbox" name="chk" value="<%=dr["CategoryID"]%>" />
             </td>
              <td>
-                 <img height="150px" width="150px;" src="/Images/CategoryImages/<%=dr["ImageUrl"]%>" />
+                 <img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/CategoryImages/<%=dr["ImageUrl"]%>" />
             </td> 
             <td>
                 <%=dr["CategoryID"]%>
@@ -92,9 +92,9 @@
             <td>
                 <a href="Edit.aspx?ID=<%=dr["CategoryID"]%>"><%=name%></a>
             </td>  
-            <%-- <td>
+             <td>
                 <%=dr["Description"]%>
-            </td>--%>
+            </td>
               <td>
                 <%=dr["Seq"]%>
             </td> 

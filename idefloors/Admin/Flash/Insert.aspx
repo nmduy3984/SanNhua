@@ -15,7 +15,7 @@
                     <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
                 </div>
                 <div>
-                    <span>Link</span>
+                    <span>Liên kết</span>
                     <asp:TextBox ID="txtLink" runat="server"></asp:TextBox>
                 </div>
                 <div>

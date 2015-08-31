@@ -14,7 +14,7 @@
                 <tr>
                     <td class="companyLogo">
                         <a href="#" target="_blank" class="topLogo">
-                            <!--<img src="#" name="logo" border="0" height="50">-->
+                            <!--<img  alt="idefloors.vn" src="#" name="logo" border="0" height="50">-->
                         </a>
                     </td>
                    

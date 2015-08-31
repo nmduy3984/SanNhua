@@ -22,7 +22,7 @@
                     <asp:TextBox ID="txtTenDanhMuc" runat="server"></asp:TextBox>
                 </div>
                  <div>
-                    <span>Mô tả</span>
+                    <span>Giới thiệu</span>
                      <one:CustomEditor ID="txtDes" Height="300" runat="server" />
                 </div>
                  <div>
