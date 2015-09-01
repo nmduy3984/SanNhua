@@ -10,7 +10,7 @@
             runat="server">Tạo mới</asp:LinkButton>
         <asp:LinkButton CssClass="btn_green" ForeColor="#ca0303" ID="btnDelete"
             OnClick="btnDelete_Click" OnClientClick="return checkDelete('Are you sure delete all selected items');"
-            runat="server">Xóa Tin Tức</asp:LinkButton>
+            runat="server">Xóa Certificate</asp:LinkButton>
        
     </div>
 

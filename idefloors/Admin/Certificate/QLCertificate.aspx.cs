@@ -23,6 +23,7 @@ public partial class Admin_Certificate_QLCertificate : System.Web.UI.Page
         {
             showData();
         }
+        //DataAccess.Delete("CREATE TABLE [dbo].[Certificate]( 	[CertificateID] [int] IDENTITY(1,1) NOT NULL, 	[Title] [nvarchar](200) NULL, 	[ImgUrl] [nvarchar](1000) NULL, 	[FileName] [nvarchar](1000) NULL,  CONSTRAINT [PK_Certificate] PRIMARY KEY CLUSTERED  ( 	[CertificateID] ASC )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY] ) ON [PRIMARY]");
     }
      protected void btnDelete_Click(object sender, EventArgs e)
      {

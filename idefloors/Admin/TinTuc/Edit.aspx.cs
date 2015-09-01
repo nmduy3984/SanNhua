@@ -27,8 +27,7 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
                 if (dt.Rows.Count == 1)
                 {
                     txtTieuDe.Text = dt.Rows[0]["Title"].ToString();
-                    //txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
-                    txtDes.Text = dt.Rows[0]["Description"].ToString();
+                    txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
                     //txtContent.Content = Server.HtmlDecode(dt.Rows[0]["Content"].ToString());
                     txtContent.Text = dt.Rows[0]["Content"].ToString();
                     txtImg.Text = dt.Rows[0]["ImageUrl"].ToString();
@@ -48,8 +47,8 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
             {
                 string ID = Request.QueryString["ID"];
                 string tieude = txtTieuDe.Text;
-                //string des = Server.HtmlEncode(txtDes.Content.Trim());
-                string des = txtDes.Text.Trim();
+                string des = Server.HtmlEncode(txtDes.Content.Trim());
+                //string des = txtDes.Text.Trim();
                 //string content = Server.HtmlEncode(txtContent.Content.Trim());
                 string content = txtContent.Text.Trim();
                

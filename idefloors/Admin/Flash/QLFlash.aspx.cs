@@ -23,6 +23,7 @@ public partial class Admin_Flash_QLFlash : System.Web.UI.Page
         {
             showData();
         }
+        //DataAccess.Delete("delete from product");
     }
      protected void btnDelete_Click(object sender, EventArgs e)
      {
