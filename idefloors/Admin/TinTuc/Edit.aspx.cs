@@ -50,7 +50,7 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
                 string des = Server.HtmlEncode(txtDes.Content.Trim());
                 //string des = txtDes.Text.Trim();
                 //string content = Server.HtmlEncode(txtContent.Content.Trim());
-                string content = txtContent.Text.Trim();
+                string content = txtContent.Text.Replace("'", "''");
                
                 DateTime now = DateTime.Now;
                 string Img = ID + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";

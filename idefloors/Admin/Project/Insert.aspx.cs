@@ -20,26 +20,28 @@ public partial class Admin_Project_Insert : System.Web.UI.Page
     {
         try
         {
-            DataTable  dtID= DataAccess.GetDatatable("select max(ID) from News");
+            DataTable dtID = DataAccess.GetDatatable("select max(ID) from Projects");
             string id1 = dtID.Rows.Count == 0 ? "0" : dtID.Rows[0][0].ToString() == "" ? "0" : dtID.Rows[0][0].ToString();
             int ID = Convert.ToInt32(id1) + 1;
             string tieude = txtTieuDe.Text;
             string des = Server.HtmlEncode(txtDes.Content.Trim());
-            string content = Server.HtmlEncode(txtContent.Content.Trim());
+            //string content = Server.HtmlEncode(txtContent.Content.Trim());
+            string content = txtContent.Text.Replace("'","''");
 
             DateTime now = DateTime.Now;
             string Img = ID.ToString() + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
 
             if (this.fileUploadImg.HasFile)
             {
-                string sMapPath = StringHelper.getFolderNewImages;
+                string sMapPath = StringHelper.getFolderProjectsImages;
                 this.fileUploadImg.SaveAs(sMapPath + Img);
             }
             else
                 Img = "";
 
             string sql = @"Insert into Projects(Title,[Description],Content,ImageUrl,UserCreated,CreatedDate) 
-                            Values(N'" + tieude + "',N'" + des + "','N" + content + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
+                            Values(N'" + tieude + "',N'" + des + "',N'" + content + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString() + "')";
+
              //UserCreated,UserModified,CreatedDate,ModifiedDate,
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");
@@ -56,7 +58,7 @@ public partial class Admin_Project_Insert : System.Web.UI.Page
 
     protected void btnCancel_Click(object sender, EventArgs e)
     {
-        Utilities.redirectClient(Page, "/Admin/Project/QLProjectSP.aspx");
+        Utilities.redirectClient(Page, "/Admin/Project/QLProject.aspx");
     }
     
 }

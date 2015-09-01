@@ -21,16 +21,17 @@
                     <one:CustomEditor ID="txtDes" Height="150" runat="server" />
                 </div>
                 <div>
+                    <span>Hình ảnh (.jpg)</span>
+                    <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px" />
+                    <asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
+                <div>
                     <span>Nội Dung</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
                     <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
                 </div>
-                <div>
-                    <span>Hình ảnh (.jpg)</span>
-                    <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px" />
-                    <asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>
-                </div>
+                
 
                 <div style="width: 260px; float: right">
                     <asp:Button ID="btnSubmit" runat="server" Text="Tạo Mới" OnClick="btnSubmit_Click"></asp:Button>

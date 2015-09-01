@@ -28,7 +28,8 @@ public partial class Admin_Project_Edit : System.Web.UI.Page
                 {
                     txtTieuDe.Text = dt.Rows[0]["Title"].ToString();
                     txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
-                    txtContent.Content = Server.HtmlDecode(dt.Rows[0]["Content"].ToString());
+                    //txtContent.Content = Server.HtmlDecode(dt.Rows[0]["Content"].ToString());
+                    txtContent.Text = dt.Rows[0]["Content"].ToString();
                     txtImg.Text = dt.Rows[0]["ImageUrl"].ToString();
                 }
             }
@@ -47,14 +48,15 @@ public partial class Admin_Project_Edit : System.Web.UI.Page
                 string ID = Request.QueryString["ID"];
                 string tieude = txtTieuDe.Text;
                 string des = Server.HtmlEncode(txtDes.Content.Trim());
-                string content = Server.HtmlEncode(txtContent.Content.Trim());
-               
+                //string content = Server.HtmlEncode(txtContent.Content.Trim());
+                string content = txtContent.Text.Replace("'", "''");
+
                 DateTime now = DateTime.Now;
                 string Img = ID + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
                
                 if (this.fileUploadImg.HasFile)
                 {
-                    string sMapPath = StringHelper.getFolderNewImages;
+                    string sMapPath = StringHelper.getFolderProjectsImages;
                     if (File.Exists(sMapPath + txtImg.Text))
                         File.Delete(sMapPath + txtImg.Text);
                     //xóa cái cũ ùi mới save cái mới
@@ -65,7 +67,7 @@ public partial class Admin_Project_Edit : System.Web.UI.Page
 
 
                 string sql = @"Update Projects set Title = N'" + tieude + "',[Description] = N'" + des +
-                                    "',ImageUrl = '" + Img + "',Content = '" + content +
+                                    "',ImageUrl = '" + Img + "',Content = N'" + content +
                                        "' where ID = " + ID + "";
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");

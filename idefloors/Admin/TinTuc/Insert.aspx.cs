@@ -26,7 +26,7 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             string tieude = txtTieuDe.Text;
             string des = Server.HtmlEncode(txtDes.Content.Trim());
             //string content = Server.HtmlEncode(txtContent.Content.Trim());
-            string content = txtContent.Text;
+            string content = txtContent.Text.Replace("'", "''");
 
             DateTime now = DateTime.Now;
             string Img = ID.ToString() + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";

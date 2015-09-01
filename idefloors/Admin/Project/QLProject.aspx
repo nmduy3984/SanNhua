@@ -10,7 +10,7 @@
             runat="server">Tạo mới</asp:LinkButton>
         <asp:LinkButton CssClass="btn_green" ForeColor="#ca0303" ID="btnDelete"
             OnClick="btnDelete_Click" OnClientClick="return checkDelete('Are you sure delete all selected items');"
-            runat="server">Xóa Tin Tức</asp:LinkButton>
+            runat="server">Xóa Dự Án</asp:LinkButton>
        
     </div>
 
@@ -58,7 +58,7 @@
                 <input type="checkbox" name="chk" value="<%=dr["ID"]%>" />
             </td>
              <td>
-                 <img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/News/<%=dr["ImageUrl"]%>" />
+                 <img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/Projects/<%=dr["ImageUrl"]%>" />
             </td> 
             <td>
                 <a href="Edit.aspx?ID=<%=dr["ID"]%>"><%=dr["Title"].ToString()%></a>

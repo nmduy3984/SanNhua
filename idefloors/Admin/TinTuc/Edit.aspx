@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="Edit.aspx.cs" Inherits="Admin_TinTuc_Edit" %>
 
-<%@ register namespace="CustomEditor" tagprefix="one" %>
+<%@ Register Namespace="CustomEditor" TagPrefix="one" %>
 <%@ Register TagPrefix="CE" Namespace="CuteEditor" Assembly="CuteEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -18,13 +18,7 @@
                 </div>
                 <div>
                     <span>Mô tả</span>
-                    <one:customeditor id="txtDes" height="150" runat="server" />
-                </div>
-                <div>
-                    <span>Nội Dung</span>
-                </div>
-                <div style="clear: both; margin: 0px; padding: 0px;">
-                    <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
+                    <one:CustomEditor ID="txtDes" Height="150" runat="server" />
                 </div>
                 <div>
                     <span>Hình ảnh (.jpg)</span>
@@ -32,6 +26,13 @@
                     <%--<asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>--%>
                     <asp:TextBox ID="txtImg" Visible="false" runat="server"></asp:TextBox>
                 </div>
+                <div>
+                    <span>Nội Dung</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
+                </div>
+
 
                 <div style="width: 260px; float: right">
                     <asp:Button ID="btnSubmit" runat="server" Text="Cập Nhật" OnClick="btnSubmit_Click"></asp:Button>

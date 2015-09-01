@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="Edit.aspx.cs" Inherits="Admin_Project_Edit" %>
-<%@ register namespace="CustomEditor" tagprefix="one" %>
+<%@ Register Namespace="CustomEditor" TagPrefix="one" %>
+<%@ Register TagPrefix="CE" Namespace="CuteEditor" Assembly="CuteEditor" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -15,19 +16,21 @@
                     <span>Tiêu Đề</span>
                     <asp:TextBox ID="txtTieuDe" runat="server"></asp:TextBox>
                 </div>
-                 <div>
+                <div>
                     <span>Mô tả</span>
-                     <one:CustomEditor ID="txtDes" Height="150" runat="server" />
-                </div>
-                 <div>
-                    <span>Nội Dung</span>
-                    <one:CustomEditor ID="txtContent" Height="300" runat="server" />
+                    <one:CustomEditor ID="txtDes" Height="150" runat="server" />
                 </div>
                 <div>
                     <span>Hình ảnh (.jpg)</span>
-                    <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px"/>
-                     <%--<asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>--%>
-                     <asp:TextBox ID="txtImg" Visible="false" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px" />
+                    <%--<asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>--%>
+                    <asp:TextBox ID="txtImg" Visible="false" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Nội Dung</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
                 </div>
                 
                 <div style="width: 260px; float: right">
