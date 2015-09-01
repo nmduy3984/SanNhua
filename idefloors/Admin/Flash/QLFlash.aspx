@@ -57,7 +57,7 @@
                  <a href="Edit.aspx?ID=<%=dr["Id"]%>"><img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/Flash/<%=dr["ImgUrl"]%>" /></a>
             </td> 
             <td>
-                <a href="Edit.aspx?ID=<%=dr["Id"]%>"><%=dr["Title"]%></a>
+                <a href="Edit.aspx?ID=<%=dr["Id"]%>"><img  alt="idefloors.vn" height="150px" width="150px;" src="/Images/Flash/<%=dr["ThumbUrl"]%>" /></a>
             </td>  
              <td>
                 <%=dr["Link"].ToString()%>
