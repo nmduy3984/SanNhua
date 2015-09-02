@@ -17,6 +17,7 @@ public class StringHelper
 
         public static string getFolderNewImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\News\\";
         public static string getFolderProjectsImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\Projects\\";
+        public static string getFolderProjectLogoImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\ProjectLogo\\";
 
         public static string getFolderFlashImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\Flash\\";
         public static string getFolderCerImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\Certificate\\";

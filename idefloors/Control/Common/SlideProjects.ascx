@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SlideProjects.ascx.cs" Inherits="Control_Common_SlideProjects" %>
+<%@ Import Namespace="System.Data" %>
 <div id="SlideProjects" style="position: relative; top: 0px; left: 0px; width: 960px; height: 100px; overflow: hidden;">
     <!-- Loading Screen -->
     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -10,42 +11,15 @@
 
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 60px; overflow: hidden;">
+        <% foreach (DataRow row in projectlogo.Rows)
+           {
+               string link = row["Link"].ToString().Trim() == "" ? "javascript:void();" : row["Link"].ToString();
+        %>
         <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn" u="image" alt="amazon" src="../Images/DuAnThiCong/logo_idetrading-hemsida.png" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn" u="image" alt="android" src="../Images/DuAnThiCong/logo_idefloors-scand.png" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="bitly" src="../Images/DuAnThiCong/bitly.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="blogger" src="../Images/DuAnThiCong/blogger.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="dnn" src="../Images/DuAnThiCong/dnn.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="drupal" src="../Images/DuAnThiCong/drupal.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="ebay" src="../Images/DuAnThiCong/ebay.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="facebook" src="../Images/DuAnThiCong/facebook.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn"  u="image" alt="google" src="../Images/DuAnThiCong/google.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn" u="image" alt="ibm" src="../Images/DuAnThiCong/ibm.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn" u="image" alt="ios" src="../Images/DuAnThiCong/ios.jpg" /></a>
-        </div>
-        <div>
-            <a href="#" target="_blank"><img  alt="idefloors.vn" u="image" alt="joomla" src="../Images/DuAnThiCong/joomla.jpg" /></a>
+            <a href="<%= link%>" target="_blank">
+                <img alt="idefloors.vn" u="image" alt="amazon" src="../Images/ProjectLogo/<%= row["ImgUrl"].ToString()%>" /></a>
         </div>
 
+        <%} %>
     </div>
 </div>

@@ -12,7 +12,7 @@
         </div>
         <div id="aboutus">
             <ul>
-                <li><a href="../Page/Introduce.aspx">Giới thiệu</a></li>
+                <li><a href="../Page/AboutUS.aspx">Giới thiệu</a></li>
                 <li>&nbsp;|&nbsp;</li>
                 <li><a href="../Page/Contact.aspx">Liên hệ</a></li>
             </ul>

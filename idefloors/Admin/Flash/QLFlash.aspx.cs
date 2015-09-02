@@ -23,7 +23,7 @@ public partial class Admin_Flash_QLFlash : System.Web.UI.Page
         {
             showData();
         }
-        //DataAccess.Delete("delete from product");
+        //DataAccess.Delete("CREATE TABLE [dbo].[AboutUs]( 	[Id] [int] IDENTITY(1,1) NOT NULL, 	[Content] [nvarchar](max) NULL, 	[UserCreated] [varchar](100) NULL, 	[UserModified] [varchar](100) NULL, 	[CreatedDate] [datetime] NULL, 	[ModifiedDate] [datetime] NULL,  CONSTRAINT [PK_Introduce] PRIMARY KEY CLUSTERED  ( 	[Id] ASC )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY] ) ON [PRIMARY]");
     }
      protected void btnDelete_Click(object sender, EventArgs e)
      {
