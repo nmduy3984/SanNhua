@@ -20,19 +20,19 @@
         <div id="lang">
             <ul>
                 <li>
-                    <a>
-                        <img  alt="idefloors.vn" src="../../Images/vn.png" alt="vn" width="30" height="20" />
-                    </a>
+                    <asp:LinkButton ID="lnkVN" runat="server"  OnClick="lnkVN_Click"><img  alt="idefloors.vn" src="../../Images/vn.png" alt="vn" width="30" height="20" /></asp:LinkButton>
+                   
                 </li>
                 <li>
-                    <a>
+                    <asp:LinkButton ID="lnkEN" runat="server"  OnClick="lnkEN_Click">
                         <img  alt="idefloors.vn" src="../../Images/en.png" alt="en" width="30" height="20" />
-                    </a>
+                    </asp:LinkButton>
                 </li>
                 <li>
-                    <a>
+                    <asp:LinkButton ID="lnkCAM" runat="server"  OnClick="lnkCAM_Click">
                         <img  alt="idefloors.vn" src="../../Images/cam.png" alt="en" width="30" height="20" />
-                    </a>
+
+                    </asp:LinkButton>
                 </li>
             </ul>
         </div>
