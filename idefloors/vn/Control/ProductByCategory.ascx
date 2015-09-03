@@ -16,7 +16,7 @@
         foreach (DataRow row1 in categoryById.Rows)
         {
             DataTable productByCategory = new DataTable();
-            productByCategory = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID =" + row1["CategoryID"].ToString() + " order by CreatedDate desc");
+            productByCategory = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID =" + row1["CategoryID"].ToString() + " order by seq");
 %>
 <div class="c2">
     <div class="t_c2"><a href="javascript:void();"><%= row0["Name"]%> - <%= row1["Name"]%></a></div>

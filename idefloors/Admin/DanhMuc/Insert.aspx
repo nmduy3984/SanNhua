@@ -39,7 +39,7 @@
                      <asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadThumbnail" Display="Dynamic"></asp:RequiredFieldValidator>
                 </div>--%>
                 <div>
-                    <span>Thứ tự show</span>
+                    <span>Thứ tự Hiển thị</span>
                      <asp:TextBox ID="txtSeq" runat="server"></asp:TextBox>
                 </div>
                 <div>

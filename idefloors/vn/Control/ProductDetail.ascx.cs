@@ -17,7 +17,7 @@ public partial class Control_ProductDetail : System.Web.UI.UserControl
         {
             string Id = Request.QueryString["Id"] == null ? "" : Request.QueryString["Id"] == "" ? "" : Request.QueryString["Id"];
             productByID = DataAccess.GetRecord("Product", "ProductID", Id);
-            productOtherID = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID=" + productByID.Rows[0]["CategoryID"].ToString() + " and ProductID <> '" + Id + "' order by CreatedDate desc");
+            productOtherID = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID=" + productByID.Rows[0]["CategoryID"].ToString() + " and ProductID <> '" + Id + "' order by seq");
         }
     }
 }

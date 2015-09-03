@@ -38,7 +38,7 @@
                      <asp:TextBox ID="txtThumb" Visible="false" runat="server"></asp:TextBox>
                 </div>--%>
                 <div>
-                    <span>Thứ tự show</span>
+                    <span>Thứ tự Hiển thị</span>
                      <asp:TextBox ID="txtSeq" runat="server"></asp:TextBox>
                 </div>
                 <div>

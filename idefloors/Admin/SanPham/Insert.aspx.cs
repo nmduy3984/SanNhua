@@ -33,6 +33,8 @@ public partial class Admin_SanPham_Insert : System.Web.UI.Page
         string madm = ddlDanhMuc.SelectedValue;
         string des = txtDes.Text;
         string status = ddlStatus.SelectedValue.ToString();
+        string seq = txtSeq.Text;
+        string isNewProduct = ddlIsNewProduct.SelectedValue.ToString();
 
         string sql = "select * from Product where ProductID = '" + maSP + "'";
         DataTable dtSP = DataAccess.GetDatatable(sql);
@@ -51,12 +53,12 @@ public partial class Admin_SanPham_Insert : System.Web.UI.Page
         }
         else
             strName = "";
-        
 
-        sql = @"Insert into Product(ProductID,Name,Size,ImageUrl,CategoryID,Description,Status)
-                       Values(N'{0}',N'{1}',N'{2}','{3}',{4},'{5}',{6})
+
+        sql = @"Insert into Product(ProductID,Name,Size,ImageUrl,CategoryID,Description,Status,Seq,IsNewProduct)
+                       Values(N'{0}',N'{1}',N'{2}','{3}',{4},'{5}',{6},{7},{8})
                     ";
-        sql = string.Format(sql, maSP, tenSP, kichthuoc, strName, ddlDanhMuc.SelectedValue, des,status);
+        sql = string.Format(sql, maSP, tenSP, kichthuoc, strName, ddlDanhMuc.SelectedValue, des,status, seq, isNewProduct);
         try
         {
             DataAccess.Insert(sql);

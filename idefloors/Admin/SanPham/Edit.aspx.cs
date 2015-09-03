@@ -35,6 +35,9 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
                 ddlStatus.SelectedValue = dtSP.Rows[0]["Status"].ToString() == "True" ? "1" : "0"; 
                // txtThumb.Text = dtSP.Rows[0]["ThumUrl"].ToString();
 
+                txtSeq.Text = dtSP.Rows[0]["Seq"].ToString();
+                ddlIsNewProduct.SelectedValue = dtSP.Rows[0]["IsNewProduct"].ToString() == "True" ? "1" : "0"; 
+
                 DataAccess.LoadCategory(ref ddlDanhMuc, catID);
             }
         }
@@ -50,6 +53,8 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
         string madm = ddlDanhMuc.SelectedValue;
         string des = txtDes.Text;
         string status = ddlStatus.SelectedValue.ToString();
+         string seq = txtSeq.Text;
+        string isNewProduct = ddlIsNewProduct.SelectedValue.ToString();
 
         string sql = "select * from Product where ProductID = '" + maSP + "' and ID != " + ID ;
         DataTable dtSP = DataAccess.GetDatatable(sql);
@@ -84,10 +89,10 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
         //    strNamethumb = txtThumb.Text;
 
 
-        sql = @"update Product set Name = N'{0}',Size = N'{1}',CategoryID = {2},ImageUrl ='{3}', Description ='{4}',Status = {5}
-                       where ID ='{6}'  ";
+        sql = @"update Product set Name = N'{0}',Size = N'{1}',CategoryID = {2},ImageUrl ='{3}', Description ='{4}',Status = {5},Seq = {6},IsNewProduct = {7}
+                       where ID ='{8}'  ";
 
-        sql = string.Format(sql, tenSP, kichthuoc, ddlDanhMuc.SelectedValue, strNameImg, des, status, ID);
+        sql = string.Format(sql, tenSP, kichthuoc, ddlDanhMuc.SelectedValue, strNameImg, des, status, seq, isNewProduct, ID);
         try
         {
             DataAccess.Update(sql);

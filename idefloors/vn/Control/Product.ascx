@@ -16,7 +16,7 @@
        foreach (DataRow row1 in categoryLevel2.Rows)
        {
            DataTable productByCategory = new DataTable();
-           productByCategory = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID =" + row1["CategoryID"].ToString() + " order by CreatedDate desc");
+           productByCategory = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID =" + row1["CategoryID"].ToString() + " order by seq");
 %>
 <div class="c2">
     <%if (productByCategory.Rows.Count > 0)

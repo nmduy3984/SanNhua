@@ -49,6 +49,17 @@
                         <asp:ListItem Text="Có" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Không" Value="0"></asp:ListItem>
                     </asp:DropDownList>
+                </div>               
+                <div>
+                    <span>Thứ tự Hiển thị</span>
+                     <asp:TextBox ID="txtSeq" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Tình Trạng Sản Phẩm Mới</span>
+                    <asp:DropDownList ID="ddlIsNewProduct" runat="server">
+                        <asp:ListItem Text="Có" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Không" Value="0"></asp:ListItem>
+                    </asp:DropDownList>
                 </div>
                 <div style="width: 260px; float: right">
                     <asp:Button ID="btnSubmit" runat="server" Text="Tạo Mới" OnClick="btnSubmit_Click" ></asp:Button>                     

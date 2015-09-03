@@ -47,7 +47,7 @@
                Giới thiệu
             </th>
              <th scope="col">
-                <span>Thư tự show</span>
+                <span>Thứ tự Hiển thị</span>
             </th>
             
         </tr>
