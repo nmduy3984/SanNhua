@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<%@ Register Src="../Control/Common/SlideFlashs.ascx" TagName="SlideFlashs" TagPrefix="uc1" %>
+
+<%@ Register Src="../Control/Common/SlideProjects.ascx" TagName="SlideProjects" TagPrefix="uc2" %>
+
+<%@ Register Src="../Control/Common/Footer.ascx" TagName="Footer" TagPrefix="uc3" %>
+
+<%@ Register Src="../Control/Common/Menu.ascx" TagName="Menu" TagPrefix="uc4" %>
+
+<%@ Register Src="../Control/Common/Banner.ascx" TagName="Banner" TagPrefix="uc5" %>
+
+<%@ Register Src="../Control/Common/Search.ascx" TagName="Search" TagPrefix="uc6" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="vi" />
+    <title>idefloors.vn</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="idefloors.vn" />
+
+    <!--include File CSS-->
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css" media="screen" />
+    <%--<link rel="stylesheet" href="../CSS/widget.css" />--%>
+
+    <!--include File Javascript-->
+    <script type="text/javascript" src="../../JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../JS/jssor.js"></script>
+    <script type="text/javascript" src="../../JS/jssor.slider.js"></script>
+    <script type="text/javascript" src="../../JS/common.js"></script>
+    <script type="text/javascript" src="../../JS/main.js"></script>
+    <%--<script type="text/javascript" src="../JS/addthis_widget.js"></script>--%>
+
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            if ($("#SlideFlashs").length > 0) {
+                SlideFlashs("SlideFlashs");
+            }
+            if ($("#SlideProjects").length > 0) {
+                SlideProjects("SlideProjects");
+            }
+
+            $("input id*='txtSearch'").keydown(function () {
+                if (event.keyCode == 13) {
+                    document.getElementById("btnSearch").onsubmit();
+                }
+            });
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 960));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body oncontextmenu="return false;">
+    <form id="form1" runat="server">
+        <div id="Container">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55e44dc5c6de444b" async="async"></script>
+
+            <!-- Begin Banner -->
+            <uc5:Banner ID="Banner1" runat="server" />
+            <!-- End Banner -->
+            <div class="Clear">
+            </div>
+            <div id="Outer">
+                <!-- Begin Banner -->
+                <uc6:Search ID="Search1" runat="server" />
+                <!-- End Banner -->
+                <!-- Begin Menu -->
+                <uc4:Menu ID="Menu1" runat="server" />
+                <!-- End Menu -->
+                <!-- Begin Flashs -->
+                <uc1:SlideFlashs ID="SlideFlashs1" runat="server" />
+                <!-- End Flashs -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <br class="Clear" />
+            </div>
+            <br />
+            <br />
+            <br />
+            <uc2:SlideProjects ID="SlideProjects1" runat="server" />
+        </div>
+        <uc3:Footer ID="Footer1" runat="server" />
+        <a href="#" class="cd-top cd-is-visible">Top</a>
+    </form>
+</body>
+</html>
