@@ -52,9 +52,11 @@
             <ul>
 
                 <li><a href="#"><span>Hotline: 08.66795275</span></a> </li>
-                <li><a href="#"><span>Email: luutrung@idefloors.vn</span></a> </li>
+                <li><a href="#"><span>Mobile: 0917 703 997</span></a> </li>
+                <li><a href="mailto:trungluu1987@gmail.com"><span>Email: trungluu1987@gmail.com</span></a> </li>
+                <li><a href="mailto:luupham@hiepphatcorp.com"><span>Email: luupham@hiepphatcorp.com</span></a> </li>
                 <li>
-                    <a href="skype:nmduy_84">Skype: Anh Lưu</a>
+                    <a href="skype:trungluu1987ms">Skype: Anh Lưu</a>
                 </li>
 
             </ul>
