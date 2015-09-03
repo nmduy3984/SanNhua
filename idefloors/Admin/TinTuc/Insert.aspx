@@ -29,7 +29,12 @@
                     <span>Nội Dung</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
-                    <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
+                    <%--<ce:editor id="txtContent" AutoConfigure="Simple"  runat="server" width="703px" height="700px" usehtmlentities="False" />--%>
+                    <CE:Editor ID="txtContent" AutoConfigure="Simple" runat="server" Width="100%" Height="200"
+                            EditorWysiwygModeCss="~/example.css">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 
 
