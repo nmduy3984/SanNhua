@@ -25,18 +25,28 @@
                     <span>Giới thiệu</span>
                      <one:CustomEditor ID="txtDes" Height="300" runat="server" />
                 </div>
+                <div>
+                    <span>Tên Danh Mục (EN)</span>
+                    <asp:TextBox ID="txtTenDanhMucEN" runat="server"></asp:TextBox>
+                </div>
+                 <div>
+                    <span>Giới thiệu (EN)</span>
+                     <one:CustomEditor ID="txtDesEN" Height="300" runat="server" />
+                </div>
+                <div>
+                    <span>Tên Danh Mục (CAM)</span>
+                    <asp:TextBox ID="txtTenDanhMucCAM" runat="server"></asp:TextBox>
+                </div>
+                 <div>
+                    <span>Giới thiệu (CAM)</span>
+                     <one:CustomEditor ID="txtDesCAM" Height="300" runat="server" />
+                </div>
                  <div>
                     <span>Hình ảnh-ImgURL (.jpg)</span>
                     <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px"/>
                      <%--<asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadImg" Display="Dynamic"></asp:RequiredFieldValidator>--%>
                      <asp:TextBox ID="txtImg" Visible="false" runat="server"></asp:TextBox>
                 </div>
-                 <%--<div>
-                    <span>Hình ảnh-Thumb (.jpg)</span>
-                    <asp:FileUpload ID="fileUploadThumbnail" runat="server"  Width="400px"/> 
-                     <asp:RequiredFieldValidator CssClass="val_btn" Width="100px" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please upload file" ControlToValidate="fileUploadThumbnail" Display="Dynamic"></asp:RequiredFieldValidator>
-                     <asp:TextBox ID="txtThumb" Visible="false" runat="server"></asp:TextBox>
-                </div>--%>
                 <div>
                     <span>Thứ tự Hiển thị</span>
                      <asp:TextBox ID="txtSeq" runat="server"></asp:TextBox>

@@ -46,6 +46,18 @@
             <th scope="col">
                Giới thiệu
             </th>
+            <th scope="col">
+                <span>Tên Danh Mục Sản Phẩm (EN)</span>
+            </th>
+            <th scope="col">
+               Giới thiệu (EN)
+            </th>
+            <th scope="col">
+                <span>Tên Danh Mục Sản Phẩm (CAM)</span>
+            </th>
+            <th scope="col">
+               Giới thiệu (CAM)
+            </th>
              <th scope="col">
                 <span>Thứ tự Hiển thị</span>
             </th>
@@ -54,10 +66,14 @@
 
         <%
         foreach (System.Data.DataRow dr in dt.Rows)
-        {    
+        {
             string Parentname = "";
+            string ParentnameEN = "";
+            string ParentnameCAM = "";
             string ParentID = "";
             string name = "";
+            string nameEN = "";
+            string nameCAM= "";
             name = dr["Name"].ToString();
             if(dr["ParentID"].ToString()!="0" && dr["ParentID"].ToString()!="")
             { 
@@ -65,8 +81,12 @@
                  if (dtParent.Rows.Count > 0)
                  {
                      Parentname = dtParent.Rows[0]["Name"].ToString();
+                     ParentnameEN = dtParent.Rows[0]["NameEN"].ToString();
+                     ParentnameCAM = dtParent.Rows[0]["NameCAM"].ToString();
                      ParentID = dtParent.Rows[0]["ParentID"].ToString();
                      name = Parentname + " >> " + name;
+                     nameEN = ParentnameEN + " >> " + nameEN;
+                     nameCAM = ParentnameCAM + " >> " + nameCAM;
                      if (ParentID != "0" && ParentID != "")
                      {
                          dtParent = DataAccess.GetRecord("Category", "CategoryID", ParentID);
@@ -74,6 +94,10 @@
                          {
                              Parentname = dtParent.Rows[0]["Name"].ToString();
                              name = Parentname + " >> " + name;
+                             ParentnameEN = dtParent.Rows[0]["NameEN"].ToString();
+                             nameEN = ParentnameEN + " >> " + nameEN;
+                             ParentnameCAM = dtParent.Rows[0]["NameCAM"].ToString();
+                             nameCAM = ParentnameCAM + " >> " + nameCAM;
                          }
                      }
                  }
@@ -94,6 +118,18 @@
             </td>  
              <td>
                 <%=dr["Description"]%>
+            </td>
+            <td>
+                <a href="Edit.aspx?ID=<%=dr["CategoryID"]%>"><%=nameEN%></a>
+            </td>  
+             <td>
+                <%=dr["DescriptionEN"]%>
+            </td>
+            <td>
+                <a href="Edit.aspx?ID=<%=dr["CategoryID"]%>"><%=nameCAM%></a>
+            </td>  
+             <td>
+                <%=dr["DescriptionCAM"]%>
             </td>
               <td>
                 <%=dr["Seq"]%>

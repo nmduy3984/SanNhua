@@ -27,6 +27,10 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
 
             string name = txtTenDanhMuc.Text;
             string des = Server.HtmlEncode(txtDes.Content.ToString());
+            string nameEN = txtTenDanhMucEN.Text;
+            string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
+            string nameCAM = txtTenDanhMucCAM.Text;
+            string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
             string seq = txtSeq.Text;
             string parentID = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
             string sql = "";
@@ -51,8 +55,8 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
             //else
             //    strHA_thumb = "";
 
-            sql = @"Insert into Category(Name,Description,ImageUrl,ThumUrl,UserCreated,CreatedDate,ParentID,Seq) 
-                            Values(N'" + name + "',N'" + des + "','" + strHA_img + "','" + strHA_thumb + "','" + Session["UserName"] + "','" + now.ToString() + "'," + parentID.ToString() + ","+seq+")";
+            sql = @"Insert into Category(Name,Description,NameEN,DescriptionEN,NameCAM,DescriptionCAM,ImageUrl,ThumUrl,UserCreated,CreatedDate,ParentID,Seq) 
+                            Values(N'" + name + "',N'" + des + "',N'" + nameEN + "',N'" + desEN + "',N'" + nameCAM + "',N'" + desCAM + "','" + strHA_img + "','" + strHA_thumb + "','" + Session["UserName"] + "','" + now.ToString() + "'," + parentID.ToString() + "," + seq + ")";
              //UserCreated,UserModified,CreatedDate,ModifiedDate,
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");
