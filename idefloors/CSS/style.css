@@ -4631,7 +4631,7 @@ Vertical scroller example, with custom base class */
     width: 227px;
     text-align:center;
 }
-#wrapcertificate .fixed_img_col3 .thumb {
+/*#wrapcertificate .fixed_img_col3 .thumb {
     border: 1px solid #fff;
     display: block;
     height: 192px;
@@ -4670,8 +4670,196 @@ Vertical scroller example, with custom base class */
 #wrapcertificate .fixed_img_col3 a:hover .thumb, #wrapcertificate .fixed_img_col3 a:active .thumb, #wrapcertificate .fixed_img_col3 a:focus .thumb {
     border: 3px solid #f8f6f6;
     margin: -2px;
+}*/
+#wrapcertificate .fixed_img_col3 ul {
+    border: 0 none;
+    font-family: Segoe UI,Helvetica,Arial,Verdana;
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 0px 0px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
 }
-
+#wrapcertificate .fixed_img_col3 ul::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#wrapcertificate .fixed_img_col3 li:nth-child(1) {
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
+    /*border: 1px solid #dadada;*/
+    float: left;
+    height: 250px;
+    margin: 0 23px 20px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 227px;
+    text-align:center;
+}
+#wrapcertificate .fixed_img_col3 li:nth-child(2) {
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
+    /*border: 1px solid #dadada;*/
+    float: left;
+    height: 250px;
+    margin: 0 22px 20px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 227px;
+    text-align:center;
+}
+#wrapcertificate .fixed_img_col3 li:nth-child(3) {
+    /*background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 100% 90deg, #f2f2f2, #ffffff) repeat scroll 0 0;*/
+    /*border: 1px solid #dadada;*/
+    float: left;
+    height: 250px;
+    margin: 0 0px 20px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 227px;
+    text-align:center;
+}
+#wrapcertificate .fixed_img_col3 .thumb {
+    border: 1px solid #ddd;
+    display: block;
+    height: 192px;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap;
+    width: 221px;
+}
+#wrapcertificate .fixed_img_col3 .thumb img{
+    height: 192px;
+    width: 221px;
+}
+#wrapcertificate .fixed_img_col3 strong {
+    color: #555;
+    display: inline-block;
+    left: 2px;
+    padding-bottom: 7px;
+    position: absolute;
+    top: 205px;
+    width: 227px;
+}
+#wrapcertificate .fixed_img_col3 em {
+    background: rgba(0, 0, 0, 0) url("../Images/search.gif") no-repeat scroll 0 0;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+    text-indent: -9999px;
+    top: 205px;
+    width: 14px;
+}
+#wrapcertificate .fixed_img_col3 a {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    text-decoration: none;
+    width: 170px;
+}
+#wrapcertificate .fixed_img_col3 a:hover .thumb, #wrapcertificate .fixed_img_col3 a:active .thumb, #wrapcertificate .fixed_img_col3 a:focus .thumb {
+    border: 3px solid #fff;
+    margin: -2px;
+}
+#wrapcertificate .fixed_img_col3 .mpopup {
+    height: 100%;
+    margin-left: -8px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#wrapcertificate .fixed_img_col3 .mpopupo {
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+}
+#wrapcertificate .fixed_img_col3 .popupLayer {
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#wrapcertificate .fixed_img_col3 .popupLayer .back {
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+#wrapcertificate .fixed_img_col3 .popup_box {
+    cursor: pointer;
+    height: 555px;
+    left: 50%;
+    margin-left: -265px;
+    margin-top: -300px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 520px;
+    z-index: 102;
+}
+#wrapcertificate .fixed_img_col3 .popup_box .popup_contents {
+    background-color: #fff;
+    border: 5px solid #ddd;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 102;
+}
+#wrapcertificate .fixed_img_col3 .popup_box .popup_contents img {
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    margin-top: 0;
+    vertical-align: top;
+}
+#wrapcertificate .fixed_img_col3 .popup_box .popup_contents .cate {
+    color: #9f9d92;
+    font-family: Segoe UI,Helvetica,Arial,Verdana;
+    font-size: 8pt;
+    left: 11px;
+    position: absolute;
+    top: 515px;
+}
+#wrapcertificate .fixed_img_col3 .popup_box .popup_contents .tit {
+    color: #444;
+    font-size: 12pt;
+    font-weight: bold;
+}
+#wrapcertificate .fixed_img_col3 .popup_box .popup_contents .close {
+    background: rgba(0, 0, 0, 0) url("../sub2/images/zoom_pop_button_close.gif") no-repeat scroll 0 0;
+    color: #777;
+    font-size: 8pt;
+    height: 25px;
+    position: absolute;
+    right: 6px;
+    top: 528px;
+    width: 66px;
+}
+#wrapcertificate .fixed_img_col3 .popupLayer iframe, #wrapcertificate .fixed_img_col3 .popup_box iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 /*Advice*/
 #wrapadvice {
     font-size:14px;
