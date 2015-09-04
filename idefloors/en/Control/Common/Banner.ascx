@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Banner.ascx.cs" Inherits="Control_Common_Banner" %>
 <div class="center_header">
     <div id="AjaxLoading">
-        <img  alt="idefloors.vn" src="../../Images/ajax-load.gif" />&nbsp; Đang tải... Vui lòng chờ...
+        <img  alt="idefloors.vn" src="../../Images/ajax-load.gif" />&nbsp; Loading... Please wait...
     </div>
     <div class="bg_topmenu">
         <div id="logo">
@@ -12,9 +12,9 @@
         </div>
         <div id="aboutus">
             <ul>
-                <li><a href="AboutUS.aspx">Giới thiệu</a></li>
+                <li><a href="AboutUS.aspx">AboutUS</a></li>
                 <li>&nbsp;|&nbsp;</li>
-                <li><a href="Contact.aspx">Liên hệ</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
             </ul>
         </div>
         <div id="lang">

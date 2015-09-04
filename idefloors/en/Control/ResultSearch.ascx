@@ -17,8 +17,8 @@
     <%if (productByCategory.Rows.Count > 0)
       { %>
 <div class="c2">
-    <div class="t_c2"><a href="javascript:void();"><%= row0["Name"] %> - <%= row1["Name"] %></a></div>
-    <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
+    <div class="t_c2"><a href="javascript:void();"><%= row0["NameEN"] %> - <%= row1["NameEN"] %></a></div>
+    <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">See more&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
     
     <% if ((bool)row1["ViewType"])
@@ -39,7 +39,7 @@
                     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                     titleSrc: function (item) {
                         var arr = item.el.attr('title').split('#idefloors.vn#');
-                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                     }
                 }
             });
@@ -50,11 +50,11 @@
                {
             %>
             <li>
-                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><%=row2["NameEN"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -79,7 +79,7 @@
                         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                         titleSrc: function (item) {
                             var arr = item.el.attr('title').split('#idefloors.vn#');
-                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                         }
                     }
                 });
@@ -99,11 +99,11 @@
                {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><%=row2["NameEN"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%

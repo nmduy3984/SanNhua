@@ -9,7 +9,7 @@
     %>
     <div class="idefloors.vn cate-menu">
         <div class="defaultTitle cate-menu-title">
-            <span><%= row0["Name"] %></span>
+            <span><%= row0["NameEN"] %></span>
         </div>
         <%
            if (CategoryLevel1 != null)
@@ -22,7 +22,7 @@
                        DataTable CategoryLevel2 = new DataTable();
                        CategoryLevel2 = DataAccess.GetDatatable("select * from fnGetAllChildHaveFilter(" + row1["CategoryID"].ToString() + ")");
                 %>
-                <li><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><span><%= row1["Name"] %></span></a>
+                <li><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><span><%= row1["NameEN"] %></span></a>
                     <ul>
                         <%
                        if (CategoryLevel2 != null)
@@ -30,7 +30,7 @@
                            foreach (DataRow row2 in CategoryLevel2.Rows)
                            {
                         %>
-                        <li><a href="ProductByCategory.aspx?Id=<%= row2["CategoryID"].ToString() %>"><span><%= row2["Name"]%></span></a></li>
+                        <li><a href="ProductByCategory.aspx?Id=<%= row2["CategoryID"].ToString() %>"><span><%= row2["NameEN"]%></span></a></li>
                         <%}
                        }  %>
                     </ul>
@@ -46,7 +46,7 @@
        }  %>
     <div id="Div3" class="idefloors.vn cate-menu">
         <div class="defaultTitle cate-menu-title">
-            <span>LIÊN HỆ</span>
+            <span>CONTACT</span>
         </div>
         <div class="defaultContent cate-menu-content">
             <ul>
@@ -56,7 +56,7 @@
                 <li><a href="mailto:trungluu1987@gmail.com"><span>Email: trungluu1987@gmail.com</span></a> </li>
                 <li><a href="mailto:luupham@hiepphatcorp.com"><span>Email: luupham@hiepphatcorp.com</span></a> </li>
                 <li>
-                    <a href="skype:trungluu1987ms">Skype: Anh Lưu</a>
+                    <a href="skype:trungluu1987ms">Skype: Mr. Lưu</a>
                 </li>
 
             </ul>

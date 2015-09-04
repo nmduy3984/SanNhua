@@ -19,7 +19,7 @@
             productByCategory = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID =" + row1["CategoryID"].ToString() + " order by seq");
 %>
 <div class="c2">
-    <div class="t_c2"><a href="javascript:void();"><%= row0["Name"]%> - <%= row1["Name"]%></a></div>
+    <div class="t_c2"><a href="javascript:void();"><%= row0["NameCAM"]%> - <%= row1["NameCAM"]%></a></div>
     <div class="seemore"></div>
     <div style='clear: both;'></div>
     <% if ((bool)row1["ViewType"])
@@ -55,11 +55,11 @@
                   
             %>
             <li>
-                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn"  src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -119,11 +119,11 @@
                           {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn"  src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%}
@@ -131,11 +131,11 @@
                           {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
+                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn"  src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%  
@@ -189,14 +189,14 @@
 <div class="c2">
     <%if (productByCategory.Rows.Count > 0)
       { %>
-    <div class="t_c2"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><%= row0["Name"] %> - <%= row1["Name"] %></a></div>
+    <div class="t_c2"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><%= row0["NameCAM"] %> - <%= row1["NameCAM"] %></a></div>
     <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
     <%}
       else
       {
     %>
-    <div class="t_c2"><a href="javascript:void();"><%= row0["Name"] %> - <%= row1["Name"] %></a></div>
+    <div class="t_c2"><a href="javascript:void();"><%= row0["NameCAM"] %> - <%= row1["NameCAM"] %></a></div>
     <div class="seemore" style="display:none;"><a href="javascript:void();">Xem thêm&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
 
@@ -231,11 +231,11 @@
                {
             %>
             <li>
-                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -280,11 +280,11 @@
                {                  
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 

@@ -75,7 +75,7 @@
                             <% foreach (DataRow row in Menu.Rows)
                                {
                             %>
-                            <li class="spacemenu"><a href="./ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>"><span><%= row["Name"] %></span></a>
+                            <li class="spacemenu"><a href="./ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>"><span><%= row["NameCAM"] %></span></a>
                             </li>
                             <%} %>
                         </ul>

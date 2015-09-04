@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/vn/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ResultSearch.aspx.cs" Inherits="Page_ResultSearch" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/en/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ResultSearch.aspx.cs" Inherits="Page_ResultSearch" %>
 
 <%@ Register src="../Control/ResultSearch.ascx" tagname="ResultSearch" tagprefix="uc1" %>
 

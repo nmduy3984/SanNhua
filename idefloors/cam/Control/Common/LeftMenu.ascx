@@ -9,7 +9,7 @@
     %>
     <div class="idefloors.vn cate-menu">
         <div class="defaultTitle cate-menu-title">
-            <span><%= row0["Name"] %></span>
+            <span><%= row0["NameCAM"] %></span>
         </div>
         <%
            if (CategoryLevel1 != null)
@@ -22,7 +22,7 @@
                        DataTable CategoryLevel2 = new DataTable();
                        CategoryLevel2 = DataAccess.GetDatatable("select * from fnGetAllChildHaveFilter(" + row1["CategoryID"].ToString() + ")");
                 %>
-                <li><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><span><%= row1["Name"] %></span></a>
+                <li><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><span><%= row1["NameCAM"] %></span></a>
                     <ul>
                         <%
                        if (CategoryLevel2 != null)
@@ -30,7 +30,7 @@
                            foreach (DataRow row2 in CategoryLevel2.Rows)
                            {
                         %>
-                        <li><a href="ProductByCategory.aspx?Id=<%= row2["CategoryID"].ToString() %>"><span><%= row2["Name"]%></span></a></li>
+                        <li><a href="ProductByCategory.aspx?Id=<%= row2["CategoryID"].ToString() %>"><span><%= row2["NameCAM"]%></span></a></li>
                         <%}
                        }  %>
                     </ul>

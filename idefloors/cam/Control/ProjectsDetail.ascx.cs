@@ -17,8 +17,8 @@ public partial class Control_ProjectsDetail : System.Web.UI.UserControl
         {
             string Id = Request.QueryString["Id"] == null ? "" : Request.QueryString["Id"] == "" ? "" : Request.QueryString["Id"];
             projectsByID = DataAccess.GetRecord("Projects", "Id", Id);
-            ltrContent.Text = Server.HtmlDecode(projectsByID.Rows[0]["Content"].ToString());
-            lblTitle.Text = projectsByID.Rows[0]["Title"].ToString();
+            ltrContent.Text = Server.HtmlDecode(projectsByID.Rows[0]["ContentCAM"].ToString());
+            lblTitle.Text = projectsByID.Rows[0]["TitleCAM"].ToString();
             projectsOtherID = DataAccess.GetDatatable("select * from Projects where  Id <> " + Id + " order by CreatedDate desc");
         }
     }

@@ -15,7 +15,7 @@
     </div>
     <div class="content">
         <div class="title"><a href="NewsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></div>
-        <div class="desc"><%= System.Net.WebUtility.HtmlDecode(row["Description"].ToString())%></div>
+        <div class="desc"><%= System.Net.WebUtility.HtmlDecode(row["DescriptionCAM"].ToString())%></div>
         <div class="seemore"><a href='NewsDetail.aspx?Id=<%=row["Id"] %>'>Xem thêm&nbsp;&#187;</a></div>
     </div>
     <div class="splitspace"></div>

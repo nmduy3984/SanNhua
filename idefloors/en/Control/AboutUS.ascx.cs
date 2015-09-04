@@ -15,7 +15,7 @@ public partial class Control_AboutUS : System.Web.UI.UserControl
         if (!IsPostBack)
         {
             aboutus = DataAccess.GetDatatable("select * from aboutus");
-            ltrContent.Text = aboutus.Rows[0]["Content"].ToString();
+            ltrContent.Text = aboutus.Rows[0]["ContentEN"].ToString();
         }
     }
 }

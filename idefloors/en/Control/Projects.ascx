@@ -16,7 +16,7 @@
     <div class="content">
         <div class="title"><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></div>
         <div class="desc"><%=Server.HtmlDecode(row["Description"].ToString()) %></div>
-        <div class="seemore"><a href='../Page/ProjectsDetail.aspx?Id=<%=row["Id"] %>'>Xem thêm&nbsp;&#187;</a></div>
+        <div class="seemore"><a href='../Page/ProjectsDetail.aspx?Id=<%=row["Id"] %>'>See more&nbsp;&#187;</a></div>
     </div>
     <div class="splitspace"></div>
     <%

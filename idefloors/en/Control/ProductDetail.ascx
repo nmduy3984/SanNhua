@@ -22,14 +22,14 @@
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                 titleSrc: function (item) {
                     var arr = item.el.attr('title').split('#idefloors.vn#');
-                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= productByID.Rows[0]["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= productByID.Rows[0]["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                 }
             }
         });
     </script>
 
     <div class="img_link">
-        <a title="<%=productByID.Rows[0]["Name"]%> - <%=productByID.Rows[0]["ProductID"]%>#idefloors.vn#<%=productByID.Rows[0]["Size"]%>" href="../../Images/ProductImages/<%=productByID.Rows[0]["ImageUrl"]%>">
+        <a title="<%=productByID.Rows[0]["NameEN"]%> - <%=productByID.Rows[0]["ProductID"]%>#idefloors.vn#<%=productByID.Rows[0]["Size"]%>" href="../../Images/ProductImages/<%=productByID.Rows[0]["ImageUrl"]%>">
             <span class="thumb">
                 <img  alt="idefloors.vn" u="image" class="img" src="../../Images/ProductImages/<%= productByID.Rows[0]["ImageUrl"] %>" />
             </span>
@@ -40,7 +40,7 @@
         <div class="title"><%= productByID.Rows[0]["ProductID"] %></div>
         <div class="desc">
             <div class="detail"><strong>Đăng ngày: </strong><%= string.Format(productByID.Rows[0]["CreatedDate"].ToString(),"dd/MM/yyyy") %></div>
-            <div class="detail"><strong>Nhóm hàng: </strong><%= categoryByProductId.Rows[0]["Name"] %></div>
+            <div class="detail"><strong>Nhóm hàng: </strong><%= categoryByProductId.Rows[0]["NameEN"] %></div>
             <div class="detail"><strong>Mã sản phẩm: </strong><%= productByID.Rows[0]["ProductID"] %></div>
         </div>
     </div>
@@ -51,7 +51,7 @@
   else
   {
 %>
-<div>Không tìm thấy.</div>
+<div>Not found.</div>
 <%
   } %>
 
@@ -77,11 +77,11 @@
                        
             %>
             <li>
-                <a title="<%=row["Name"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="ProductDetail.aspx?Id=<%=row["ProductID"]%>">
+                <a title="<%=row["NameEN"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="ProductDetail.aspx?Id=<%=row["ProductID"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row["Name"]%><br /><%=row["ProductID"]%></strong>
+                    <strong><%=row["NameEN"]%><br /><%=row["ProductID"]%></strong>
                 </a>
             </li>
             <%  

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/vn/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ProductByCategory.aspx.cs" Inherits="Page_ProductByCatagory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cam/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ProductByCategory.aspx.cs" Inherits="Page_ProductByCatagory" %>
 
 <%@ Register src="../Control/ProductByCategory.ascx" tagname="ProductByCategory" tagprefix="uc1" %>
 

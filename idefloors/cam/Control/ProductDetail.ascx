@@ -29,7 +29,7 @@
     </script>
 
     <div class="img_link">
-        <a title="<%=productByID.Rows[0]["Name"]%> - <%=productByID.Rows[0]["ProductID"]%>#idefloors.vn#<%=productByID.Rows[0]["Size"]%>" href="../../Images/ProductImages/<%=productByID.Rows[0]["ImageUrl"]%>">
+        <a title="<%=productByID.Rows[0]["NameCAM"]%> - <%=productByID.Rows[0]["ProductID"]%>#idefloors.vn#<%=productByID.Rows[0]["Size"]%>" href="../../Images/ProductImages/<%=productByID.Rows[0]["ImageUrl"]%>">
             <span class="thumb">
                 <img  alt="idefloors.vn" u="image" class="img" src="../../Images/ProductImages/<%= productByID.Rows[0]["ImageUrl"] %>" />
             </span>
@@ -40,7 +40,7 @@
         <div class="title"><%= productByID.Rows[0]["ProductID"] %></div>
         <div class="desc">
             <div class="detail"><strong>Đăng ngày: </strong><%= string.Format(productByID.Rows[0]["CreatedDate"].ToString(),"dd/MM/yyyy") %></div>
-            <div class="detail"><strong>Nhóm hàng: </strong><%= categoryByProductId.Rows[0]["Name"] %></div>
+            <div class="detail"><strong>Nhóm hàng: </strong><%= categoryByProductId.Rows[0]["NameCAM"] %></div>
             <div class="detail"><strong>Mã sản phẩm: </strong><%= productByID.Rows[0]["ProductID"] %></div>
         </div>
     </div>
@@ -77,11 +77,11 @@
                        
             %>
             <li>
-                <a title="<%=row["Name"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="ProductDetail.aspx?Id=<%=row["ProductID"]%>">
+                <a title="<%=row["NameCAM"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="ProductDetail.aspx?Id=<%=row["ProductID"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row["Name"]%><br /><%=row["ProductID"]%></strong>
+                    <strong><%=row["NameCAM"]%><br /><%=row["ProductID"]%></strong>
                 </a>
             </li>
             <%  

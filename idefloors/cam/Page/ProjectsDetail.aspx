@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/vn/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ProjectsDetail.aspx.cs" Inherits="Page_ProjectsDetail" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cam/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="ProjectsDetail.aspx.cs" Inherits="Page_ProjectsDetail" %>
 
 <%@ Register src="../Control/ProjectsDetail.ascx" tagname="ProjectsDetail" tagprefix="uc1" %>
 

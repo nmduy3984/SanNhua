@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/vn/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="Certificate.aspx.cs" Inherits="Page_Certificate" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cam/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="Certificate.aspx.cs" Inherits="Page_Certificate" %>
 
 <%@ Register src="../Control/Certificate.ascx" tagname="Certificate" tagprefix="uc1" %>
 

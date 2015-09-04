@@ -17,8 +17,8 @@ public partial class Control_NewsDetail : System.Web.UI.UserControl
         {
             string Id = Request.QueryString["Id"] == null ? "" : Request.QueryString["Id"] == "" ? "" : Request.QueryString["Id"];
             newsByID = DataAccess.GetRecord("News", "Id", Id);
-            ltrContent.Text = Server.HtmlDecode(newsByID.Rows[0]["Content"].ToString());
-            lblTitle.Text = newsByID.Rows[0]["Title"].ToString();
+            ltrContent.Text = Server.HtmlDecode(newsByID.Rows[0]["ContentEN"].ToString());
+            lblTitle.Text = newsByID.Rows[0]["TitleEN"].ToString();
             newsOtherID = DataAccess.GetDatatable("select * from News where  Id <> " + Id + " order by CreatedDate desc");
         }
     }

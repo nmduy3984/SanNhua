@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/vn/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="References.aspx.cs" Inherits="Page_References" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cam/MasterPages/MainMasterPage.master" AutoEventWireup="true" CodeFile="References.aspx.cs" Inherits="Page_References" %>
 
 <%@ Register src="../Control/References.ascx" tagname="References" tagprefix="uc1" %>
 

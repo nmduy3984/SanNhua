@@ -12,48 +12,32 @@ public partial class Control_Common_Banner : System.Web.UI.UserControl
     }
     protected void lnkVN_Click(object sender, EventArgs e)
     {
-        //string lang = Session["Lang"].ToString();
-        //if (!lang.Equals("vn"))
-        //{
-            string url = HttpContext.Current.Request.Url.AbsoluteUri;
-            if (url.Contains("/EN/") || url.Contains("/CAM/"))
-            {
-                url = url.Replace("/EN/", "/VN/");
-                url = url.Replace("/CAM/", "/VN/");
-                //Session["Lang"] = "VN";
-                
-            }
-            Response.Redirect(url);
-        //}
+        string url = HttpContext.Current.Request.Url.AbsoluteUri;
+        if (url.ToLower().Contains("/en/") || url.ToLower().Contains("/cam/"))
+        {
+            url = url.Replace("/en/", "/vn/");
+            url = url.Replace("/cam/", "/vn/");
+        }
+        Response.Redirect(url);
     }
     protected void lnkEN_Click(object sender, EventArgs e)
     {
-        //string lang = Session["Lang"].ToString();
-        //if (!lang.Equals("en"))
-        //{
-            string url = HttpContext.Current.Request.Url.AbsoluteUri;
-            if (url.Contains("/VN/") || url.Contains("/CAM/"))
-            {
-                url = url.Replace("/VN/", "/EN/");
-                url = url.Replace("/CAM/", "/EN/");
-                //Session["Lang"] = "EN";
-            }
-            Response.Redirect(url);
-        //}
+        string url = HttpContext.Current.Request.Url.AbsoluteUri;
+        if (url.ToLower().Contains("/vn/") || url.ToLower().Contains("/cam/"))
+        {
+            url = url.Replace("/vn/", "/en/");
+            url = url.Replace("/cam/", "/en/");
+        }
+        Response.Redirect(url);
     }
     protected void lnkCAM_Click(object sender, EventArgs e)
     {
-        //string lang = Session["Lang"].ToString();
-        //if (!lang.Equals("cam"))
-        //{
-            string url = HttpContext.Current.Request.Url.AbsoluteUri;
-            if (url.Contains("/EN/") || url.Contains("/VN/"))
-            {
-                url = url.Replace("/EN/", "/CAM/");
-                url = url.Replace("/VN/", "/CAM/");
-                //Session["Lang"] = "CAM";
-            }
-            Response.Redirect(url);
-        //}
+        string url = HttpContext.Current.Request.Url.AbsoluteUri;
+        if (url.ToLower().Contains("/en/") || url.ToLower().Contains("/vn/"))
+        {
+            url = url.Replace("/en/", "/cam/");
+            url = url.Replace("/vn/", "/cam/");
+        }
+        Response.Redirect(url);
     }
 }

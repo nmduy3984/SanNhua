@@ -82,18 +82,18 @@
                               dem++;
                     %>
                     <div>
-                        <a title="<%=row["Name"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="../../Images/ProductImages/<%=row["ImageUrl"]%>">
+                        <a title="<%=row["NameCAM"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="../../Images/ProductImages/<%=row["ImageUrl"]%>">
                             <img  alt="idefloors.vn"  u="image" class="img" src="../../Images/ProductImages/<%=row["ImageUrl"]%>" /></a>
                     </div>
-                    <div style="text-align: center; color: #555"><strong><%=row["Name"]%><br /><%=row["ProductID"]%></strong></div>
+                    <div style="text-align: center; color: #555"><strong><%=row["NameCAM"]%><br /><%=row["ProductID"]%></strong></div>
                     <%}
                     %>
                     <div style="display: none;">
-                        <a title="<%=row1["Name"]%> - <%=row1["ProductID"]%>#idefloors.vn#<%=row1["Size"]%>" href="../../Images/ProductImages/<%=row1["ImageUrl"]%>">
+                        <a title="<%=row1["NameCAM"]%> - <%=row1["ProductID"]%>#idefloors.vn#<%=row1["Size"]%>" href="../../Images/ProductImages/<%=row1["ImageUrl"]%>">
                             <span class="thumb">
                                 <img  alt="idefloors.vn"  src="../../Images/ProductImages/<%=row1["ImageUrl"]%>" />
                             </span>
-                            <strong><%=row1["Name"]%><br /><%=row1["ProductID"]%></strong><em>Zoom</em>
+                            <strong><%=row1["NameCAM"]%><br /><%=row1["ProductID"]%></strong><em>Zoom</em>
                         </a>
                     </div>
                     <%
