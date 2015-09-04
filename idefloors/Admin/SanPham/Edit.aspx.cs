@@ -29,9 +29,13 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
                 txtKichThuoc.Text = dtSP.Rows[0]["Size"].ToString();
                 txtMaSanPham.Text = dtSP.Rows[0]["ProductID"].ToString();
                 txtTenSanPham.Text = dtSP.Rows[0]["Name"].ToString();
+                txtDes.Text = dtSP.Rows[0]["Description"].ToString();
+                txtTenSanPhamEN.Text = dtSP.Rows[0]["NameEN"].ToString();
+                txtDesEN.Text = dtSP.Rows[0]["DescriptionEN"].ToString();
+                txtTenSanPhamCAM.Text = dtSP.Rows[0]["NameCAM"].ToString();
+                txtDesCAM.Text = dtSP.Rows[0]["DescriptionCAM"].ToString();
                 string catID = dtSP.Rows[0]["CategoryID"].ToString();
                 txtImgUrl.Text = dtSP.Rows[0]["ImageUrl"].ToString();
-                txtDes.Text = dtSP.Rows[0]["Description"].ToString();
                 ddlStatus.SelectedValue = dtSP.Rows[0]["Status"].ToString() == "True" ? "1" : "0"; 
                // txtThumb.Text = dtSP.Rows[0]["ThumUrl"].ToString();
 
@@ -48,12 +52,17 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
         string ID = Request.QueryString["ID"];
 
         string tenSP = txtTenSanPham.Text;
+        string des = txtDes.Text;
+        string tenSPEN = txtTenSanPhamEN.Text;
+        string desEN = txtDesEN.Text;
+        string tenSPCAM = txtTenSanPhamCAM.Text;
+        string desCAM = txtDesCAM.Text;
+
         string maSP = txtMaSanPham.Text;
         string kichthuoc = txtKichThuoc.Text;
         string madm = ddlDanhMuc.SelectedValue;
-        string des = txtDes.Text;
         string status = ddlStatus.SelectedValue.ToString();
-         string seq = txtSeq.Text;
+        string seq = (txtSeq.Text.Trim() == "") ? "0" : txtSeq.Text.Trim();
         string isNewProduct = ddlIsNewProduct.SelectedValue.ToString();
 
         string sql = "select * from Product where ProductID = '" + maSP + "' and ID != " + ID ;
@@ -89,10 +98,10 @@ public partial class Admin_SanPham_Edit : System.Web.UI.Page
         //    strNamethumb = txtThumb.Text;
 
 
-        sql = @"update Product set Name = N'{0}',Size = N'{1}',CategoryID = {2},ImageUrl ='{3}', Description ='{4}',Status = {5},Seq = {6},IsNewProduct = {7}
-                       where ID ='{8}'  ";
+        sql = @"update Product set Name = N'{0}',Size = N'{1}',CategoryID = {2},ImageUrl ='{3}', Description =N'{4}',Status = {5},Seq = {6},IsNewProduct = {7}, NameEN =N'{8}', DescriptionEN =N'{9}', NameCAM =N'{10}', DescriptionCAM =N'{11}'
+                       where ID ='{12}'  ";
 
-        sql = string.Format(sql, tenSP, kichthuoc, ddlDanhMuc.SelectedValue, strNameImg, des, status, seq, isNewProduct, ID);
+        sql = string.Format(sql, tenSP, kichthuoc, ddlDanhMuc.SelectedValue, strNameImg, des, status, seq, isNewProduct, tenSPEN, desEN, tenSPCAM, desCAM, ID);
         try
         {
             DataAccess.Update(sql);

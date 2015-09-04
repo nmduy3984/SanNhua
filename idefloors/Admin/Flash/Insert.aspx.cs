@@ -23,7 +23,7 @@ public partial class Admin_Flash_Insert : System.Web.UI.Page
             DataTable  dtID= DataAccess.GetDatatable("select max(Id) from Flash");
             string id1 = dtID.Rows.Count == 0 ? "0" : dtID.Rows[0][0].ToString() == "" ? "0" : dtID.Rows[0][0].ToString();
             int ID = Convert.ToInt32(id1) + 1;
-            string title = txtTitle.Text;
+            //string title = txtTitle.Text;
             string link = txtLink.Text;
 
             DateTime now = DateTime.Now;
@@ -46,8 +46,8 @@ public partial class Admin_Flash_Insert : System.Web.UI.Page
             else
                 thumb = "";
 
-            string sql = @"Insert into Flash(Title,Link,ImgUrl,ThumbUrl,UserCreated,CreatedDate) 
-                            Values(N'" + title + "','" + link + "','" + Img + "','" + thumb + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
+            string sql = @"Insert into Flash(Link,ImgUrl,ThumbUrl,UserCreated,CreatedDate) 
+                            Values(N'" + link + "','" + Img + "','" + thumb + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");
         }

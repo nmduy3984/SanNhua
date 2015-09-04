@@ -28,8 +28,14 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
                 {
                     txtTieuDe.Text = dt.Rows[0]["Title"].ToString();
                     txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
-                    //txtContent.Content = Server.HtmlDecode(dt.Rows[0]["Content"].ToString());
                     txtContent.Text = dt.Rows[0]["Content"].ToString();
+                    txtTieuDeEN.Text = dt.Rows[0]["TitleEN"].ToString();
+                    txtDesEN.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionEN"].ToString());
+                    txtContentEN.Text = dt.Rows[0]["ContentEN"].ToString();
+                    txtTieuDeCAM.Text = dt.Rows[0]["TitleCAM"].ToString();
+                    txtDesCAM.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionCAM"].ToString());
+                    txtContentCAM.Text = dt.Rows[0]["ContentCAM"].ToString();
+                    //txtContent.Content = Server.HtmlDecode(dt.Rows[0]["Content"].ToString());
                     txtImg.Text = dt.Rows[0]["ImageUrl"].ToString();
                 }
             }
@@ -48,9 +54,15 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
                 string ID = Request.QueryString["ID"];
                 string tieude = txtTieuDe.Text;
                 string des = Server.HtmlEncode(txtDes.Content.Trim());
+                string content = txtContent.Text.Replace("'", "''");
+                string tieudeEN = txtTieuDeEN.Text;
+                string desEN = Server.HtmlEncode(txtDesEN.Content.Trim());
+                string contentEN = txtContentEN.Text.Replace("'", "''");
+                string tieudeCAM = txtTieuDeCAM.Text;
+                string desCAM = Server.HtmlEncode(txtDesCAM.Content.Trim());
+                string contentCAM = txtContentCAM.Text.Replace("'", "''");
                 //string des = txtDes.Text.Trim();
                 //string content = Server.HtmlEncode(txtContent.Content.Trim());
-                string content = txtContent.Text.Replace("'", "''");
                
                 DateTime now = DateTime.Now;
                 string Img = ID + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
@@ -67,8 +79,8 @@ public partial class Admin_TinTuc_Edit : System.Web.UI.Page
                     Img = txtImg.Text;
 
 
-                string sql = @"Update News set Title = N'" + tieude + "',[Description] = N'" + des +
-                                    "',ImageUrl = '" + Img + "',Content = N'" + content +
+                string sql = @"Update News set Title = N'" + tieude + "',[Description] = N'" + des + "',TitleEN = N'" + tieudeEN + "',[DescriptionEN] = N'" + desEN + "',TitleCAM = N'" + tieudeCAM + "',[DescriptionCAM] = N'" + desCAM +
+                                    "',ImageUrl = '" + Img + "',Content = N'" + content + "',ContentEN = N'" + contentEN + "',ContentCAM = N'" + contentCAM +
                                        "' where ID = " + ID + "";
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");

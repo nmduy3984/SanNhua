@@ -28,7 +28,7 @@ public partial class Admin_ProjectLogo_Edit : System.Web.UI.Page
                 {
                     txtImg.Text = dt.Rows[0]["ImgUrl"].ToString();
                     txtLink.Text = dt.Rows[0]["Link"].ToString();
-                    txtTitle.Text = dt.Rows[0]["Title"].ToString();
+                    //txtTitle.Text = dt.Rows[0]["Title"].ToString();
                 }
             }
             else
@@ -45,7 +45,7 @@ public partial class Admin_ProjectLogo_Edit : System.Web.UI.Page
             {
                 string ID = Request.QueryString["ID"];
                 string link = txtLink.Text;
-                string title = txtTitle.Text;
+                //string title = txtTitle.Text;
                
                 DateTime now = DateTime.Now;
                 string Img = ID + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
@@ -64,7 +64,7 @@ public partial class Admin_ProjectLogo_Edit : System.Web.UI.Page
 
 
 
-                string sql = @"Update ProjectLogo set Link = N'" + link + "',Title = N'" + title +
+                string sql = @"Update ProjectLogo set Link = N'" + link 
                                     "',ImgUrl = '" + Img + 
                                        "' where Id = " + ID + "";
                 DataAccess.Update(sql);

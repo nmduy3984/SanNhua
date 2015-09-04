@@ -41,6 +41,12 @@
                 <span>Tên Sản Phẩm</span>
             </th>
             <th scope="col">
+                <span>Tên Sản Phẩm (EN)</span>
+            </th>
+            <th scope="col">
+                <span>Tên Sản Phẩm (CAM)</span>
+            </th>
+            <th scope="col">
                 <span>Tên Danh Mục Sản Phẩm</span>
             </th>
             <th scope="col">
@@ -65,6 +71,8 @@
                 string size = dtSanPham.Rows[i]["Size"].ToString();
 
                 string tenSP = dtSanPham.Rows[i]["Name"].ToString();
+                string tenSPEN = dtSanPham.Rows[i]["NameEN"].ToString();
+                string tenSPCAM = dtSanPham.Rows[i]["NameCAM"].ToString();
                 string tenDMSP = dtSanPham.Rows[i]["CategoryName"].ToString();
                 string hinhanh = dtSanPham.Rows[i]["ImageUrl"].ToString();  
           
@@ -82,6 +90,12 @@
             <td>
                 <%=tenSP%>
             </td>   
+            <td>
+                <%=tenSPEN%>
+            </td>
+            <td>
+                <%=tenSPCAM%>
+            </td>
             <td>
                 <%=tenDMSP%>
             </td> 

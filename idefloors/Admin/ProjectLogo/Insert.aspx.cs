@@ -23,7 +23,7 @@ public partial class Admin_ProjectLogo_Insert : System.Web.UI.Page
             DataTable dtID = DataAccess.GetDatatable("select max(Id) from ProjectLogo");
             string id1 = dtID.Rows.Count == 0 ? "0" : dtID.Rows[0][0].ToString() == "" ? "0" : dtID.Rows[0][0].ToString();
             int ID = Convert.ToInt32(id1) + 1;
-            string title = txtTitle.Text;
+            //string title = txtTitle.Text;
             string link = txtLink.Text;
 
             DateTime now = DateTime.Now;
@@ -37,8 +37,8 @@ public partial class Admin_ProjectLogo_Insert : System.Web.UI.Page
             else
                 Img = "";
  
-            string sql = @"Insert into ProjectLogo(Title,Link,ImgUrl,UserCreated,CreatedDate) 
-                            Values(N'" + title + "','" + link + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
+            string sql = @"Insert into ProjectLogo(Link,ImgUrl,UserCreated,CreatedDate) 
+                            Values(N'" + link + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");
         }

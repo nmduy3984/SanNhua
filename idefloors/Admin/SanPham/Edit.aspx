@@ -21,6 +21,26 @@
                     <asp:TextBox ID="txtTenSanPham" runat="server"></asp:TextBox>
                 </div>
                 <div>
+                    <span>Mô tả</span>
+                    <asp:TextBox ID="txtDes" runat="server" TextMode="MultiLine"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Tên Sản Phẩm (EN)</span>
+                    <asp:TextBox ID="txtTenSanPhamEN" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Mô tả (EN)</span>
+                    <asp:TextBox ID="txtDesEN" runat="server" TextMode="MultiLine"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Tên Sản Phẩm (CAM)</span>
+                    <asp:TextBox ID="txtTenSanPhamCAM" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Mô tả (CAM)</span>
+                    <asp:TextBox ID="txtDesCAM" runat="server" TextMode="MultiLine"></asp:TextBox>
+                </div>
+                <div>
                     <span>Mã Sản Phẩm</span>
                     <asp:TextBox ID="txtMaSanPham" Enabled="false" runat="server"></asp:TextBox>
                 </div>
@@ -28,10 +48,7 @@
                     <span>Kích thước</span>
                     <asp:TextBox ID="txtKichThuoc" runat="server"></asp:TextBox>
                 </div>
-                 <div>
-                    <span>Mô tả</span>
-                    <asp:TextBox ID="txtDes" runat="server" TextMode="MultiLine"></asp:TextBox>
-                </div>
+                 
                 <div>
                     <span>Hình ảnh-ImgURL(.jpg)</span>
                     <asp:FileUpload ID="fileUploadImg" runat="server" /> 

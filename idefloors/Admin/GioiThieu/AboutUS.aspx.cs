@@ -25,6 +25,8 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
         {
             btnSubmit.Text = "Cập nhật";
             txtContent.Text = dt.Rows[0]["Content"].ToString();
+            txtContentEN.Text = dt.Rows[0]["ContentEN"].ToString();
+            txtContentCAM.Text = dt.Rows[0]["ContentCAM"].ToString();
         }
 
     }

@@ -51,7 +51,7 @@
                 </div>
                  <div>
                     <span>Thứ tự Hiển thị</span>
-                     <asp:TextBox ID="txtSeq" runat="server"></asp:TextBox>
+                     <asp:TextBox ID="txtSeq" runat="server">0</asp:TextBox>
                 </div>
                 <div>
                     <span>Cho Phép Hiển thị</span>

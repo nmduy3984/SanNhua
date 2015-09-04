@@ -11,10 +11,10 @@
 <div style="width: 100%; float: left;">
         <div class="inputSmall" style="width: 720px;margin-top:30px;">
             <div class="inputSmallContain">
-                <div>
+               <%-- <div>
                     <span>Tiêu đề</span>
                     <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
-                </div>
+                </div>--%>
                 <div>
                     <span>Liên kết</span>
                     <asp:TextBox ID="txtLink" runat="server"></asp:TextBox>

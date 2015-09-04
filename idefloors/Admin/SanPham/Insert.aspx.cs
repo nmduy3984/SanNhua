@@ -28,12 +28,17 @@ public partial class Admin_SanPham_Insert : System.Web.UI.Page
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
         string tenSP = txtTenSanPham.Text;
+        string des = txtDes.Text;
+        string tenSPEN = txtTenSanPhamEN.Text;
+        string desEN = txtDesEN.Text;
+        string tenSPCAM = txtTenSanPhamCAM.Text;
+        string desCAM = txtDesCAM.Text;
+
         string maSP = txtMaSanPham.Text;
         string kichthuoc = txtKichThuoc.Text;
         string madm = ddlDanhMuc.SelectedValue;
-        string des = txtDes.Text;
         string status = ddlStatus.SelectedValue.ToString();
-        string seq = txtSeq.Text;
+        string seq = (txtSeq.Text.Trim() == "") ? "0" : txtSeq.Text.Trim();
         string isNewProduct = ddlIsNewProduct.SelectedValue.ToString();
 
         string sql = "select * from Product where ProductID = '" + maSP + "'";
@@ -55,10 +60,10 @@ public partial class Admin_SanPham_Insert : System.Web.UI.Page
             strName = "";
 
 
-        sql = @"Insert into Product(ProductID,Name,Size,ImageUrl,CategoryID,Description,Status,Seq,IsNewProduct)
-                       Values(N'{0}',N'{1}',N'{2}','{3}',{4},'{5}',{6},{7},{8})
+        sql = @"Insert into Product(ProductID,Name,Size,ImageUrl,CategoryID,Description,Status,Seq,IsNewProduct,NameEN,DescriptionEN,NameCAM,DescriptionCAM)
+                       Values(N'{0}',N'{1}',N'{2}','{3}',{4},'{5}',{6},{7},{8},N'{9}',N'{10}',N'{11}',N'{12}')
                     ";
-        sql = string.Format(sql, maSP, tenSP, kichthuoc, strName, ddlDanhMuc.SelectedValue, des,status, seq, isNewProduct);
+        sql = string.Format(sql, maSP, tenSP, kichthuoc, strName, ddlDanhMuc.SelectedValue, des,status, seq, isNewProduct,tenSPEN,desEN,tenSPCAM,desCAM);
         try
         {
             DataAccess.Insert(sql);

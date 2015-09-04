@@ -24,6 +24,8 @@ public partial class Admin_Certificate_Insert : System.Web.UI.Page
             string id1 = dtID.Rows.Count == 0 ? "0" : dtID.Rows[0][0].ToString() == "" ? "0" : dtID.Rows[0][0].ToString();
             int ID = Convert.ToInt32(id1) + 1;
             string tieude = txtTieuDe.Text;
+            string tieudeEN = txtTieuDeEN.Text;
+            string tieudeCAM = txtTieuDeCAM.Text;
            
 
             DateTime now = DateTime.Now;
@@ -47,8 +49,8 @@ public partial class Admin_Certificate_Insert : System.Web.UI.Page
                 FileName = "";
 
 
-            string sql = @"Insert into Certificate(Title,FileName,ImgUrl) 
-                            Values(N'" + tieude + "',N'" + FileName + "',N'" + Img + "')";
+            string sql = @"Insert into Certificate(Title,FileName,ImgUrl,TitleEN,TitleCAM) 
+                            Values(N'" + tieude + "',N'" + FileName + "',N'" + Img + "',N'" + tieudeEN + "',N'" + tieudeCAM + "')";
              //UserCreated,UserModified,CreatedDate,ModifiedDate,
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");

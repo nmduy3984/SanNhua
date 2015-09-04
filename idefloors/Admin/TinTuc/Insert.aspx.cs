@@ -25,8 +25,14 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             int ID = Convert.ToInt32(id1) + 1;
             string tieude = txtTieuDe.Text;
             string des = Server.HtmlEncode(txtDes.Content.Trim());
-            //string content = Server.HtmlEncode(txtContent.Content.Trim());
             string content = txtContent.Text.Replace("'", "''");
+            string tieudeEN = txtTieuDeEN.Text;
+            string desEN = Server.HtmlEncode(txtDesEN.Content.Trim());
+            string contentEN = txtContentEN.Text.Replace("'", "''");
+            string tieudeCAM = txtTieuDeCAM.Text;
+            string desCAM = Server.HtmlEncode(txtDesCAM.Content.Trim());
+            string contentCAM = txtContentCAM.Text.Replace("'", "''");
+            //string content = Server.HtmlEncode(txtContent.Content.Trim());
 
             DateTime now = DateTime.Now;
             string Img = ID.ToString() + "_" + now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
@@ -39,8 +45,8 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             else
                 Img = "";
 
-            string sql = @"Insert into News(Title,[Description],Content,ImageUrl,UserCreated,CreatedDate) 
-                            Values(N'" + tieude + "',N'" + des + "',N'" + content + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString()  + "')";
+            string sql = @"Insert into News(Title,[Description],Content,ImageUrl,UserCreated,CreatedDate,TitleEN,[DescriptionEN],ContentEN,TitleCAM,[DescriptionCAM],ContentCAM) 
+                            Values(N'" + tieude + "',N'" + des + "',N'" + content + "','" + Img + "','" + Session["UserName"] + "','" + now.ToString() + "',N'" + tieudeEN + "',N'" + desEN + "',N'" + contentEN + "',N'" + tieudeCAM + "',N'" + desCAM + "',N'" + contentCAM + "')";
              //UserCreated,UserModified,CreatedDate,ModifiedDate,
             DataAccess.Insert(sql);
             MessageBox.Show(Page,"Tao Moi Thanh Cong");

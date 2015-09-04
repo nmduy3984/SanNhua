@@ -27,6 +27,8 @@ public partial class Admin_Certificate_Edit : System.Web.UI.Page
                 if (dt.Rows.Count == 1)
                 {
                     txtTieuDe.Text = dt.Rows[0]["Title"].ToString();
+                    txtTieuDeEN.Text = dt.Rows[0]["TitleEN"].ToString();
+                    txtTieuDeCAM.Text = dt.Rows[0]["TitleCAM"].ToString();
                     txtFileName.Text = dt.Rows[0]["FileName"].ToString();
                     txtImg.Text = dt.Rows[0]["ImgUrl"].ToString();
                 }
@@ -45,6 +47,8 @@ public partial class Admin_Certificate_Edit : System.Web.UI.Page
             {
                 string ID = Request.QueryString["ID"];
                 string tieude = txtTieuDe.Text;
+                string tieudeEN = txtTieuDeEN.Text;
+                string tieudeCAM = txtTieuDeCAM.Text;
                
                 DateTime now = DateTime.Now;
                 
@@ -70,7 +74,7 @@ public partial class Admin_Certificate_Edit : System.Web.UI.Page
                 else
                     FileName = "";
 
-                string sql = @"Update Certificate set Title = N'" + tieude + "',ImgUrl = N'" + Img + "',[FileName] = N'" + FileName +
+                string sql = @"Update Certificate set Title = N'" + tieude + "',ImgUrl = N'" + Img + "',[FileName] = N'" + FileName + "',TitleEN = N'" + tieudeEN + "',TitleCAM = N'" + tieudeCAM +
                                        "' where CertificateID = " + ID + "";
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");

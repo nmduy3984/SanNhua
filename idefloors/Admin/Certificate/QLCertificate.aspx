@@ -38,7 +38,13 @@
             </th>
                       
             <th scope="col">
-                <span>Tiêu Đề</span>
+                <span>Tên chứng nhận</span>
+            </th>
+            <th scope="col">
+                <span>Tên chứng nhận (EN)</span>
+            </th>
+            <th scope="col">
+                <span>Tên chứng nhận (CAM)</span>
             </th>
             <th scope="col">
                Download File
@@ -59,6 +65,12 @@
             </td> 
             <td>
                 <a href="Edit.aspx?ID=<%=dr["CertificateID"]%>"><%=dr["Title"].ToString()%></a>
+            </td>  
+            <td>
+                <a href="Edit.aspx?ID=<%=dr["CertificateID"]%>"><%=dr["TitleEN"].ToString()%></a>
+            </td>  
+            <td>
+                <a href="Edit.aspx?ID=<%=dr["CertificateID"]%>"><%=dr["TitleCAM"].ToString()%></a>
             </td>  
              <td>
                 

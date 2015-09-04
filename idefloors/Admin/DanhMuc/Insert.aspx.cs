@@ -31,7 +31,7 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
             string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
             string nameCAM = txtTenDanhMucCAM.Text;
             string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
-            string seq = txtSeq.Text;
+            string seq = (txtSeq.Text.Trim() == "") ? "0" : txtSeq.Text.Trim();
             string parentID = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
             string sql = "";
 

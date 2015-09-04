@@ -61,7 +61,7 @@ public partial class Admin_DanhMuc_Edit : System.Web.UI.Page
 
                 string Thumb = "";//txtThumb.Text;
                 string parentId = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
-                string Seq = txtSeq.Text;
+                string Seq = (txtSeq.Text.Trim() == "") ? "0" : txtSeq.Text.Trim();
                 DateTime now = DateTime.Now;
                 string Img = name + "_" + parentId + "_"+ now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Hour.ToString() + now.Minute.ToString() + now.Second.ToString() + ".jpg";
                

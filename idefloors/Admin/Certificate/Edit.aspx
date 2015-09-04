@@ -12,8 +12,16 @@
         <div class="inputSmall" style="width: 720px;margin-top:30px;">
             <div class="inputSmallContain">
                 <div>
-                    <span>Tiêu Đề</span>
+                    <span>Tên chứng nhận</span>
                     <asp:TextBox ID="txtTieuDe" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Tên chứng nhận (EN)</span>
+                    <asp:TextBox ID="txtTieuDeEN" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Tên chứng nhận (CAM)</span>
+                    <asp:TextBox ID="txtTieuDeCAM" runat="server"></asp:TextBox>
                 </div>
                   <div>
                     <span>Hình ảnh (.jpg)</span>

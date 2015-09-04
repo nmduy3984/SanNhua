@@ -19,6 +19,22 @@
                     <span>Mô tả</span>
                     <one:CustomEditor ID="txtDes" Height="150" runat="server" />
                 </div>
+              <div>
+                    <span>Tiêu Đề (EN)</span>
+                    <asp:TextBox ID="txtTieuDeEN" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Mô tả (EN)</span>
+                    <one:CustomEditor ID="txtDesEN" Height="150" runat="server" />
+                </div>
+                <div>
+                    <span>Tiêu Đề (CAM)</span>
+                    <asp:TextBox ID="txtTieuDeCAM" runat="server"></asp:TextBox>
+                </div>
+                <div>
+                    <span>Mô tả (CAM)</span>
+                    <one:CustomEditor ID="txtDesCAM" Height="150" runat="server" />
+                </div>
                 <div>
                     <span>Hình ảnh (.jpg)</span>
                     <asp:FileUpload ID="fileUploadImg" runat="server" Width="400px" />
@@ -28,9 +44,29 @@
                     <span>Nội Dung</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
-                    <ce:editor id="txtContent" runat="server" width="703px" height="700px" usehtmlentities="False" />
+                    <CE:Editor ID="txtContent" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
-                
+                <div>
+                    <span>Nội Dung (EN)</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtContentEN" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
+                <div>
+                    <span>Nội Dung (CAM)</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtContentCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
                 <div style="width: 260px; float: right">
                     <asp:Button ID="btnSubmit" runat="server" Text="Tạo Mới" OnClick="btnSubmit_Click"></asp:Button>
                     <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn_gray"  NavigateUrl="~/Admin/Project/QLProject.aspx">
