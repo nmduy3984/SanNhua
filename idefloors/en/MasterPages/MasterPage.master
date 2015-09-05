@@ -24,7 +24,7 @@
 
     <!--include File CSS-->
     <link rel="stylesheet" type="text/css" href="../../CSS/style.css" media="screen" />
-    <%--<link rel="stylesheet" href="../CSS/widget.css" />--%>
+    <link rel='shortcut icon' href='../../Images/favicon.ico' type='image/x-icon'/ />
 
     <!--include File Javascript-->
     <script type="text/javascript" src="../../JS/jquery-1.9.1.min.js"></script>

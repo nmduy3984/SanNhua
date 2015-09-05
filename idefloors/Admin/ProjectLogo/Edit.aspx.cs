@@ -64,7 +64,7 @@ public partial class Admin_ProjectLogo_Edit : System.Web.UI.Page
 
 
 
-                string sql = @"Update ProjectLogo set Link = N'" + link 
+                string sql = @"Update ProjectLogo set Link = N'" + link +
                                     "',ImgUrl = '" + Img + 
                                        "' where Id = " + ID + "";
                 DataAccess.Update(sql);
