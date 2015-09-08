@@ -12,7 +12,7 @@
         </div>
         <div id="aboutus">
             <ul>
-                <li><a href="AboutUS.aspx">AboutUS</a></li>
+                <li><a href="AboutUS.aspx">About US</a></li>
                 <li>&nbsp;|&nbsp;</li>
                 <li><a href="Contact.aspx">Contact</a></li>
             </ul>

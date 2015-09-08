@@ -23,7 +23,7 @@ public partial class Control_ProductByCatagory : System.Web.UI.UserControl
                 categoryLevel1 = DataAccess.GetDatatable("select * from fnGetAllChildHaveFilter(2)");
                 categoryByParentId = DataAccess.GetDatatable("select * from Category where CategoryID =2");
                 if (string.IsNullOrEmpty(ltrContent.Text))
-                    ltrContent.Text = Server.HtmlDecode(categoryByParentId.Rows[0]["DescriptionEN"].ToString());
+                    ltrContent.Text = categoryByParentId.Rows[0]["DescriptionEN"].ToString();
             }
             else
             {
@@ -41,7 +41,7 @@ public partial class Control_ProductByCatagory : System.Web.UI.UserControl
                 }
                 categoryByParentId = DataAccess.GetDatatable("select * from Category where CategoryID =" + para);
                 if (string.IsNullOrEmpty(ltrContent.Text))
-                    ltrContent.Text = Server.HtmlDecode(categoryByParentId.Rows[0]["DescriptionEN"].ToString());
+                    ltrContent.Text = categoryByParentId.Rows[0]["DescriptionEN"].ToString();
             }
         }
     }

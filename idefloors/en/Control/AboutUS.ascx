@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="AboutUS.ascx.cs" Inherits="Control_AboutUS" %>
 <div id="wrapadvice">
     <div class="advice">
-        <div class="title">Giới Thiệu</div>
+        <div class="title">About US</div>
         <div style='clear: both;'></div>
         <br />
         <br />

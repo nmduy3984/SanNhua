@@ -1,16 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Contact.ascx.cs" Inherits="Control_Contact" %>
 <div class="">
     <div>
-        <h2>Liên hệ:</h2>
+        <h2>Contact:</h2>
     </div>
     <br />
     <br />
     <div id="contact">
-        <div class="title">CÔNG TY TNHH ĐT-TM-DV XUẤT NHẬP KHẨU HIỆP PHÁT</div>
-        <div class="desc"><b>Địa chỉ:</b> 1494/13/11A Quốc Lộ 1A, Phường Tân Thới Hiệp, Quận 12, HCM</div>
-        <div class="desc"><b>Điện thoại:</b> 08.66795275</div>
-        <div class="desc"><b>Hotline:</b> 0917 703 997</div>
-        <div class="desc"><b>Fax:</b> 08.62621387</div> 
+        <div class="title">HIEP PHAT IMPORT EXPORT SERVICE TRADING INVESTMENT COMPANY LIMITED</div>
+        <div class="desc"><b>Address:</b> No 1494/13/11A, Highway 1A, Tan Thoi  Hiep Ward, District 12, Hochiminh City,Vietnam</div>
+        <div class="desc"><b>Representative Office:</b> 1472 Bui Ta Han Street,  An Phu Ward, District 2, Hochiminh City,Vietnam</div>
+        <div class="desc"><b>Tel:</b> 08.6679 5275</div>
+        <div class="desc"><b>Mobile:</b> +(84) 917 703 997 (Mr Pham)</div>
+        <div class="desc"><b>Fax:</b> 08.6262 1387</div> 
+        <div class="desc"><b>Site:</b> <a href="http://hiepphatcorp.com">www.hiepphatcorp.com</a></div> 
     </div>
 </div>
 
@@ -18,7 +20,7 @@
 <br />
 <div style="text-align:center;">
     <div style="text-align:left !important;">
-        <h2>Bản đồ:</h2>
+        <h2>Map:</h2>
     </div>
     <br />
     <br />
@@ -46,7 +48,7 @@
                                   '<div id="siteNotice">' +
                                   '</div>' +
                                   '<div id="bodyContent">' +
-                                  '<p>1494/13/11A Quốc Lộ 1A, Phường Tân Thới Hiệp, Quận 12, HCM</p>' +
+                                  '<p>No 1494/13/11A, Highway 1A, Tan Thoi  Hiep Ward, District 12, Hochiminh City,Vietnam</p>' +
                                   '</div>' +
                                   '</div>';
                     
