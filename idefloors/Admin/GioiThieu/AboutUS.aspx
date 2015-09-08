@@ -16,7 +16,7 @@
                     <span>Nội Dung</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
-                    <CE:Editor ID="txtContent" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                    <CE:Editor ID="txtContent" AutoConfigure="Simple" runat="server" Width="100%" Height="500">
                             <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
                                 CssClass="CuteEditorFrame" Height="100%" Width="100%" />
                         </CE:Editor>
@@ -25,7 +25,7 @@
                     <span>Nội Dung (EN)</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
-                    <CE:Editor ID="txtContentEN" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                    <CE:Editor ID="txtContentEN" AutoConfigure="Simple" runat="server" Width="100%" Height="500">
                             <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
                                 CssClass="CuteEditorFrame" Height="100%" Width="100%" />
                         </CE:Editor>
@@ -34,7 +34,7 @@
                     <span>Nội Dung (CAM)</span>
                 </div>
                 <div style="clear: both; margin: 0px; padding: 0px;">
-                    <CE:Editor ID="txtContentCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                    <CE:Editor ID="txtContentCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="500">
                             <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
                                 CssClass="CuteEditorFrame" Height="100%" Width="100%" />
                         </CE:Editor>

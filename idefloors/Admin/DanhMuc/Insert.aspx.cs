@@ -26,11 +26,14 @@ public partial class Admin_DanhMuc_Insert : System.Web.UI.Page
         {
 
             string name = txtTenDanhMuc.Text;
-            string des = Server.HtmlEncode(txtDes.Content.ToString());
+            //string des = Server.HtmlEncode(txtDes.Content.ToString());
+            string des = txtDes.Text.ToString();
             string nameEN = txtTenDanhMucEN.Text;
-            string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
+            //string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
+            string desEN = txtDesEN.Text.ToString();
             string nameCAM = txtTenDanhMucCAM.Text;
-            string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
+            //string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
+            string desCAM = txtDesCAM.Text.ToString();
             string seq = (txtSeq.Text.Trim() == "") ? "0" : txtSeq.Text.Trim();
             string parentID = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
             string sql = "";

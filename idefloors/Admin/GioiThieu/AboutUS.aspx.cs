@@ -54,7 +54,9 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             {
                 DateTime now = DateTime.Now;
                 string content = txtContent.Text.Replace("'", "''");
-                string sql = @"Update AboutUS set Content = N'" + content + "',UserModified = '" + Session["UserName"] +
+                string contentEN = txtContentEN.Text.Replace("'", "''");
+                string contentCAM = txtContentCAM.Text.Replace("'", "''");
+                string sql = @"Update AboutUS set Content = N'" + content + "',ContentEN = N'" + contentEN + "',ContentCAM = N'" + contentCAM + "',UserModified = '" + Session["UserName"] +
                                     "',ModifiedDate = '" + now.ToString() + "'";
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");

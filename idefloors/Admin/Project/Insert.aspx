@@ -17,15 +17,28 @@
                 </div>
                 <div>
                     <span>Mô tả</span>
-                    <one:CustomEditor ID="txtDes" Height="150" runat="server" />
+                    <%--<one:CustomEditor ID="txtDes" Height="150" runat="server" />--%>
+                   
                 </div>
-              <div>
+                 <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDes" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
+                <div>
                     <span>Tiêu Đề (EN)</span>
                     <asp:TextBox ID="txtTieuDeEN" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <span>Mô tả (EN)</span>
-                    <one:CustomEditor ID="txtDesEN" Height="150" runat="server" />
+                    <%--<one:CustomEditor ID="txtDesEN" Height="150" runat="server" />--%>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesEN" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 <div>
                     <span>Tiêu Đề (CAM)</span>
@@ -33,7 +46,13 @@
                 </div>
                 <div>
                     <span>Mô tả (CAM)</span>
-                    <one:CustomEditor ID="txtDesCAM" Height="150" runat="server" />
+                    <%--<one:CustomEditor ID="txtDesCAM" Height="150" runat="server" />--%>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 <div>
                     <span>Hình ảnh (.jpg)</span>

@@ -24,13 +24,16 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             string id1 = dtID.Rows.Count == 0 ? "0" : dtID.Rows[0][0].ToString() == "" ? "0" : dtID.Rows[0][0].ToString();
             int ID = Convert.ToInt32(id1) + 1;
             string tieude = txtTieuDe.Text;
-            string des = Server.HtmlEncode(txtDes.Content.Trim());
+            //string des = Server.HtmlEncode(txtDes.Content.Trim());
+            string des = txtDes.Text.Trim();
             string content = txtContent.Text.Replace("'", "''");
             string tieudeEN = txtTieuDeEN.Text;
-            string desEN = Server.HtmlEncode(txtDesEN.Content.Trim());
+            //string desEN = Server.HtmlEncode(txtDesEN.Content.Trim());
+            string desEN = txtDesEN.Text.Trim();
             string contentEN = txtContentEN.Text.Replace("'", "''");
             string tieudeCAM = txtTieuDeCAM.Text;
-            string desCAM = Server.HtmlEncode(txtDesCAM.Content.Trim());
+            //string desCAM = Server.HtmlEncode(txtDesCAM.Content.Trim());
+            string desCAM = txtDesCAM.Text.Trim();
             string contentCAM = txtContentCAM.Text.Replace("'", "''");
             //string content = Server.HtmlEncode(txtContent.Content.Trim());
 

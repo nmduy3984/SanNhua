@@ -27,11 +27,14 @@ public partial class Admin_DanhMuc_Edit : System.Web.UI.Page
                 if (dt.Rows.Count == 1)
                 {
                     txtTenDanhMuc.Text = dt.Rows[0]["Name"].ToString();
-                    txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
+                    //txtDes.Content = Server.HtmlDecode(dt.Rows[0]["Description"].ToString());
+                    txtDes.Text = dt.Rows[0]["Description"].ToString();
                     txtTenDanhMucEN.Text = dt.Rows[0]["NameEN"].ToString();
-                    txtDesEN.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionEN"].ToString());
+                    //txtDesEN.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionEN"].ToString());
+                    txtDesEN.Text = dt.Rows[0]["DescriptionEN"].ToString();
                     txtTenDanhMucCAM.Text = dt.Rows[0]["NameCAM"].ToString();
-                    txtDesCAM.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionCAM"].ToString());
+                    //txtDesCAM.Content = Server.HtmlDecode(dt.Rows[0]["DescriptionCAM"].ToString());
+                    txtDesCAM.Text = dt.Rows[0]["DescriptionCAM"].ToString();
                     txtImg.Text = dt.Rows[0]["ImageUrl"].ToString();
                     //txtThumb.Text = dt.Rows[0]["ThumUrl"].ToString();
                     txtSeq.Text = dt.Rows[0]["Seq"].ToString();
@@ -53,11 +56,14 @@ public partial class Admin_DanhMuc_Edit : System.Web.UI.Page
             {
                 string ID = Request.QueryString["ID"];
                 string name = txtTenDanhMuc.Text;
-                string des = Server.HtmlEncode(txtDes.Content.Trim());
+                //string des = Server.HtmlEncode(txtDes.Content.Trim());
+                string des = txtDes.Text.Trim();
                 string nameEN = txtTenDanhMucEN.Text;
-                string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
+                //string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
+                string desEN = txtDesEN.Text.ToString();
                 string nameCAM = txtTenDanhMucCAM.Text;
-                string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
+                //string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
+                string desCAM = txtDesCAM.Text.ToString();
 
                 string Thumb = "";//txtThumb.Text;
                 string parentId = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();

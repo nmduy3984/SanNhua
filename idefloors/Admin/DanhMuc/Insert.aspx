@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPages/AdminMaster.master" AutoEventWireup="true" CodeFile="Insert.aspx.cs" Inherits="Admin_DanhMuc_Insert" %>
 <%@ register namespace="CustomEditor" tagprefix="one" %>
+<%@ Register TagPrefix="CE" Namespace="CuteEditor" Assembly="CuteEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script type="text/javascript">
         
@@ -26,7 +27,13 @@
                 </div>
                  <div>
                     <span>Giới thiệu</span>
-                     <one:CustomEditor ID="txtDes" Height="300" runat="server" />
+                     <%--<one:CustomEditor ID="txtDes" Height="300" runat="server" />--%>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDes" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 <div>
                     <span>Tên Danh Mục (EN)</span>
@@ -34,7 +41,13 @@
                 </div>
                  <div>
                     <span>Giới thiệu (EN)</span>
-                     <one:CustomEditor ID="txtDesEN" Height="300" runat="server" />
+                     <%--<one:CustomEditor ID="txtDesEN" Height="300" runat="server" />--%>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesEN" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 <div>
                     <span>Tên Danh Mục (CAM)</span>
@@ -42,7 +55,13 @@
                 </div>
                  <div>
                     <span>Giới thiệu (CAM)</span>
-                     <one:CustomEditor ID="txtDesCAM" Height="300" runat="server" />
+                     <%--<one:CustomEditor ID="txtDesCAM" Height="300" runat="server" />--%>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
                 </div>
                 <div>
                     <span>Hình ảnh-ImgURL (.jpg)</span>
