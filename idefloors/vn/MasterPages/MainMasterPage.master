@@ -98,6 +98,11 @@
 </head>
 <body oncontextmenu="return false;">
     <form id="frmMain" runat="server">
+        <style type="text/css">
+            .atss {
+                z-index:0 !important;
+            }
+        </style>
         <div id="Container">
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55e44dc5c6de444b" async="async"></script>

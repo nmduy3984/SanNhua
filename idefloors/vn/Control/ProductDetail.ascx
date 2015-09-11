@@ -5,10 +5,11 @@
   {
       DataTable categoryByProductId = new DataTable();
       categoryByProductId = DataAccess.GetRecord("Category", "CategoryID", productByID.Rows[0]["CategoryID"].ToString());
+      string productID = productByID.Rows[0]["ProductID"].ToString().Replace(" ", "");
 %>
-<div class="wrapproductdetail" id='ProductDetail<%= productByID.Rows[0]["ProductID"].ToString()%>'>
+<div class="wrapproductdetail" id='ProductDetail<%= productID%>'>
     <script type="text/javascript">
-        $('#ProductDetail<%= productByID.Rows[0]["ProductID"].ToString() %>').magnificPopup({
+        $('#ProductDetail<%= productID %>').magnificPopup({
             delegate: 'a',
             type: 'image',
             tLoading: 'Loading image #%curr%...',

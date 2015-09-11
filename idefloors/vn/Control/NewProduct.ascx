@@ -24,12 +24,13 @@
                    {
                        DataTable productPopup = new DataTable();
                        productPopup = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID = " + row["CategoryID"].ToString() + " and ProductID <> '" + row["ProductID"].ToString() + "'");
-                %>
-                <div id='PopupNewProduct<%= row["ProductID"].ToString()%>'>
+                       string productID = row["ProductID"].ToString().Replace(" ", "");
+                       %>
+                <div id='PopupNewProduct<%= productID%>'>
                     <%if (productPopup.Rows.Count > 0)
                       { %>
                     <script type="text/javascript">
-                        $('#PopupNewProduct<%= row["ProductID"].ToString() %>').magnificPopup({
+                        $('#PopupNewProduct<%= productID %>').magnificPopup({
                             delegate: 'a',
                             type: 'image',
                             tLoading: 'Loading image #%curr%...',
@@ -53,7 +54,7 @@
                       {
                     %>
                     <script type="text/javascript">
-                        $('#PopupNewProduct<%= row["ProductID"].ToString() %>').magnificPopup({
+                        $('#PopupNewProduct<%= productID %>').magnificPopup({
                             delegate: 'a',
                             type: 'image',
                             tLoading: 'Loading image #%curr%...',
