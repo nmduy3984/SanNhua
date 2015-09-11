@@ -51,7 +51,7 @@
                else
                {
             %>
-            <div>Đang cập nhật</div>
+            <div>Updating</div>
             <%
               }
             %>
