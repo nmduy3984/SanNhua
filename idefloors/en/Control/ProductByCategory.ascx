@@ -62,13 +62,11 @@
                                        string name = row2["NameEN"].ToString().Trim();
                                         %>
                                         <li>
-                                            <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                            <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                                 <span class="thumb">
                                                     <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                                 </span>
-                                                <strong><% if (name != "")
-                                                           { %><%=name%><br />
-                                                    <% } %><%=row2["ProductID"]%></strong>
+                                                <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                                             </a>
                                         </li>
                                         <%
@@ -80,7 +78,7 @@
                           }
                           else
                           {
-                            %><div>Updating</div><%   
+                            %><div>Đang cập nhật</div><%   
                           }
                    }
                    else
@@ -127,13 +125,11 @@
                                       {                              
                                             %>
                                             <li>
-                                                <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                                <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                                     <span class="thumb">
                                                         <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                                     </span>
-                                                    <strong><% if (name != "")
-                                                               { %><%=name%><br />
-                                                        <% } %><%=row2["ProductID"]%></strong>
+                                                    <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                                                 </a>
                                             </li>
                                             <%
@@ -142,13 +138,11 @@
                                       {
                                             %>
                                             <li>
-                                                <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
+                                                <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="ProductDetail.aspx?Id=<%=row2["ProductID"]%>">
                                                     <span class="thumb">
                                                         <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                                     </span>
-                                                    <strong><% if (name != "")
-                                                               { %><%=name%><br />
-                                                        <% } %><%=row2["ProductID"]%></strong>
+                                                    <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                                                 </a>
                                             </li>
                                             <%  
@@ -161,7 +155,7 @@
                           }
                           else
                           {
-                            %><div>Updating</div><%
+                            %><div>Đang cập nhật</div><%
                           }
                    } %>
                     </div>
@@ -235,7 +229,7 @@
                                        string name = row2["NameEN"].ToString().Trim();
                                         %>
                                         <li>
-                                            <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                            <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                                 <span class="thumb">
                                                     <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                                 </span>
@@ -287,7 +281,7 @@
                             {                  
                                 %>
                                 <li>
-                                    <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                         <span class="thumb">
                                             <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                         </span>

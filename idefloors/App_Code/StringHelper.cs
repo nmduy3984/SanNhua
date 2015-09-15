@@ -12,7 +12,8 @@ public class StringHelper
         public static string getConnectionString = ConfigurationManager.ConnectionStrings["idefloors"].ConnectionString;
      
         public static string getFolderImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\ProductImages\\";
-
+        public static string getFolderAdviceImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\Advice\\";
+        public static string getFolderAdvicePDF = AppDomain.CurrentDomain.BaseDirectory + "Images\\PDF\\Advice\\";
         public static string getFolderCategoryImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\CategoryImages\\";
 
         public static string getFolderNewImages = AppDomain.CurrentDomain.BaseDirectory + "Images\\News\\";

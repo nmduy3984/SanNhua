@@ -18,7 +18,7 @@
       { %>
 <div class="c2">
     <div class="t_c2"><a href="javascript:void();"><%= row0["NameEN"] %> - <%= row1["NameEN"] %></a></div>
-    <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">See more&nbsp;&#187;</a></div>
+    <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
     
     <% if ((bool)row1["ViewType"])
@@ -39,7 +39,7 @@
                     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                     titleSrc: function (item) {
                         var arr = item.el.attr('title').split('#idefloors.vn#');
-                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
+                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
                     }
                 }
             });
@@ -48,13 +48,14 @@
         <ul>
             <% foreach (DataRow row2 in productByCategory.Rows)
                {
+                   string name = row2["NameEN"].ToString().Trim();
             %>
             <li>
-                <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["NameEN"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -63,7 +64,7 @@
         <%}
        else
        { %>
-        <div class="fixed_img_col4" id='Popup<%= row1["CategoryID"].ToString() %>'>
+        <div class="fixed_img_col4" id='Div1'>
             <script type="text/javascript">
                 $('#Popup<%= row1["CategoryID"].ToString() %>').magnificPopup({
                     delegate: 'a',
@@ -79,7 +80,7 @@
                         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                         titleSrc: function (item) {
                             var arr = item.el.attr('title').split('#idefloors.vn#');
-                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
+                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
                         }
                     }
                 });
@@ -89,6 +90,7 @@
            int count = 1;
            foreach (DataRow row2 in productByCategory.Rows)
            {
+               string name = row2["NameEN"].ToString().Trim();
                if (count > 3) count = 1;
                if (count == 1)
                {
@@ -99,11 +101,11 @@
                {
                 %>
                 <li>
-                    <a title="<%=row2["NameEN"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["NameEN"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%

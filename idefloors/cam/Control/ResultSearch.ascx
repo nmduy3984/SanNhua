@@ -48,13 +48,14 @@
         <ul>
             <% foreach (DataRow row2 in productByCategory.Rows)
                {
+                   string name = row2["NameCAM"].ToString().Trim();
             %>
             <li>
-                <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -63,7 +64,7 @@
         <%}
        else
        { %>
-        <div class="fixed_img_col4" id='Popup<%= row1["CategoryID"].ToString() %>'>
+        <div class="fixed_img_col4" id='Div1'>
             <script type="text/javascript">
                 $('#Popup<%= row1["CategoryID"].ToString() %>').magnificPopup({
                     delegate: 'a',
@@ -89,6 +90,7 @@
            int count = 1;
            foreach (DataRow row2 in productByCategory.Rows)
            {
+               string name = row2["NameCAM"].ToString().Trim();
                if (count > 3) count = 1;
                if (count == 1)
                {
@@ -99,11 +101,11 @@
                {
                 %>
                 <li>
-                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["NameCAM"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%

@@ -48,13 +48,14 @@
         <ul>
             <% foreach (DataRow row2 in productByCategory.Rows)
                {
+                   string name = row2["Name"].ToString().Trim();
             %>
             <li>
-                <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                     <span class="thumb">
                         <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                     </span>
-                    <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                    <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                 </a>
             </li>
             <%
@@ -89,6 +90,7 @@
            int count = 1;
            foreach (DataRow row2 in productByCategory.Rows)
            {
+               string name = row2["Name"].ToString().Trim();
                if (count > 3) count = 1;
                if (count == 1)
                {
@@ -99,11 +101,11 @@
                {
                 %>
                 <li>
-                    <a title="<%=row2["Name"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                         <span class="thumb">
                             <img  alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                         </span>
-                        <strong><%=row2["Name"]%><br /><%=row2["ProductID"]%></strong>
+                        <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                     </a>
                 </li>
                 <%

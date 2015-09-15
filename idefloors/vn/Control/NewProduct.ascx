@@ -22,6 +22,7 @@
             <div class="ProductList" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 751px; height: 250px; overflow: hidden;">
                 <% foreach (DataRow row in new_product.Rows)
                    {
+                       
                        DataTable productPopup = new DataTable();
                        productPopup = DataAccess.GetDatatable("select * from Product  where Status=1 and CategoryID = " + row["CategoryID"].ToString() + " and ProductID <> '" + row["ProductID"].ToString() + "'");
                        string productID = row["ProductID"].ToString().Replace(" ", "");
@@ -76,25 +77,29 @@
                     <%   
                       } %>
                     <%int dem = 1;
+                      string name = "";
                       foreach (DataRow row1 in productPopup.Rows)
                       {
+                          
                           if (dem == 1)
                           {
+                              name = row["Name"].ToString().Trim();
                               dem++;
                     %>
                     <div>
-                        <a title="<%=row["Name"]%> - <%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="../../Images/ProductImages/<%=row["ImageUrl"]%>">
+                        <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row["ProductID"]%>#idefloors.vn#<%=row["Size"]%>" href="../../Images/ProductImages/<%=row["ImageUrl"]%>">
                             <img  alt="idefloors.vn"  u="image" class="img" src="../../Images/ProductImages/<%=row["ImageUrl"]%>" /></a>
                     </div>
-                    <div style="text-align: center; color: #555"><strong><%=row["Name"]%><br /><%=row["ProductID"]%></strong></div>
+                    <div style="text-align: center; color: #555"><strong><% if (name != ""){ %><%=name%><br /><% } %><%=row["ProductID"]%></strong></div>
                     <%}
+                          name = row1["Name"].ToString().Trim();
                     %>
                     <div style="display: none;">
-                        <a title="<%=row1["Name"]%> - <%=row1["ProductID"]%>#idefloors.vn#<%=row1["Size"]%>" href="../../Images/ProductImages/<%=row1["ImageUrl"]%>">
+                        <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row1["ProductID"]%>#idefloors.vn#<%=row1["Size"]%>" href="../../Images/ProductImages/<%=row1["ImageUrl"]%>">
                             <span class="thumb">
                                 <img  alt="idefloors.vn"  src="../../Images/ProductImages/<%=row1["ImageUrl"]%>" />
                             </span>
-                            <strong><%=row1["Name"]%><br /><%=row1["ProductID"]%></strong><em>Zoom</em>
+                            <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row1["ProductID"]%></strong><em>Zoom</em>
                         </a>
                     </div>
                     <%

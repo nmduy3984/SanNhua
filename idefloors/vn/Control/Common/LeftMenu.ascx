@@ -51,12 +51,18 @@
         <div class="defaultContent cate-menu-content">
             <ul>
 
-                <li><a href="#"><span>Hotline: 08.66795275</span></a> </li>
-                <li><a href="#"><span>Mobile: 0917 703 997</span></a> </li>
-                <li><a href="mailto:trungluu1987@gmail.com"><span>Email: trungluu1987@gmail.com</span></a> </li>
-                <li><a href="mailto:luupham@hiepphatcorp.com"><span>Email: luupham@hiepphatcorp.com</span></a> </li>
+                <li><a href="#"><span>Hotline: <%= thamso.Rows[0]["Phone"].ToString() %></span></a> </li>
+                <li><a href="#"><span>Mobile: <%= thamso.Rows[0]["Mobile"].ToString() %></span></a> </li>
+                <% 
+                    string[] arr = thamso.Rows[0]["Email"].ToString().Split(';');
+                    for( int i=0 ; i<arr.Length; i++){
+                        %>
+                        <li><a href="mailto:<%= arr[i] %>"><span>Email: <%= arr[i] %></span></a> </li>
+                <%
+                    }
+                    %>
                 <li>
-                    <a href="skype:trungluu1987ms">Skype: Anh Lưu</a>
+                    <a href="skype:<%= thamso.Rows[0]["Skype"].ToString() %>">Skype: Anh Lưu</a>
                 </li>
 
             </ul>

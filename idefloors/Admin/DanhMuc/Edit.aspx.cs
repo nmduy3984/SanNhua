@@ -57,13 +57,13 @@ public partial class Admin_DanhMuc_Edit : System.Web.UI.Page
                 string ID = Request.QueryString["ID"];
                 string name = txtTenDanhMuc.Text;
                 //string des = Server.HtmlEncode(txtDes.Content.Trim());
-                string des = txtDes.Text.Trim();
+                string des = txtDes.Text.Trim().Replace("'","''");
                 string nameEN = txtTenDanhMucEN.Text;
                 //string desEN = Server.HtmlEncode(txtDesEN.Content.ToString());
-                string desEN = txtDesEN.Text.ToString();
+                string desEN = txtDesEN.Text.ToString().Replace("'", "''");
                 string nameCAM = txtTenDanhMucCAM.Text;
                 //string desCAM = Server.HtmlEncode(txtDesCAM.Content.ToString());
-                string desCAM = txtDesCAM.Text.ToString();
+                string desCAM = txtDesCAM.Text.ToString().Replace("'", "''");
 
                 string Thumb = "";//txtThumb.Text;
                 string parentId = ddlDanhMucCha.SelectedValue.ToString() == "-1" ? "0" : ddlDanhMucCha.SelectedValue.ToString();
@@ -90,6 +90,7 @@ public partial class Admin_DanhMuc_Edit : System.Web.UI.Page
                                        "', isShow =" + ddlIsShow.SelectedValue +
                                        ", ParentID =" + parentId +
                                        ",Seq=" + Seq + " where CategoryID = " + ID + "";
+                
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");
             }

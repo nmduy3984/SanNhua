@@ -4,6 +4,7 @@
 
 <uc1:NewProduct ID="NewProduct1" runat="server" />
 
+
 <div class="c2">
     <div class="t_c2">
     </div>
@@ -64,6 +65,7 @@
                    int numRow = 0;
                    foreach (DataRow row2 in productByCategory.Rows)
                    {
+                       string name = row2["NameCAM"].ToString().Trim();
                        if(row1["NumRowToView"].ToString() != "")
                        {
                            numRow++;
@@ -78,12 +80,11 @@
                                {
                                     %>
                                     <li>
-                                        <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                        <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                             <span class="thumb">
                                                 <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                             </span>
-                                            <strong><%=row2["NameCAM"]%><br />
-                                                <%=row2["ProductID"]%></strong>
+                                            <strong><% if (name != ""){ %><%=name%><br /><% } %><%=row2["ProductID"]%></strong>
                                         </a>
                                     </li>
                                     <%
@@ -105,11 +106,10 @@
                             if (count == 1 )
                             {%><ul><%}
                             if (count <= 2)
-                            {                       
-                                string name = row2["NameCAM"].ToString().Trim();
+                            {
                                 %>
                                 <li>
-                                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                         <span class="thumb">
                                             <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                         </span>
@@ -154,12 +154,12 @@
                    int numRow = 0;
                    foreach (DataRow row2 in productByCategory.Rows)
                    {
+                       string name = row2["NameCAM"].ToString().Trim();
                        if(row1["NumRowToView"].ToString() != "")
                        {
                            numRow++;
                            if (numRow <= (int)row1["NumRowToView"] * 3)
                            {
-                               string name = row2["NameCAM"].ToString().Trim();
                                if (count > 3) count = 1;
                                if (count == 1)
                                {%><ul><%}
@@ -167,7 +167,7 @@
                                 {
                                     %>
                                     <li>
-                                        <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                        <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                             <span class="thumb">
                                                 <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                             </span>
@@ -189,7 +189,7 @@
                        }else
                        {
                             dem++;
-                            string name = row2["NameCAM"].ToString().Trim();
+                            
                             if (count > 3) count = 1;
                             if (count == 1)
                             {%><ul><%}
@@ -197,7 +197,7 @@
                             {
                                 %>
                                 <li>
-                                    <a title="<%=row2["NameCAM"]%> - <%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
+                                    <a title="<% if (name != ""){ %><%=name%> - <% } %><%=row2["ProductID"]%>#idefloors.vn#<%=row2["Size"]%>" href="../../Images/ProductImages/<%=row2["ImageUrl"]%>">
                                         <span class="thumb">
                                             <img alt="idefloors.vn" src="../../Images/ProductImages/<%=row2["ImageUrl"]%>" />
                                         </span>
