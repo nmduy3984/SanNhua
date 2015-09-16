@@ -50,7 +50,8 @@
         </div>
         <div class="defaultContent cate-menu-content">
             <ul>
-
+                <%if (thamso.Rows.Count>0)
+                  { %>
                 <li><a href="#"><span>Hotline: <%= thamso.Rows[0]["Phone"].ToString() %></span></a> </li>
                 <li><a href="#"><span>Mobile: <%= thamso.Rows[0]["Mobile"].ToString() %></span></a> </li>
                 <% 
@@ -64,7 +65,7 @@
                 <li>
                     <a href="skype:<%= thamso.Rows[0]["Skype"].ToString() %>">Skype: Anh Lưu</a>
                 </li>
-
+                <%} %>
             </ul>
         </div>
         <div class="defaultFooter cate-menu-footer">

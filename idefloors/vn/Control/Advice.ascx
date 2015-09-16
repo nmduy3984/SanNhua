@@ -27,14 +27,18 @@
         <%} %>
         <br />
         <div class="content">Vui lòng liên hệ chúng tôi để biết thêm thông tin:</div>
+        <%if (thamso.Rows.Count>0)
+                  { %>
         <div>Phone: <%=thamso.Rows[0]["Phone"].ToString()%></div>
         <div class="download">
+            Email: <br />
         <% 
             string[] arr = thamso.Rows[0]["Email"].ToString().Split(';');
             for( int i=0 ; i<arr.Length; i++){
                 %>
-               Email: <a href="mailto:<%= arr[i] %>"><span><%= arr[i] %></span></a> <br />
+               <a href="mailto:<%= arr[i] %>"><span><%= arr[i] %></span></a> <br />
         <%
+            }
             }
             %>
 

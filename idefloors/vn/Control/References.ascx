@@ -11,7 +11,7 @@
 
 <div class="L_col">
     <div>
-        <h2>References:</h2>
+        <h2>Tham khảo:</h2>
     </div>
     <br />
     <br />
@@ -24,7 +24,7 @@
 
 <div class="R_col">
     <div>
-        <h2>References from Sweden:</h2>
+        <h2>Tham khảo:</h2>
     </div>
     <br />
     <br />

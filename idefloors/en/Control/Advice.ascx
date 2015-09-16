@@ -11,7 +11,7 @@
                 <div class="content"><%=row["Title"]%></div>
                 <div class="download">
                     <div style="background: rgb(238, 238, 238) url(&quot;../../Images/pdf_icon.gif&quot;) no-repeat scroll 0px 0px;" class="thumb"></div>
-                    <%=row["Description"]%> <a href="../../Images/PDF/Advice/<%=row["FileName"]%>" target="_blank">(download PDF)</a>
+                    <%=row["Description"]%> <a href="../../Images/PDF/Advice/<%=row["FileNameEN"]%>" target="_blank">(download PDF)</a>
                 </div>
         <%} %>
 
@@ -27,16 +27,18 @@
         <%} %>
         <br />
         <div class="content">Please contact us for more information: </div>
+        <%if (thamso.Rows.Count>0)
+                  { %>
         <div>Phone: <%=thamso.Rows[0]["Phone"].ToString()%></div>
         <div class="download">
-                     
+              Email:    <br />    
         <% 
-            string[] arr = thamso.Rows[0]["Email"].ToString().Split(';')
+                      string[] arr = thamso.Rows[0]["Email"].ToString().Split(';');
             for( int i=0 ; i<arr.Length; i++){
                 %>
-               Email: <a href="mailto:<%= arr[i] %>"><span><%= arr[i] %></span></a> <br />
+               <a href="mailto:<%= arr[i] %>"><span><%= arr[i] %></span></a> <br />
         <%
-            }
+            }}
             %>
 
         </div>

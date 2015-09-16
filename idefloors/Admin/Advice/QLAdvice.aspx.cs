@@ -23,7 +23,6 @@ public partial class Admin_Advice_QLAdvice : System.Web.UI.Page
         {
             showData();
         }
-        DataAccess.Delete("   ALTER TABLE [dbo].[Advice]    ADD [FileNameCAM] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL;  ALTER TABLE [dbo].[Advice] ADD [FileNameEN] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL");
 
     }
 
