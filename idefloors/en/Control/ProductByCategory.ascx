@@ -83,7 +83,7 @@
                    }
                    else
                    { %>
-                        <div class="fixed_img_col4" id="Div1">
+                        <div class="fixed_img_col4" id="Popup<%= row1["CategoryID"].ToString() %>">
                         <%if (!row0["CategoryID"].ToString().Equals("3"))
                           { %>
                             <script type="text/javascript">
@@ -192,7 +192,7 @@
                 } 
                 if ((bool)row1["ViewType"])
                 { %>
-                    <div class="fixed_img_col2" id="Div2">
+                    <div class="fixed_img_col2" id="Popup<%= row1["CategoryID"].ToString() %>">
                         <script type="text/javascript">
                             $('#Popup<%= row1["CategoryID"].ToString() %>').magnificPopup({
                                 delegate: 'a',
@@ -245,7 +245,7 @@
                 }
                 else
                 { %>
-                        <div class="fixed_img_col4" id="Div3">
+                        <div class="fixed_img_col4" id="Popup<%= row1["CategoryID"].ToString() %>">
                             <script type="text/javascript">
                                 $('#Popup<%= row1["CategoryID"].ToString() %>').magnificPopup({
                                     delegate: 'a',

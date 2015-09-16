@@ -126,7 +126,7 @@
             }
             else
             { %>
-                <div class="fixed_img_col4" id="Div1">
+                <div class="fixed_img_col4" id="Popup<%= row1["CategoryID"].ToString() %>">
                     <script type="text/javascript">
                         $('#Popup<%= row1["CategoryID"].ToString() %>').magnificPopup({
                             delegate: 'a',
