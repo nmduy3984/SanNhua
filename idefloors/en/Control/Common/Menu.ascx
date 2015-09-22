@@ -70,7 +70,7 @@
                 <ul>
                     <!--<li id="menu-button"><a>Menu</a></li>-->
                     <li><a href="Home.aspx"><span class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
-                    <li><a href="Product.aspx"><span>Sản phẩm</span></a>
+                    <li><a href="Product.aspx"><span>OUR FLOORS</span></a>
                         <ul>
                             <% foreach (DataRow row in Menu.Rows)
                                {
@@ -80,12 +80,12 @@
                             <%} %>
                         </ul>
                     </li>
-                    <li class="active has-sub"><a href="Certificate.aspx"><span>Chứng nhận chất lượng</span></a>
+                    <li class="active has-sub"><a href="Certificate.aspx"><span>QUALITY CERTIFICATION</span></a>
                     </li>
-                    <li><a href="Advice.aspx"><span>Hướng dẫn lắp đặt</span></a></li>
-                    <li class="last"><a href="References.aspx"><span>Tài liệu tham khảo</span></a></li>
-                    <li class="last"><a href="Projects.aspx"><span>Dự án</span></a></li>
-                    <li class="last"><a href="News.aspx"><span>Tin tức</span></a></li>
+                    <li><a href="Advice.aspx"><span>ADVICE</span></a></li>
+                    <li class="last"><a href="References.aspx"><span>REFERENCES</span></a></li>
+                    <li class="last"><a href="Projects.aspx"><span>PROJECT</span></a></li>
+                    <li class="last"><a href="News.aspx"><span>NEWS</span></a></li>
                 </ul>
             </div>
         </div>

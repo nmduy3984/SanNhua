@@ -22,14 +22,14 @@
             <div class="c2">
             <%if (productByCategory.Rows.Count > 0)
             { %>
-                <div class="t_c2"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><%= row0["NameCAM"] %> - <%= row1["NameCAM"] %></a></div>
+                <div class="t_c2"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><%= row0["NameCAM"] %>&nbsp;&#187;&nbsp;<%= row1["NameCAM"] %></a></div>
                 <div class="seemore"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
                 <div style='clear: both;'></div>
             <%}
               else
               {
             %>
-                <div class="t_c2"><a href="javascript:void();"><%= row0["NameCAM"] %> - <%= row1["NameCAM"] %></a></div>
+                <div class="t_c2"><a href="javascript:void();"><%= row0["NameCAM"] %>&nbsp;&#187;&nbsp;<%= row1["NameCAM"] %></a></div>
                 <div class="seemore" style="display: none;"><a href="javascript:void();">Xem thêm&nbsp;&#187;</a></div>
                 <div style='clear: both;'></div>
             <%

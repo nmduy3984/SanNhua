@@ -3,7 +3,7 @@
 
 <div id="wrapcertificate">
     <div class="certificate">
-        <div class="certificatetitle">Giới thiệu</div>
+        <div class="certificatetitle">INTRODUCTION</div>
         <div style='clear: both;'></div>
         <div>
             <span style="line-height: 1.538em;">Sàn nhựa&nbsp;</span><br>

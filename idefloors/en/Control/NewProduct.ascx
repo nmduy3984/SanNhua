@@ -2,7 +2,7 @@
 <%@ Import Namespace="System.Data" %>
 
 <div class="c2">
-    <div class="t_c2"><a href='javascript:void();'>Sản phẩm mới</a></div>
+    <div class="t_c2"><a href='javascript:void();'>NEW PRODUCTS</a></div>
     <div class="seemore"></div>
     <div style='clear: both;'></div>
     <%if (new_product.Rows.Count > 0)

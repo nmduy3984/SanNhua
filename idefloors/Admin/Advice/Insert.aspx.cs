@@ -69,7 +69,7 @@ public partial class Admin_Advice_Insert : System.Web.UI.Page
             strNamePDFCAM = "";
 
         string sql = @"Insert into Advice(Title, TitleEN, TitleCAM, Description,DescriptionEN,DescriptionCAM, ImageUrl, LinkVideo, UserCreated,CreatedDate, FileName, FileNameEN, FileNameCAM, Type)
-                       Values(N'{0}',N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}',N'{8}','{9}',N'{10}',N'{11}')
+                       Values(N'{0}',N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}',N'{8}','{9}',N'{10}',N'{11}',N'{12}','{13}')
                     ";
         sql = string.Format(sql, title, titleEN, titleCAM, des, desEN, desCAM, strName, linkVideo, Session["UserName"], now.ToString(), strNamePDF, strNamePDFEN, strNamePDFCAM, type);
         try

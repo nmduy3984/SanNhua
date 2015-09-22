@@ -28,12 +28,12 @@
                         <img  alt="idefloors.vn" src="../../Images/en.png" alt="en" width="30" height="20" />
                     </asp:LinkButton>
                 </li>
-                <li>
+                <%--<li>
                     <asp:LinkButton ID="lnkCAM" runat="server"  OnClick="lnkCAM_Click">
                         <img  alt="idefloors.vn" src="../../Images/cam.png" alt="en" width="30" height="20" />
 
                     </asp:LinkButton>
-                </li>
+                </li>--%>
             </ul>
         </div>
     </div>
