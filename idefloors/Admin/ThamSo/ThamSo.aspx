@@ -28,6 +28,33 @@
                     <span>Skype</span>
                     <asp:TextBox ID="txtSkype" runat="server"></asp:TextBox>
                 </div>
+                <div>
+                    <span>Giới thiệu Chứng Nhận Chất Lượng</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDes" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
+                <div>
+                    <span>Giới thiệu Chứng Nhận Chất Lượng (EN)</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesEN" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
+                <div>
+                    <span>Giới thiệu Chứng Nhận Chất Lượng (CAM)</span>
+                </div>
+                <div style="clear: both; margin: 0px; padding: 0px;">
+                    <CE:Editor ID="txtDesCAM" AutoConfigure="Simple" runat="server" Width="100%" Height="200">
+                            <TextAreaStyle BackColor="White" BorderColor="#DDDDDD" BorderStyle="Solid" BorderWidth="1px"
+                                CssClass="CuteEditorFrame" Height="100%" Width="100%" />
+                        </CE:Editor>
+                </div>
                 <div style="width: 260px; float: right">
                     <asp:Button ID="btnSubmit" runat="server" Text="Tạo Mới" OnClick="btnSubmit_Click"></asp:Button>
 

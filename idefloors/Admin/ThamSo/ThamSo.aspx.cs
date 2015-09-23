@@ -28,6 +28,9 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
             txtMobile.Text = dt.Rows[0]["Mobile"].ToString();
             txtEmail.Text = dt.Rows[0]["Email"].ToString();
             txtSkype.Text = dt.Rows[0]["Skype"].ToString();
+            txtDes.Text = dt.Rows[0]["Description"].ToString();
+            txtDesEN.Text = dt.Rows[0]["DescriptionEN"].ToString();
+            txtDesCAM.Text = dt.Rows[0]["DescriptionCAM"].ToString();
         }
 
     }
@@ -45,11 +48,14 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
                 string mobile = txtMobile.Text.Trim();
                 string email = txtEmail.Text.Trim();
                 string skype = txtSkype.Text.Trim();
+                string des = txtDes.Text.Trim();
+                string desEN = txtDesEN.Text.Trim();
+                string desCAM = txtDesCAM.Text.Trim();
 
 
                 DateTime now = DateTime.Now;
-                string sql = @"Insert into ThamSo(Phone,Mobile,Email,Skype,UserCreated,CreatedDate) 
-                            Values(N'" + phone + "',N'" + mobile + "',N'" + email + "',N'" + skype + "','" + Session["UserName"] + "','" + now.ToString() + "')";
+                string sql = @"Insert into ThamSo(Phone,Mobile,Email,Skype,UserCreated,CreatedDate, Description, DescriptionEN, DescriptionCAM) 
+                            Values(N'" + phone + "',N'" + mobile + "',N'" + email + "',N'" + skype + "','" + Session["UserName"] + "','" + now.ToString() + "',N'" + des + "',N'" + desEN + "',N'" + desCAM + "')";
                 //UserCreated,UserModified,CreatedDate,ModifiedDate,
                 DataAccess.Insert(sql);
                 MessageBox.Show(Page, "Tao Moi Thanh Cong");
@@ -61,8 +67,12 @@ public partial class Admin_TinTuc_Insert : System.Web.UI.Page
                 string mobile = txtMobile.Text.Trim();
                 string email = txtEmail.Text.Trim();
                 string skype = txtSkype.Text.Trim();
+                string des = txtDes.Text.Trim();
+                string desEN = txtDesEN.Text.Trim();
+                string desCAM = txtDesCAM.Text.Trim();
+
                 string sql = @"Update ThamSo set phone = N'" + phone + "',mobile = N'" + mobile + "',email = N'" + email + "',skype = N'" + skype + "',UserModified = '" + Session["UserName"] +
-                                    "',ModifiedDate = '" + now.ToString() + "'";
+                                    "',ModifiedDate = '" + now.ToString() + "',Description = N'" + des + "',DescriptionEN = N'" + desEN + "',DescriptionCAM = N'" + desCAM + "'";
                 DataAccess.Update(sql);
                 MessageBox.Show(Page, "Cap Nhat Thanh Cong");
             }
