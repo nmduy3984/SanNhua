@@ -6,11 +6,10 @@
         <div class="certificatetitle">Giới thiệu</div>
         <div style='clear: both;'></div>
         <div>
-            <span style="line-height: 1.538em;">Sàn nhựa&nbsp;</span><br>
-            <span style="line-height: 1.538em;">Kích thước đa dạng ...</span><br>
-            <span style="line-height: 1.538em;">Size : 6″ × 36″(152.4mm × 914.4mm:24pcs, 3.34㎡/box)
-           8″ × 48″(203.2mm × 1.219.2mm:13pcs, 3.22㎡/box)
-           184mm × 950mm(19pcs, 3.32㎡/box)</span>
+            <%  string gioiThieu = "";
+                if (thamso.Rows.Count > 0)
+                    gioiThieu = thamso.Rows[0]["Description"].ToString(); %>
+            <%= gioiThieu %>
             <br />
             <br />
         </div>

@@ -5,7 +5,7 @@
     <p>
         <strong style="font-size: 20px; line-height: 1.538em; color: #6ab901;">Giới thiệu</strong>
     </p>
-    <div style="text-align: justify;">
+    <div style="text-align: justify;font-family: Helvetica, Tahoma, Arial, sans-serif;">
         <asp:Literal ID="ltrContent" runat="server" Text=""></asp:Literal>
     </div>
 </div>

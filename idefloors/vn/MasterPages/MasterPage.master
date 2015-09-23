@@ -24,6 +24,7 @@
 
     <!--include File CSS-->
     <link rel="stylesheet" type="text/css" href="../../CSS/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/home.css" media="screen" />
     <link rel='shortcut icon' href='../../Images/favicon.ico' type='image/x-icon'/ />
 
 
