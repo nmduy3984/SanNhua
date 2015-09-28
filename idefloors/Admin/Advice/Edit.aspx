@@ -4,20 +4,20 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 if ($(".ddlType").val() == "1") {
-                    $(".Video").hide(1000);
-                    $(".Pdf").show(1000);
+                    $(".Video").css({ display: "none" });
+                    $(".Pdf").css({ display: "block" });
                 } else {
-                    $(".Video").show(1000);
-                    $(".Pdf").hide(1000);
+                    $(".Video").css({ display: "block" });
+                    $(".Pdf").css({ display: "none" });
                 }
                 $(".ddlType").change(function () {
                     var sel = $(this).val();
                     if (sel == 1) {
-                        $(".Video").hide(1000);
-                        $(".Pdf").show(1000);
+                        $(".Video").css({ display: "none" });
+                        $(".Pdf").css({ display: "block" });
                     } else {
-                        $(".Video").show(1000);
-                        $(".Pdf").hide(1000);
+                        $(".Video").css({ display: "block" });
+                        $(".Pdf").css({ display: "none" });
                     }
                 });
             });
