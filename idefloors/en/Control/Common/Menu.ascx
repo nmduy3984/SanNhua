@@ -70,7 +70,7 @@
                 <ul>
                     <!--<li id="menu-button"><a>Menu</a></li>-->
                     <li><a href="Home.aspx"><span class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
-                    <li><a href="Product.aspx"><span>OUR FLOORS</span></a>
+                    <li><a href="Product.aspx"><span>&nbsp;&nbsp;&nbsp;&nbsp;OUR FLOORS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
                         <ul>
                             <% foreach (DataRow row in Menu.Rows)
                                {
@@ -82,10 +82,10 @@
                     </li>
                     <li class="active has-sub"><a href="Certificate.aspx"><span>QUALITY CERTIFICATION</span></a>
                     </li>
-                    <li><a href="Advice.aspx"><span>ADVICE</span></a></li>
-                    <li class="last"><a href="References.aspx"><span>REFERENCES</span></a></li>
-                    <li class="last"><a href="Projects.aspx"><span>PROJECT</span></a></li>
-                    <li class="last"><a href="News.aspx"><span>NEWS</span></a></li>
+                    <li><a href="Advice.aspx"><span>&nbsp;&nbsp;&nbsp;ADVICE&nbsp;&nbsp;&nbsp;</span></a></li>
+                    <li class="last"><a href="References.aspx"><span>&nbsp;&nbsp;&nbsp;&nbsp;REFERENCES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+                    <li class="last"><a href="Projects.aspx"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROJECT&nbsp;&nbsp;&nbsp;</span></a></li>
+                    <li class="last"><a href="News.aspx"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEWS</span></a></li>
                 </ul>
             </div>
         </div>

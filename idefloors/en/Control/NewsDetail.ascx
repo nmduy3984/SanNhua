@@ -2,7 +2,7 @@
 <%@ Import Namespace="System.Data" %>
 <div class="wrapnewsdetail">
     <div>
-        <h2>BÀI VIẾT</h2>
+        <h2>WRITING</h2>
     </div>
     <br />
     <br />
@@ -16,7 +16,7 @@
     </div>
     <br />
     <div>
-        <h2>Bài viết cùng chủ đề</h2>
+        <h2>Related Articles</h2>
     </div>
     <br />
     <div class="newsrelate">

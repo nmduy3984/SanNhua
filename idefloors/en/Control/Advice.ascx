@@ -2,16 +2,16 @@
 <%@ Import Namespace="System.Data" %>
 <div id="wrapadvice">
     <div class="advice">
-        <div class="title">Hướng dẫn lắp đặt</div>
+        <div class="title">Installation</div>
         <div style='clear: both;'></div>
         <% foreach (DataRow row in pdf.Rows)
            {
   
         %>
-                <div class="content"><%=row["Title"]%></div>
+                <div class="content"><%=row["TitleEN"]%></div>
                 <div class="download">
                     <div style="background: rgb(238, 238, 238) url(&quot;../../Images/pdf_icon.gif&quot;) no-repeat scroll 0px 0px;" class="thumb"></div>
-                    <%=row["Description"]%> <a href="../../Images/PDF/Advice/<%=row["FileNameEN"]%>" target="_blank">(download PDF)</a>
+                    <%=row["DescriptionEN"]%> <a href="../../Images/PDF/Advice/<%=row["FileNameEN"]%>" target="_blank">(download PDF)</a>
                 </div>
         <%} %>
 
@@ -19,7 +19,7 @@
            {
   
         %>
-                <div class="content"><%=row["Title"]%></div>
+                <div class="content"><%=row["TitleEN"]%></div>
                 <div>
                     <a href="<%=row["LinkVideo"]%>" target="_blank">
                         <img alt="idefloors.vn" src="../../Images/Advice/<%=row["ImageURL"]%>" width="400px" height="300px" /></a>

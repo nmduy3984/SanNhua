@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="certificate">
-        <div class="certificatetitle">Chứng nhận chất lượng</div>
+        <div class="certificatetitle">Quality Certification</div>
         <div style='clear: both;'></div>
         <div class="fixed_img_col3">
             <% if (certificate.Rows.Count > 0)

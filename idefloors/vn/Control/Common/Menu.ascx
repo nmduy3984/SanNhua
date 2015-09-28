@@ -80,12 +80,12 @@
                             <%} %>
                         </ul>
                     </li>
-                    <li class="active has-sub"><a href="Certificate.aspx"><span>Chứng nhận chất lượng</span></a>
+                    <li class="active has-sub"><a href="Certificate.aspx"><span>&nbsp;&nbsp;Chứng nhận chất lượng</span></a>
                     </li>
                     <li><a href="Advice.aspx"><span>Hướng dẫn lắp đặt</span></a></li>
                     <li class="last"><a href="References.aspx"><span>Tài liệu tham khảo</span></a></li>
-                    <li class="last"><a href="Projects.aspx"><span>Dự án</span></a></li>
-                    <li class="last"><a href="News.aspx"><span>Tin tức</span></a></li>
+                    <li class="last"><a href="Projects.aspx"><span>&nbsp;&nbsp;Dự án</span></a></li>
+                    <li class="last"><a href="News.aspx"><span>&nbsp;&nbsp;Tin tức</span></a></li>
                 </ul>
             </div>
         </div>

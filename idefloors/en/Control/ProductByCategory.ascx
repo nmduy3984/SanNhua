@@ -3,7 +3,7 @@
 
 <div class="c2">
     <p>
-        <strong style="font-size: 20px; line-height: 1.538em; color: #6ab901;">Giới thiệu</strong>
+        <strong style="font-size: 20px; line-height: 1.538em; color: #6ab901;">INTRODUCTION</strong>
     </p>
     <div style="text-align: justify;">
         <asp:Literal ID="ltrContent" runat="server" Text=""></asp:Literal>
@@ -78,7 +78,7 @@
                           }
                           else
                           {
-                            %><div>Đang cập nhật</div><%   
+                            %><div>Updating</div><%   
                           }
                    }
                    else
@@ -155,7 +155,7 @@
                           }
                           else
                           {
-                            %><div>Đang cập nhật</div><%
+                            %><div>Updating</div><%
                           }
                    } %>
                     </div>
@@ -179,14 +179,14 @@
                 <%if (productByCategory.Rows.Count > 0)
                 { %>
                     <div class="t_c2"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>"><%= row0["NameEN"] %>&nbsp;&#187;&nbsp;<%= row1["NameEN"] %></a></div>
-                    <div class="seemore" style="display: none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
+                    <div class="seemore" style="display: none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">See more&nbsp;&#187;</a></div>
                     <div style='clear: both;'></div>
                 <%}
                 else
                 {
                 %>
                     <div class="t_c2"><a href="javascript:void();"><%= row0["NameEN"] %>&nbsp;&#187;&nbsp;<%= row1["NameEN"] %></a></div>
-                    <div class="seemore" style="display: none;"><a href="javascript:void();">Xem thêm&nbsp;&#187;</a></div>
+                    <div class="seemore" style="display: none;"><a href="javascript:void();">See more&nbsp;&#187;</a></div>
                     <div style='clear: both;'></div>
                 <%
                 } 
@@ -208,7 +208,7 @@
                                     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                                     titleSrc: function (item) {
                                         var arr = item.el.attr('title').split('#idefloors.vn#');
-                                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                                        return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                                     }
                                 }
                             });
@@ -261,7 +261,7 @@
                                         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                                         titleSrc: function (item) {
                                             var arr = item.el.attr('title').split('#idefloors.vn#');
-                                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                                            return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; color:#6ab901; font-weight:normal;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                                         }
                                     }
                                 });

@@ -3462,8 +3462,21 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
     float: left;
     display: block;
     /*margin: 6px 6px 6px 6px;*/
+    border: 3px solid #6ab901;
+    width: 220px;
+    padding-top: 5px;   
+    height: 450px;
 }
-
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+}
+.showproduct:hover {
+    border: solid 3px #6ab901;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
     .showproduct .img_product {
         width: 160px;
         height: 162px;
@@ -3478,13 +3491,15 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
     }
     /* show circle trang chu */
     .showproduct .img_roll {
-        width: 226px;
+        width: 220px;
         height: 226px;
-        border-radius: 100%;
+        /*border-radius: 100%;*/
         overflow: hidden !important;
         -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
         cursor: pointer;
         text-align: center;
+        /*padding: 0px 4px;
+        width: 212px;*/
     }
 
         .showproduct .img_roll img {
@@ -3505,34 +3520,69 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
         }
 
     .showproduct .name_product_roll {
-        width: 226px!important;
+        color: #6ab901;
+        /*width: 215px!important;*/
+        font-weight: bold;
+
         text-align: center;
         margin: 8px 0;
         overflow: hidden;
         height: 32px;
         font-weight: bold;
-    }
 
-    .showproduct .red_product_roll {
+        color: rgba(0,0,0,0.6);
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+    }
+.showproduct .name_product_roll a {
+        color: #6ab901;
+        width: 215px!important;
         text-align: center;
-        display: none;
+        margin: 8px 0;
+        overflow: hidden;
+        height: 32px;
+        font-weight: bold;
+
+        
+    }
+    .showproduct .dis {
+        width: 210px!important;
+        margin: 18px 0;
+        overflow: hidden;
+        height: 110px;
+        font-weight: bold;
+        text-align:justify;
+        padding-left:5px;
+    }
+    .showproduct .dis a{
+        width: 215px!important;
+        margin: 18px 0;
+        overflow: hidden;
+        /*height: 32px;
+        font-weight: bold;*/
+        text-align:justify;
+    }
+    .showproduct .red_product_roll {
+        /*text-align: center;*/
+        display: block;
+        padding-left: 5px;
     }
 
-        .showproduct .red_product_roll a {
-            font-weight: bold;
-            color: #fff;
-            background-color: #FF0000;
-            border-radius: 2px;
-            padding: 4px 40px;
-        }
+    .showproduct .red_product_roll a {
+        font-weight: bold;
+        color: #6ab901;
+        /*background-color: #FF0000;*/
+        border-radius: 2px;
+        /*padding: 4px 40px;*/
+    }
 
-            .showproduct .red_product_roll a:hover {
-                text-decoration: underline;
-            }
-.Spaceshowproduct {
-    float:left;
-    margin:9px;
-}
+    .showproduct .red_product_roll a:hover {
+        text-decoration: underline;
+    }
+    .Spaceshowproduct {
+        float:left;
+        margin:9px;
+    }
     /* end circle trang chu */
     .showproduct .img_product:hover {
         border: 1px solid red;

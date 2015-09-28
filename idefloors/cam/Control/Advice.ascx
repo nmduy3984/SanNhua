@@ -8,10 +8,10 @@
            {
   
         %>
-                <div class="content"><%=row["Title"]%></div>
+                <div class="content"><%=row["TitleCAM"]%></div>
                 <div class="download">
                     <div style="background: rgb(238, 238, 238) url(&quot;../../Images/pdf_icon.gif&quot;) no-repeat scroll 0px 0px;" class="thumb"></div>
-                    <%=row["Description"]%> <a href="../../Images/PDF/Advice/<%=row["FileNameCAM"]%>" target="_blank">(download PDF)</a>
+                    <%=row["DescriptionCAM"]%> <a href="../../Images/PDF/Advice/<%=row["FileNameCAM"]%>" target="_blank">(download PDF)</a>
                 </div>
         <%} %>
 
@@ -19,7 +19,7 @@
            {
   
         %>
-                <div class="content"><%=row["Title"]%></div>
+                <div class="content"><%=row["TitleCAM"]%></div>
                 <div>
                     <a href="<%=row["LinkVideo"]%>" target="_blank">
                         <img alt="idefloors.vn" src="../../Images/Advice/<%=row["ImageURL"]%>" width="400px" height="300px" /></a>

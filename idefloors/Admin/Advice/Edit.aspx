@@ -26,7 +26,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
 <div style="width: 100%; float: left;margin-top:30px;">
-    <a href="/Admin/Advice/QLAdvice.aspx" style="color:#333333;font-size: 15px;font-weight: bold;">Quản Lý Hướng dẫn lắp đặt</a> >> Tạo mới
+    <a href="/Admin/Advice/QLAdvice.aspx" style="color:#333333;font-size: 15px;font-weight: bold;">Quản Lý Hướng dẫn lắp đặt</a> >> Cập nhật
    
 </div>
 <div style="width: 100%; float: left;">

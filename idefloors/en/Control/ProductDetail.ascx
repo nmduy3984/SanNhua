@@ -40,9 +40,9 @@ string productID = productByID.Rows[0]["ProductID"].ToString().Replace(" ", "");
     <div class="content">
         <div class="title"><%= productByID.Rows[0]["ProductID"] %></div>
         <div class="desc">
-            <div class="detail"><strong>Đăng ngày: </strong><%= string.Format(productByID.Rows[0]["CreatedDate"].ToString(),"dd/MM/yyyy") %></div>
-            <div class="detail"><strong>Nhóm hàng: </strong><%= categoryByProductId.Rows[0]["NameEN"] %></div>
-            <div class="detail"><strong>Mã sản phẩm: </strong><%= productByID.Rows[0]["ProductID"] %></div>
+            <div class="detail"><strong>Publish date: </strong><%= string.Format(productByID.Rows[0]["CreatedDate"].ToString(),"dd/MM/yyyy") %></div>
+            <div class="detail"><strong>Catalog: </strong><%= categoryByProductId.Rows[0]["NameEN"] %></div>
+            <div class="detail"><strong>Code: </strong><%= productByID.Rows[0]["ProductID"] %></div>
         </div>
     </div>
     <div class="splitspace"></div>
@@ -61,7 +61,7 @@ string productID = productByID.Rows[0]["ProductID"].ToString().Replace(" ", "");
 <%if (productOtherID.Rows.Count > 0)
   { %>
 <div class="c2">
-    <div class="t_c2"><a href='#'>Sản phẩm liên quan</a></div>
+    <div class="t_c2"><a href='#'>Related Products</a></div>
     <div style='clear: both;'></div>
     <div class="fixed_img_col4">
         <%int count = 1;

@@ -45,7 +45,7 @@
                                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                                 titleSrc: function (item) {
                                     var arr = item.el.attr('title').split('#idefloors.vn#');
-                                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="../../Page/ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="../../en/Page/ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                                 }
                             }
                         });
@@ -69,7 +69,7 @@
                                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                                 titleSrc: function (item) {
                                     var arr = item.el.attr('title').split('#idefloors.vn#');
-                                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="../../Page/ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>" style="color:#6ab901;">Xem thêm&nbsp;&#187;</a></div>';
+                                    return '<div style="float:left;padding-left:5px;color:#403d3b;font-size:12px;font-weight:normal;">' + arr[1] + '</div>' + arr[0] + '<div style="float:right;font-size:12px; font-weight:normal;"><a href="../../en/Page/ProductByCategory.aspx?Id=<%= row["CategoryID"].ToString() %>" style="color:#6ab901;">See more&nbsp;&#187;</a></div>';
                                 }
                             }
                         });

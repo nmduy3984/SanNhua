@@ -13,7 +13,7 @@
                 </a>
             </div>
             <div class="dis">
-                <a id="A9" title="idefloors.vn" href='ProductByCategory.aspx?Id=4'>Bao ngày xa cách nhau Là anh vẫn đợi chờ giây phút em về Để anh được nhìn thấy em Được nghe nói cười và được ôm em mãi. Tháng ngày thiếu vắng anh Em có nhớ không ngày ta vẫn bên nhau?</a>
+                <a id="A9" title="idefloors.vn" href='ProductByCategory.aspx?Id=4'></a>
             </div>
             <div class="red_product_roll">
                 <a id="A10" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
@@ -31,10 +31,7 @@
                 </a>
             </div>
             <div class="dis">
-                <a id="A11" title="idefloors.vn" href='ProductByCategory.aspx?Id=5'>Yêu mình anh nhé em Chỉ cần thế thôi là anh hạnh phúc lắm.
-Rồi từng ngày qua đi em vẫn chưa về
-Chỉ còn mỗi anh nơi đây mà thôi
-Vì sao hỡi em? tại sao thế em? </a>
+                <a id="A11" title="idefloors.vn" href='ProductByCategory.aspx?Id=5'></a>
             </div>
             <div class="red_product_roll">
                 <a id="A12" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
@@ -53,9 +50,7 @@ Vì sao hỡi em? tại sao thế em? </a>
                 </a>
             </div>
             <div class="dis">
-                <a id="A13" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'>Rồi từng ngày qua đi em vẫn chưa về
-Chỉ còn mỗi anh nơi đây mà thôi
-Vì sao hỡi em? tại sao thế em? </a>
+                <a id="A13" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
             </div>
             <div class="red_product_roll">
                 <a id="A14" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
@@ -64,7 +59,7 @@ Vì sao hỡi em? tại sao thế em? </a>
         </div>
 
         <div class="Spaceshowproduct"></div>
-        <div class='showproduct showproduct_bordder'>
+        <div class='showproduct showproduct_bordder' style="float:right !important">
             <div class="name_product_roll">
                 <a id="A1" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'>SẢN PHẨM TRANG TRÍ</a>
             </div>
@@ -74,10 +69,7 @@ Vì sao hỡi em? tại sao thế em? </a>
                 </a>
             </div>
             <div class="dis">
-                <a id="A15" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'>Yêu mình anh nhé em Chỉ cần thế thôi là anh hạnh phúc lắm.
-Rồi từng ngày qua đi em vẫn chưa về
-Chỉ còn mỗi anh nơi đây mà thôi
-Vì sao hỡi em? tại sao thế em? </a>
+                <a id="A15" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'></a>
             </div>
             <div class="red_product_roll">
                 <a id="A16" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>

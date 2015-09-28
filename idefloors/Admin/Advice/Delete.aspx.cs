@@ -14,7 +14,7 @@ public partial class Admin_Advice_Delete : System.Web.UI.Page
         {
             try
             {
-                DataAccess.Delete("delete from Product where ID in (" + x + ")");
+                DataAccess.Delete("delete from Advice where ID in (" + x + ")");
                 MessageBox.Show(Page, "Xoa Thanh Cong");
             }
             catch (Exception)

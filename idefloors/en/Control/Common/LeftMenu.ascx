@@ -63,7 +63,7 @@
                     }
                     %>
                 <li>
-                    <a href="skype:<%= thamso.Rows[0]["Skype"].ToString() %>">Skype: Anh Lưu</a>
+                    <a href="skype:<%= thamso.Rows[0]["Skype"].ToString() %>">Skype: Mr.Lưu</a>
                 </li>
                 <%} %>
             </ul>

@@ -24,7 +24,7 @@
 
 <div class="R_col">
     <div>
-        <h2>Tham khảo:</h2>
+        <h2>&nbsp;</h2>
     </div>
     <br />
     <br />
