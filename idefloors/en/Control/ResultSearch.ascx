@@ -17,7 +17,7 @@
     <%if (productByCategory.Rows.Count > 0)
       { %>
 <div class="c2">
-    <div class="t_c2"><a href="javascript:void();"><%= row0["NameEN"] %> - <%= row1["NameEN"] %></a></div>
+    <div class="t_c2"><a href="javascript:void();"><%= row0["NameEN"] %>&nbsp;&#187;&nbsp;<%= row1["NameEN"] %></a></div>
     <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">See more&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
     

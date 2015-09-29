@@ -17,7 +17,7 @@
     <%if (productByCategory.Rows.Count > 0)
       { %>
 <div class="c2">
-    <div class="t_c2"><a href="javascript:void();"><%= row0["Name"] %> - <%= row1["Name"] %></a></div>
+    <div class="t_c2"><a href="javascript:void();"><%= row0["Name"] %>&nbsp;&#187;&nbsp;<%= row1["Name"] %></a></div>
     <div class="seemore" style="display:none;"><a href="ProductByCategory.aspx?Id=<%= row1["CategoryID"].ToString() %>">Xem thêm&nbsp;&#187;</a></div>
     <div style='clear: both;'></div>
     
