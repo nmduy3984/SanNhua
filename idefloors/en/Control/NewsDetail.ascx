@@ -15,6 +15,7 @@
         <asp:Literal ID="ltrContent" runat="server"></asp:Literal>
     </div>
     <br />
+    <%if (newsOtherID.Rows.Count > 0){ %>
     <div>
         <h2>Related Articles</h2>
     </div>
@@ -29,4 +30,5 @@
             <%} %>
         </ul>
     </div>
+    <%} %>
 </div>

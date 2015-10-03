@@ -16,7 +16,7 @@
                 <a id="A9" title="idefloors.vn" href='ProductByCategory.aspx?Id=4'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A10" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
+                <a id="A10" title="idefloors.vn" href="ProductByCategory.aspx?Id=4">Chi tiết&nbsp;&#187;</a>
             </div>
             <!--</div> -->
         </div>
@@ -34,7 +34,7 @@
                 <a id="A11" title="idefloors.vn" href='ProductByCategory.aspx?Id=5'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A12" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
+                <a id="A12" title="idefloors.vn" href="ProductByCategory.aspx?Id=5">Chi tiết&nbsp;&#187;</a>
             </div>
 
         </div>
@@ -53,7 +53,7 @@
                 <a id="A13" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A14" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
+                <a id="A14" title="idefloors.vn" href="ProductByCategory.aspx?Id=2">Chi tiết&nbsp;&#187;</a>
             </div>
 
         </div>
@@ -72,7 +72,7 @@
                 <a id="A15" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A16" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
+                <a id="A16" title="idefloors.vn" href="ProductByCategory.aspx?Id=3">Chi tiết&nbsp;&#187;</a>
             </div>
         </div>
 

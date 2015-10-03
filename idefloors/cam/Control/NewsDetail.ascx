@@ -15,6 +15,7 @@
         <asp:Literal ID="ltrContent" runat="server"></asp:Literal>
     </div>
     <br />
+    <%if (newsOtherID.Rows.Count > 0){ %>
     <div>
         <h2>Bài viết cùng chủ đề</h2>
     </div>
@@ -25,8 +26,9 @@
               foreach (DataRow row in newsOtherID.Rows)
               {
             %>
-            <li><a href="NewsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></li>
+            <li><a href="NewsDetail.aspx?Id=<%=row["Id"] %>"><%=row["TitleCAM"] %></a></li>
             <%} %>
         </ul>
     </div>
+    <%} %>
 </div>

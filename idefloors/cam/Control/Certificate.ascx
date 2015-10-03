@@ -36,7 +36,7 @@
                 <li>
                     <a href="../../Images/PDF/Certificate/<%= row["FileName"].ToString()%>" target="_blank">
                         <span style="background: url(../../Images/Certificate/<%= row["ImgUrl"].ToString()%>) no-repeat; background-color: #eee;" class="thumb"></span>
-                        <strong><%= row["Title"].ToString()%></strong>
+                        <strong><%= row["TitleCAM"].ToString()%></strong>
                     </a>
                 </li>
                 <%}
