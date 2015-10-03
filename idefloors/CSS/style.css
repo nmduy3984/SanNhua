@@ -3461,22 +3461,22 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
 .showproduct {
     float: left;
     display: block;
-    /*margin: 6px 6px 6px 6px;*/
-    border: 3px solid #6ab901;
+    /*margin: 6px 6px 6px 6px;
+    border: 3px solid #6ab901;*/
     width: 220px;
     padding-top: 5px;   
-    height: 450px;
+    /*height: 450px;*/
 }
 .imagedropshadow {
 	padding: 5px;
 	border: solid 1px #EFEFEF;
 }
-.showproduct:hover {
+/*.showproduct:hover {
     border: solid 3px #6ab901;
     -moz-box-shadow: 1px 1px 5px #999;
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999;
-}
+}*/
     .showproduct .img_product {
         width: 160px;
         height: 162px;
@@ -3565,7 +3565,7 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
     .showproduct .red_product_roll {
         /*text-align: center;*/
         display: block;
-        padding-left: 5px;
+        padding-top: 10px;
     }
 
     .showproduct .red_product_roll a {

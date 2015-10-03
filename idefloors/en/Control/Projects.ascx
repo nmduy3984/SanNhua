@@ -14,8 +14,8 @@
             <img  alt="idefloors.vn" u="image" class="img" src="../../Images/Projects/<%=row["ImageUrl"] %>" /></a>
     </div>
     <div class="content">
-        <div class="title"><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></div>
-        <div class="desc"><%=Server.HtmlDecode(row["Description"].ToString()) %></div>
+        <div class="title"><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["TitleEN"] %></a></div>
+        <div class="desc"><%=Server.HtmlDecode(row["DescriptionEN"].ToString()) %></div>
         <div class="seemore"><a href='../Page/ProjectsDetail.aspx?Id=<%=row["Id"] %>'>See more&nbsp;&#187;</a></div>
     </div>
     <div class="splitspace"></div>

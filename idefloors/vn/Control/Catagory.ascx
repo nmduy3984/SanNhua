@@ -12,9 +12,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/4.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A9" title="idefloors.vn" href='ProductByCategory.aspx?Id=4'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A10" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
             </div>
@@ -30,9 +30,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/2.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A11" title="idefloors.vn" href='ProductByCategory.aspx?Id=5'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A12" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
             </div>
@@ -49,9 +49,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/3.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A13" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A14" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
             </div>
@@ -68,9 +68,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/4.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A15" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A16" title="idefloors.vn" href="javascript:void();">Chi tiết&nbsp;&#187;</a>
             </div>

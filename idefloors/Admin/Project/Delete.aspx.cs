@@ -14,7 +14,7 @@ public partial class Admin_Project_Delete : System.Web.UI.Page
         {
            try
             {
-                DataAccess.Delete("delete from News where ID in (" + x + ")");
+                DataAccess.Delete("delete from Projects where ID in (" + x + ")");
                 MessageBox.Show(Page, "Xoa Thanh Cong");
             }
             catch (Exception)

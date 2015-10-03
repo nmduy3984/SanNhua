@@ -12,9 +12,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/4.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A1" title="idefloors.vn" href='ProductByCategory.aspx?Id=4'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A2" title="idefloors.vn" href="javascript:void();">Detail&nbsp;&#187;</a>
             </div>
@@ -30,9 +30,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/2.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A5" title="idefloors.vn" href='ProductByCategory.aspx?Id=5'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A6" title="idefloors.vn" href="javascript:void();">Detail&nbsp;&#187;</a>
             </div>
@@ -49,9 +49,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/3.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A8" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A17" title="idefloors.vn" href="javascript:void();">Detail&nbsp;&#187;</a>
             </div>
@@ -68,9 +68,9 @@
                     <img alt="idefloors.vn" src="../../Images/ProductImages/4.jpg" style="border-width: 0px;" />
                 </a>
             </div>
-            <div class="dis">
+            <%--<div class="dis">
                 <a id="A19" title="idefloors.vn" href='ProductByCategory.aspx?Id=3'></a>
-            </div>
+            </div>--%>
             <div class="red_product_roll">
                 <a id="A20" title="idefloors.vn" href="javascript:void();">Detail&nbsp;&#187;</a>
             </div>

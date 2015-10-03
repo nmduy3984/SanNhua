@@ -14,7 +14,7 @@
             <img  alt="idefloors.vn" u="image" class="img" src="../../Images/Projects/<%=row["ImageUrl"] %>" /></a>
     </div>
     <div class="content">
-        <div class="title"><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></div>
+        <div class="title"><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["TitleCAM"] %></a></div>
         <div class="desc"><%=Server.HtmlDecode(row["DescriptionCAM"].ToString()) %></div>
         <div class="seemore"><a href='../Page/ProjectsDetail.aspx?Id=<%=row["Id"] %>'>Xem thêm&nbsp;&#187;</a></div>
     </div>

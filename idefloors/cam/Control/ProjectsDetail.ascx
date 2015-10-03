@@ -25,7 +25,7 @@
                 foreach (DataRow row in projectsOtherID.Rows)
               {
             %>
-            <li><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["Title"] %></a></li>
+            <li><a href="ProjectsDetail.aspx?Id=<%=row["Id"] %>"><%=row["TitleCAM"] %></a></li>
             <%} %>
         </ul>
     </div>
