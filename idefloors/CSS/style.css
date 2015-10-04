@@ -3465,6 +3465,7 @@ div.newsLastest div.newsLastest_Item div.newsLastest_Title a:hover span {
     border: 3px solid #6ab901;*/
     width: 220px;
     padding-top: 5px;   
+    padding-left: 6px;
     /*height: 450px;*/
 }
 .imagedropshadow {
