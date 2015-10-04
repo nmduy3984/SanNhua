@@ -42,7 +42,7 @@
         <div class="Spaceshowproduct"></div>
         <div class='showproduct showproduct_bordder'>
             <div class="name_product_roll">
-                <a id="A2" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'>KEO DÁN SÀN NHỰA</a>
+                <a id="A2" title="idefloors.vn" href='ProductByCategory.aspx?Id=17'>KEO DÁN SÀN NHỰA</a>
             </div>
             <div class="img_roll">
                 <a href='ProductByCategory.aspx?Id=2' title='idefloors.vn'>
@@ -53,7 +53,7 @@
                 <a id="A13" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A14" title="idefloors.vn" href="ProductByCategory.aspx?Id=2">Chi tiết&nbsp;&#187;</a>
+                <a id="A14" title="idefloors.vn" href="ProductByCategory.aspx?Id=17">Chi tiết&nbsp;&#187;</a>
             </div>
 
         </div>

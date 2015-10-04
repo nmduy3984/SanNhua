@@ -42,7 +42,7 @@
         <div class="Spaceshowproduct"></div>
         <div class='showproduct showproduct_bordder'>
             <div class="name_product_roll">
-                <a id="A7" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'>GLUE - PVC FLOOR ADHESIVE</a>
+                <a id="A7" title="idefloors.vn" href='ProductByCategory.aspx?Id=17'>GLUE - PVC FLOOR ADHESIVE</a>
             </div>
             <div class="img_roll">
                 <a href='ProductByCategory.aspx?Id=2' title='idefloors.vn'>
@@ -53,7 +53,7 @@
                 <a id="A8" title="idefloors.vn" href='ProductByCategory.aspx?Id=2'></a>
             </div>--%>
             <div class="red_product_roll">
-                <a id="A17" title="idefloors.vn" href="ProductByCategory.aspx?Id=2">Detail&nbsp;&#187;</a>
+                <a id="A17" title="idefloors.vn" href="ProductByCategory.aspx?Id=17">Detail&nbsp;&#187;</a>
             </div>
 
         </div>
